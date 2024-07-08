@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+
 <html lang="en">
+  
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -54,7 +56,7 @@
         display: block;
       }
 
-      .prev, .next{
+      .prev1, .next1{
         top: 50%;
         transform: translateY(-50%);
         cursor: pointer;
@@ -64,7 +66,9 @@
 
   </head>
 
-  <body class="bg-white">
+  <body class="bg-white" id="class">
+
+   <main id="body" class="">
 
     <header class="bg-white hidden lg:block shadow-lg m-2">
 
@@ -120,7 +124,7 @@
 
         <div class="xl:w-[25%] mx-1 flex justify-start items-center gap-2">
           <button
-            class="p-3 hover:animate__animated animate__pulse hover:text-purple-700 hover:bg-gray-200 bg-purple-700 text-white text-[13px] rounded-[10px]"
+            class="p-3 hover:animate__animated animate__pulse hover:text-purple-700 hover:bg-gray-200 bg-purple-700 text-white text-[13px] rounded-[10px]" onclick="popopen()" 
           >
             Create Account
           </button>
@@ -231,7 +235,7 @@
 
           <div class="justify-center flex-col mt-[15px]">
             <button
-              class="p-3 mx-9 hover:animate__animated animate__pulse hover:text-purple-700 bg-purple-700 hover:bg-white text-white text-[13px] rounded-[10px]"
+              class="p-3 mx-9 hover:animate__animated animate__pulse hover:text-purple-700 bg-purple-700 hover:bg-white text-white text-[13px] rounded-[10px]" onclick="popopen()" 
             >
               Create Account
             </button>
@@ -289,21 +293,22 @@
 
           <div class="flex justify-center gap-4 max-w-[350px] mx-auto">
             <button
-              class="p-3 hover:animate__animated animate__pulse hover:text-purple-700 hover:bg-white bg-purple-700 text-white text-[13px] rounded-[10px]"
+              class="p-3 hover:animate__animated animate__pulse hover:text-purple-700 hover:bg-white bg-purple-700 text-white text-[13px] rounded-[10px]" onclick="popopen()" 
             >
               Get Started
             </button>
-            <button
+            <a href="#proper"
               class="p-3 hover:animate__animated animate__pulse hover:text-purple-700 hover:bg-white bg-purple-700 text-white text-[13px] rounded-[10px]"
             >
               View Listing
-            </button>
+            </a>
           </div>
         </div>
       </div>
     </section>
 
     <section class="mx-2 flex flex-col shadow-lg md:flex-row">
+
       <div
         class="flex bg-[#f0f0f0] md:w-[78%] w-full justify-center lg:gap-3 move"
       >
@@ -352,6 +357,7 @@
     </section>
 
     <section class="mx-2 my-2">
+
       <h2
         class="mx-[20px] text-[26px] md:text-[45px] mt-7 text-purple-700 font-bold"
       >
@@ -470,6 +476,7 @@
     </section>
 
     <section class="m-2">
+
       <h2
         class="mx-[20px] text-[26px] md:text-[45px] text-right mx-3 mt-7 text-purple-700 font-bold"
       >
@@ -625,7 +632,7 @@
             </div>
 
             <div class="md:w-[70%] w-[50%] mx-auto  lg:mt-0">
-            <button class="md:text-[14px] text-[13px] my-3 flex justify-center md:px-3 px-2 py-2 hover:bg-[#f0f0f0] hover:text-purple-700 rounded-[5px] shadow-lg text-white bg-purple-700" >Book Reservations</button>
+            <button class="md:text-[14px] text-[13px] my-3 flex justify-center md:px-3 px-2 py-2 hover:bg-[#f0f0f0] hover:text-purple-700 rounded-[5px] shadow-lg text-white bg-purple-700" onclick="popopen()" >Book Reservations</button>
             </div>
             
 
@@ -676,7 +683,7 @@
             </div>
 
             <div class="md:w-[70%] w-[50%] mx-auto  lg:mt-0">
-            <button class="md:text-[14px] text-[13px] my-3 flex justify-center md:px-3 px-2 py-2 hover:bg-[#f0f0f0] hover:text-purple-700 rounded-[5px] shadow-lg text-white bg-purple-700" >Book Reservations</button>
+            <button class="md:text-[14px] text-[13px] my-3 flex justify-center md:px-3 px-2 py-2 hover:bg-[#f0f0f0] hover:text-purple-700 rounded-[5px] shadow-lg text-white bg-purple-700" onclick="popopen()"  >Book Reservations</button>
             </div>
             
 
@@ -727,7 +734,7 @@
             </div>
 
             <div class="md:w-[70%] w-[50%] mx-auto  lg:mt-0">
-            <button class="md:text-[14px] text-[13px] my-3 flex justify-center md:px-3 px-2 py-2 hover:bg-[#f0f0f0] hover:text-purple-700 rounded-[5px] shadow-lg text-white bg-purple-700" >Book Reservations</button>
+            <button class="md:text-[14px] text-[13px] my-3 flex justify-center md:px-3 px-2 py-2 hover:bg-[#f0f0f0] hover:text-purple-700 rounded-[5px] shadow-lg text-white bg-purple-700" onclick="popopen()"  >Book Reservations</button>
             </div>
             
 
@@ -778,7 +785,7 @@
             </div>
 
             <div class="md:w-[70%] w-[50%] mx-auto  lg:mt-0">
-            <button class="md:text-[14px] text-[13px] my-3 flex justify-center md:px-3 px-2 py-2 hover:bg-[#f0f0f0] hover:text-purple-700 rounded-[5px] shadow-lg text-white bg-purple-700" >Book Reservations</button>
+            <button class="md:text-[14px] text-[13px] my-3 flex justify-center md:px-3 px-2 py-2 hover:bg-[#f0f0f0] hover:text-purple-700 rounded-[5px] shadow-lg text-white bg-purple-700" onclick="popopen()"  >Book Reservations</button>
             </div>
             
 
@@ -829,7 +836,7 @@
             </div>
 
             <div class="md:w-[70%] w-[50%] mx-auto  lg:mt-0">
-            <button class="md:text-[14px] text-[13px] my-3 flex justify-center md:px-3 px-2 py-2 hover:bg-[#f0f0f0] hover:text-purple-700 rounded-[5px] shadow-lg text-white bg-purple-700" >Book Reservations</button>
+            <button class="md:text-[14px] text-[13px] my-3 flex justify-center md:px-3 px-2 py-2 hover:bg-[#f0f0f0] hover:text-purple-700 rounded-[5px] shadow-lg text-white bg-purple-700" onclick="popopen()"  >Book Reservations</button>
             </div>
             
 
@@ -880,7 +887,7 @@
             </div>
 
             <div class="md:w-[70%] w-[50%] mx-auto  lg:mt-0">
-            <button class="md:text-[14px] text-[13px] my-3 flex justify-center md:px-3 px-2 py-2 hover:bg-[#f0f0f0] hover:text-purple-700 rounded-[5px] shadow-lg text-white bg-purple-700" >Book Reservations</button>
+            <button class="md:text-[14px] text-[13px] my-3 flex justify-center md:px-3 px-2 py-2 hover:bg-[#f0f0f0] hover:text-purple-700 rounded-[5px] shadow-lg text-white bg-purple-700" onclick="popopen()"  >Book Reservations</button>
             </div>
             
 
@@ -931,7 +938,7 @@
             </div>
 
             <div class="md:w-[70%] w-[50%] mx-auto  lg:mt-0">
-            <button class="md:text-[14px] text-[13px] my-3 flex justify-center md:px-3 px-2 py-2 hover:bg-[#f0f0f0] hover:text-purple-700 rounded-[5px] shadow-lg text-white bg-purple-700" >Book Reservations</button>
+            <button class="md:text-[14px] text-[13px] my-3 flex justify-center md:px-3 px-2 py-2 hover:bg-[#f0f0f0] hover:text-purple-700 rounded-[5px] shadow-lg text-white bg-purple-700" onclick="popopen()"  >Book Reservations</button>
             </div>
             
 
@@ -982,7 +989,7 @@
             </div>
 
             <div class="md:w-[70%] w-[50%] mx-auto  lg:mt-0">
-            <button class="md:text-[14px] text-[13px] my-3 flex justify-center md:px-3 px-2 py-2 hover:bg-[#f0f0f0] hover:text-purple-700 rounded-[5px] shadow-lg text-white bg-purple-700" >Book Reservations</button>
+            <button class="md:text-[14px] text-[13px] my-3 flex justify-center md:px-3 px-2 py-2 hover:bg-[#f0f0f0] hover:text-purple-700 rounded-[5px] shadow-lg text-white bg-purple-700" onclick="popopen()"  >Book Reservations</button>
             </div>
             
 
@@ -1033,7 +1040,7 @@
             </div>
 
             <div class="md:w-[70%] w-[50%] mx-auto  lg:mt-0">
-            <button class="md:text-[14px] text-[13px] my-3 flex justify-center md:px-3 px-2 py-2 hover:bg-[#f0f0f0] hover:text-purple-700 rounded-[5px] shadow-lg text-white bg-purple-700" >Book Reservations</button>
+            <button class="md:text-[14px] text-[13px] my-3 flex justify-center md:px-3 px-2 py-2 hover:bg-[#f0f0f0] hover:text-purple-700 rounded-[5px] shadow-lg text-white bg-purple-700" onclick="popopen()"  >Book Reservations</button>
             </div>
             
 
@@ -1084,7 +1091,7 @@
             </div>
 
             <div class="md:w-[70%] w-[50%] mx-auto  lg:mt-0">
-            <button class="md:text-[14px] text-[13px] my-3 flex justify-center md:px-3 px-2 py-2 hover:bg-[#f0f0f0] hover:text-purple-700 rounded-[5px] shadow-lg text-white bg-purple-700" >Book Reservations</button>
+            <button class="md:text-[14px] text-[13px] my-3 flex justify-center md:px-3 px-2 py-2 hover:bg-[#f0f0f0] hover:text-purple-700 rounded-[5px] shadow-lg text-white bg-purple-700" onclick="popopen()"  >Book Reservations</button>
             </div>
             
 
@@ -1135,7 +1142,7 @@
             </div>
 
             <div class="md:w-[70%] w-[50%] mx-auto  lg:mt-0">
-            <button class="md:text-[14px] text-[13px] my-3 flex justify-center md:px-3 px-2 py-2 hover:bg-[#f0f0f0] hover:text-purple-700 rounded-[5px] shadow-lg text-white bg-purple-700" >Book Reservations</button>
+            <button class="md:text-[14px] text-[13px] my-3 flex justify-center md:px-3 px-2 py-2 hover:bg-[#f0f0f0] hover:text-purple-700 rounded-[5px] shadow-lg text-white bg-purple-700" onclick="popopen()"  >Book Reservations</button>
             </div>
             
 
@@ -1186,7 +1193,7 @@
             </div>
 
             <div class="md:w-[70%] w-[50%] mx-auto  lg:mt-0">
-            <button class="md:text-[14px] text-[13px] my-3 flex justify-center md:px-3 px-2 py-2 hover:bg-[#f0f0f0] hover:text-purple-700 rounded-[5px] shadow-lg text-white bg-purple-700" >Book Reservations</button>
+            <button class="md:text-[14px] text-[13px] my-3 flex justify-center md:px-3 px-2 py-2 hover:bg-[#f0f0f0] hover:text-purple-700 rounded-[5px] shadow-lg text-white bg-purple-700" onclick="popopen()"  >Book Reservations</button>
             </div>
             
 
@@ -1237,7 +1244,7 @@
             </div>
 
             <div class="md:w-[70%] w-[50%] mx-auto  lg:mt-0">
-            <button class="md:text-[14px] text-[13px] my-3 flex justify-center md:px-3 px-2 py-2 hover:bg-[#f0f0f0] hover:text-purple-700 rounded-[5px] shadow-lg text-white bg-purple-700" >Book Reservations</button>
+            <button class="md:text-[14px] text-[13px] my-3 flex justify-center md:px-3 px-2 py-2 hover:bg-[#f0f0f0] hover:text-purple-700 rounded-[5px] shadow-lg text-white bg-purple-700" onclick="popopen()"  >Book Reservations</button>
             </div>
             
 
@@ -1288,7 +1295,7 @@
             </div>
 
             <div class="md:w-[70%] w-[50%] mx-auto  lg:mt-0">
-            <button class="md:text-[14px] text-[13px] my-3 flex justify-center md:px-3 px-2 py-2 hover:bg-[#f0f0f0] hover:text-purple-700 rounded-[5px] shadow-lg text-white bg-purple-700" >Book Reservations</button>
+            <button class="md:text-[14px] text-[13px] my-3 flex justify-center md:px-3 px-2 py-2 hover:bg-[#f0f0f0] hover:text-purple-700 rounded-[5px] shadow-lg text-white bg-purple-700" onclick="popopen()"  >Book Reservations</button>
             </div>
             
 
@@ -1339,7 +1346,7 @@
             </div>
 
             <div class="md:w-[70%] w-[50%] mx-auto  lg:mt-0">
-            <button class="md:text-[14px] text-[13px] my-3 flex justify-center md:px-3 px-2 py-2 hover:bg-[#f0f0f0] hover:text-purple-700 rounded-[5px] shadow-lg text-white bg-purple-700" >Book Reservations</button>
+            <button class="md:text-[14px] text-[13px] my-3 flex justify-center md:px-3 px-2 py-2 hover:bg-[#f0f0f0] hover:text-purple-700 rounded-[5px] shadow-lg text-white bg-purple-700" onclick="popopen()"  >Book Reservations</button>
             </div>
             
 
@@ -1390,23 +1397,15 @@
             </div>
 
             <div class="md:w-[70%] w-[50%] mx-auto  lg:mt-0">
-            <button class="md:text-[14px] text-[13px] my-3 flex justify-center md:px-3 px-2 py-2 hover:bg-[#f0f0f0] hover:text-purple-700 rounded-[5px] shadow-lg text-white bg-purple-700" >Book Reservations</button>
+            <button class="md:text-[14px] text-[13px] my-3 flex justify-center md:px-3 px-2 py-2 hover:bg-[#f0f0f0] hover:text-purple-700 rounded-[5px] shadow-lg text-white bg-purple-700" onclick="popopen()"  >Book Reservations</button>
             </div>
             
 
           </div>
 
-          
-          
-
-
-
         </div>
 
       </div>
-
-    
-     
 
     </section>
 
@@ -1419,7 +1418,7 @@
       >
         Reviews
       </h2>
-      <p class="mx-[20px] text-[10px]  md:text-[13px] text-center  mb-3 text-black md:text-right md:mx-3">
+      <p class="mx-[20px] text-[10px]  md:text-[13px] mb-3 text-black text-right md:mx-3">
         <span class="text-purple-700 text-[10px]  md:text-[13px]">.......</span>Here is what our clients have to say about us<span
           class="text-purple-700 text-[10px]"
           >.......</span
@@ -1427,49 +1426,54 @@
       </p>
       <hr class="w-[95%] mx-auto" />
 
-      <div class=" flex xl:flex-row flex-col lg:justify-between w-full lg:w-[90%] px-3 py-4 mx-auto my-4 bg-white shadow-lg">
+      <div class=" flex xl:flex-row flex-col lg:justify-between w-full lg:w-[90%] px-3 py-4 mx-auto my-2 md:my-4 bg-white shadow-lg">
 
-        <div class="md:p-2 p-1   flex justify-center relative items-center gap-2 md:gap-3">
+        <div class="md:p-2 p-1  md:flex-row flex-col  flex justify-center relative items-center gap-2 md:gap-3">
 
          
-          <button class=" absolute left-[16%] prev  text-[20px] flex justify-center rounded-[50%] bg-[#f0f0f0] text-purple-700 px-4 py-2" aria-hidden="true"> < </button>
-          <button class=" absolute right-[16%]   next text-[20px] flex justify-center  rounded-[50%] bg-[#f0f0f0] text-purple-700 px-4 py-2 " aria-hidden="true"> > </button>
+          <button class="hidden md:block absolute left-[16%] prev prev1  shadow-md text-[20px] flex justify-center rounded-[50%] bg-[#f0f0f0] text-purple-700 px-4 py-2" aria-hidden="true"> < </button>
+          <button class=" hidden md:block absolute right-[16%] next1  shadow-md  next text-[20px] flex justify-center  rounded-[50%] bg-[#f0f0f0] text-purple-700 px-4 py-2 " aria-hidden="true"> > </button>
+
+          <div class=" flex md:hidden justify-end gap-3 items-center ">
+            <button class=" prev2  text-[20px] flex justify-center  shadow-md rounded-[50%] bg-[#f0f0f0] text-purple-700 px-4 py-2" aria-hidden="true"> < </button>
+            <button class="  next2 text-[20px] flex justify-center shadow-md   rounded-[50%] bg-[#f0f0f0] text-purple-700 px-4 py-2 " aria-hidden="true"> > </button>
+          </div>
 
 
          <div class="  flex justify-center">
 
-          <div class="review w-[50%] mx-auto mt-3 border boder-black shadow-lg p-3">
+          <div class="review md:w-[50%] w-full mx-auto mt-3 border boder-black shadow-lg p-2 md:p-3">
 
-            <p class="text-center px-4 text-[17px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam cupiditate nesciunt in quidem quos illo consectetur dolores fugit voluptatum pariatur repellendus, veritatis asperiores cum hic. Praesentium similique amet sapiente eos!</p>
+            <p class="text-center  md:px-4 px-1 md:text-[17px] text-[14px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam cupiditate nesciunt in quidem quos illo consectetur dolores fugit voluptatum pariatur repellendus, veritatis asperiores cum hic. Praesentium similique amet sapiente eos!</p>
 
-            <div class="w-[50%] mx-auto mt-4 ">
+            <div class="md:w-[50%] w-[70%] mx-auto mt-4 ">
               <img src="assests/images/Mestate19.jpg" class="mt-3 w-[35%] h-[35%] mx-auto rounded-[100%]" alt="">
-            <h2 class="text-center text-[20px] text-purple-700">Jone Doe</h2>
-            <h3 class="text-center text-[16px]">CEO Agro-links</h3>
+            <h2 class="text-center md:text-[20px] text-[15px] text-purple-700">Jone Doe</h2>
+            <h3 class="text-center md:text-[16px] text-[14px]">CEO Agro-links</h3>
             </div>
 
           </div>
 
-         <div class="review w-[50%] mx-auto mt-3 border boder-black shadow-lg p-3">
+         <div class="review md:w-[50%] w-full mx-auto mt-3 border boder-black shadow-lg p-2 md:p-3">
 
-          <p class="text-center px-4 text-[17px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam cupiditate nesciunt in quidem quos illo consectetur dolores fugit voluptatum pariatur repellendus, veritatis asperiores cum hic. Praesentium similique amet sapiente eos!</p>
+          <p class="text-center  md:px-4 px-1 md:text-[17px] text-[14px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam cupiditate nesciunt in quidem quos illo consectetur dolores fugit voluptatum pariatur repellendus, veritatis asperiores cum hic. Praesentium similique amet sapiente eos!</p>
 
-          <div class="w-[50%] mx-auto mt-4 ">
+          <div class="md:w-[50%] w-[70%] mx-auto mt-4 ">
             <img src="assests/images/Mestate19.jpg" class="mt-3 w-[35%] h-[35%] mx-auto rounded-[100%]" alt="">
-          <h2 class="text-center text-[20px] text-purple-700">Bill James</h2>
-          <h3 class="text-center text-[16px]">Youth-Alliance Sports</h3>
+          <h2 class="text-center md:text-[20px] text-[15px] text-purple-700">Bill James</h2>
+          <h3 class="text-center md:text-[16px] text-[14px]">Youth-Alliance Sports</h3>
           </div>
 
          </div>
 
-         <div class="review w-[50%] mx-auto mt-3 border boder-black shadow-lg p-3">
+         <div class="review md:w-[50%] w-full mx-auto mt-3 border boder-black shadow-lg p-2 md:p-3">
 
-          <p class="text-center px-4 text-[17px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam cupiditate nesciunt in quidem quos illo consectetur dolores fugit voluptatum pariatur repellendus, veritatis asperiores cum hic. Praesentium similique amet sapiente eos!</p>
+          <p class="text-center  md:px-4 px-1 md:text-[17px] text-[14px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam cupiditate nesciunt in quidem quos illo consectetur dolores fugit voluptatum pariatur repellendus, veritatis asperiores cum hic. Praesentium similique amet sapiente eos!</p>
 
-          <div class="w-[50%] mx-auto mt-4 ">
+          <div class="md:w-[50%] w-[70%] mx-auto mt-4 ">
             <img src="assests/images/Mestate19.jpg" class="mt-3 w-[35%] h-[35%] mx-auto rounded-[100%]" alt="">
-          <h2 class="text-center text-[20px] text-purple-700">Shadow-Dev</h2>
-          <h3 class="text-center text-[16px]">CEO Shadow Tech Hub</h3>
+          <h2 class="text-center md:text-[20px] text-[15px] text-purple-700">Shadow-Dev</h2>
+          <h3 class="text-center md:text-[16px] text-[14px]">CEO Shadow Tech Hub</h3>
           </div>
 
       
@@ -1481,6 +1485,39 @@
 
     </section>
 
+    <footer class="m-2 bg-black flex text-white justify-between p-4 items-center ">
+
+      <i class="fa fa-copyright md:text-[18px] text-[13px]"> 2024 </i>
+      <h2 class="md:text-[20px] text-[14px] text-center">Mestate</h2>
+      <h3 class="text-right md:text-[15px] text-[13px] "> Shadow-Dev</h3>
+
+    </footer>
+
+   </main>
+
+   <div id="create" class="lg:w-[50%] md:w-[70%] hidden w-[95%] mx-3 mx-auto shadow-lg rounded-[14px] fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white md:mx-0 mx-3 p-3">
+
+    <i id="dead" class="fa fa-close p-3 rounded-[6px] border-purple-700 border text-purple-700 text-[18px] md:text-[20px]" onclick="popopen()" ></i>
+
+    <p class="lg:text-[25px] md:text-[20px] text-[16px] lg:p-0 p-1 text-purple-700 shadow-md  float-right glow lg:w-[20%] text-center">Mestate</p>
+
+    <h2 class="md:text-[30px] text-[20px] font-bold text-purple-700 text-center">Create an Account </h2>
+    <p class="text-[13px] my-2 md:w-[50%]  mx-auto text-center px-2">Join our platform and connect with numerous landlords and Tenants across Nigeria</p>
+
+    <div class="flex flex-col justify-center items-center gap-4  mt-4">
+
+      <button class="text-[14px] p-3 hover:bg-[#f0f0f0] hover:text-purple-700 rounded-[5px] shadow-lg text-white bg-purple-700">Join as a Tenant</button>
+     <button class="text-[14px] p-3 hover:bg-[#f0f0f0] hover:text-purple-700 rounded-[5px] shadow-lg text-white bg-purple-700">Join as a landlord</button>
+
+    </div>
+
+    <p class="text-center text-[14px] my-4">Already have an Account? <a href="login.html" class="text-purple-700 underline">Login in</a> </p>
+
+    
+
+   </div>
+
     <script src="index.js"></script>
   </body>
+
 </html>
