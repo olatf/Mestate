@@ -17,3 +17,22 @@ if ( y.style.display=== "block"){
 }
 
 }
+
+const reviews = document.querySelectorAll(".review");
+let currentReview = 0;
+
+reviews[currentReview].classList.add('show');
+
+document.querySelector('.prev').addEventListener('click', () =>{
+    reviews[currentReview].classList.remove('show');
+    currentReview--;
+    if(currentReview < 0 ) currentReview = reviews.length-1;
+    reviews[currentReview].classList.add('show');
+});
+
+document.querySelector('.next').addEventListener('click', () =>{
+    reviews[currentReview].classList.remove('show');
+    currentReview++;
+    if(currentReview >=  reviews.length ) currentReview = 0;
+    reviews[currentReview].classList.add('show');
+});
