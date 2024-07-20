@@ -30,7 +30,9 @@
       rel="stylesheet"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <script src="index.js"></script> -->
+    <link rel="stylesheet" href="lost.css">
+    <link rel="stylesheet" href="preloader.css">
+    <script src="index.js"></script>
     <title>Mestate create-profile</title>
 
     <style>
@@ -75,6 +77,25 @@
 
     <main id="body" class="relative ">
 
+      <div id="preloader" class="flex items-center  justify-center ">
+
+        <div class="md:w-[40%]  pulse w-full md:mx-4  mx-auto flex justify-center  ">
+  
+            <div class=" bg-white  mx-auto glow shadow-lg rounded-full w-[40%] flex justify-center items-center flex px-4 gap-2  my-4">
+  
+              <a href="" class="lg:w-[22%] w-[30%] flex  items-center"
+              ><img
+                src="assests/images/logo 2.jpeg"
+                class=" "
+                alt="logo"
+              /></a>
+  
+              <a href="" class=" lg:text-[18px]  md:text-[20px] text-[16px] lg:p-0 p-1 text-purple-700 "> Mestate </a>
+  
+            </div>
+      </div>
+      </div>
+
         <section class="lg:m-2 m-0 md:p-0 p-2 h-[100vh]  flex justify-center items-center  hero">
 
           <div class=" w-full h-[100vh] md:hidden block absolute  md:bg-transparent bg-black opacity-50 md:opacity-100 md:top-[8%]  text-black"></div>
@@ -118,31 +139,32 @@
                      </div>
 
                       <div class=" mt-3 bg-transparent flex md:flex-row flex-col gap-2 w-full items-center px-2   " >
-                          <input type="text" class="index-2 bg-transparent w-full md:w-[30%] focus:outline-none md:placeholder:text-black placeholder:text-white lg:p-2 p-1 md:placeholder:text-[15px] md:text-[15px] placeholder:text-[17px] text-[17px] border-b border-purple-700  text-purple-700" name="" placeholder="First name" id="">
+                        <input type="text" class="index-2 bg-transparent w-full md:w-[30%] focus:outline-none md:placeholder:text-black placeholder:text-white lg:p-2 p-1 md:placeholder:text-[15px] md:text-[15px] placeholder:text-[17px] text-[17px] border-b border-purple-700 text-white  md:text-purple-700" name="" placeholder="First name" id="">
 
-                          <input type="text" class="index-2 bg-transparent w-full md:w-[30%] focus:outline-none md:placeholder:text-black placeholder:text-white lg:p-2 p-1 md:placeholder:text-[15px] md:text-[15px] placeholder:text-[17px] text-[17px] border-b border-purple-700  text-purple-700" name="" placeholder="Other names" id="">
+                        <input type="text" class="index-2 bg-transparent w-full md:w-[30%] focus:outline-none md:placeholder:text-black placeholder:text-white lg:p-2 p-1 md:placeholder:text-[15px] md:text-[15px] placeholder:text-[17px] text-[17px] border-b border-purple-700  text-white  md:text-purple-700" name="" placeholder="Other names" id="">
 
-                          <input type="text" class="index-2 bg-transparent w-full md:w-[30%] focus:outline-none md:placeholder:text-black placeholder:text-white lg:p-2 p-1 md:placeholder:text-[15px] md:text-[15px] placeholder:text-[17px] text-[17px] border-b border-purple-700  text-purple-700" name="" placeholder="Surname" id="">
+                        <input type="text" class="index-2 bg-transparent w-full md:w-[30%] focus:outline-none md:placeholder:text-black placeholder:text-white lg:p-2 p-1 md:placeholder:text-[15px] md:text-[15px] placeholder:text-[17px] text-[17px] border-b border-purple-700  text-white  md:text-purple-700" name="" placeholder="Surname" id="">
 
                       </div>
 
                       <div class=" mt-2 bg-transparent flex gap-2 w-full items-center px-2   " >
-                          <input type="text" class="index-2 bg-transparent md:w-[90%] w-full  focus:outline-none md:placeholder:text-black placeholder:text-white lg:p-2 p-1 md:placeholder:text-[15px] md:text-[15px] placeholder:text-[17px] text-[17px] border-b border-purple-700  text-purple-700" name="" placeholder="Address" id="">
+                        <input type="text" class="index-2 bg-transparent md:w-[90%] w-full  focus:outline-none md:placeholder:text-black placeholder:text-white lg:p-2 p-1 md:placeholder:text-[15px] md:text-[15px] placeholder:text-[17px] text-[17px] border-b border-purple-700  text-white  md:text-purple-700" name="" placeholder="Address" id="">
 
                       </div>
 
-                      <div class=" mt-3 bg-transparent flex md:flex-row flex-col gap-3 w-full items-center px-2   " >
-                          <input type="text" class="index-2 bg-transparent md:w-[45%] w-full focus:outline-none md:placeholder:text-black placeholder:text-white lg:p-2 p-1 md:placeholder:text-[15px] md:text-[15px] placeholder:text-[17px] text-[17px] border-b border-purple-700  text-purple-700" name="" placeholder=" Occupation " id="">
+                      <div class=" mt-3 bg-transparent flex md:flex-row flex-col gap-3 w-full items-center px-2 " >
 
-                          <input type="text"  class=" appearance-none index-2 bg-transparent md:w-[45%] w-full focus:outline-none md:placeholder:text-black placeholder:text-white lg:p-2 p-1 md:placeholder:text-[15px] md:text-[15px] placeholder:text-[17px] text-[17px] border-b border-purple-700  text-purple-700" name="" pattern=" [0-9]* " placeholder="Phone Number" id="num">
+                        <input type="text" class="index-2 bg-transparent md:w-[45%] w-full focus:outline-none md:placeholder:text-black placeholder:text-white lg:p-2 p-1 md:placeholder:text-[15px] md:text-[15px] placeholder:text-[17px] text-[17px] border-b border-purple-700  text-white  md:text-purple-700" name="" placeholder=" Occupation " id="">
+
+                        <input type="text"  class=" appearance-none index-2 bg-transparent md:w-[45%] w-full focus:outline-none md:placeholder:text-black placeholder:text-white lg:p-2 p-1 md:placeholder:text-[15px] md:text-[15px] placeholder:text-[17px] text-[17px] border-b border-purple-700  text-white  md:text-purple-700" name="" pattern=" [0-9]* " placeholder="Phone Number" id="num">
                           
                       </div>
 
                       <div class=" mt-3 bg-transparent flex md:flex-row flex-col gap-3 w-full items-center px-2 ">
 
-                        <input type="password" class="index-2 bg-transparent w-full md:w-[45%] focus:outline-none md:placeholder:text-black placeholder:text-white lg:p-2 p-1 md:placeholder:text-[15px] md:text-[15px] placeholder:text-[17px] text-[17px] border-b border-purple-700  text-purple-700" name="" placeholder=" Set password " id="password1">
+                        <input type="password" class="index-2 bg-transparent w-full md:w-[45%] focus:outline-none md:placeholder:text-black placeholder:text-white lg:p-2 p-1 md:placeholder:text-[15px] md:text-[15px] placeholder:text-[17px] text-[17px] border-b border-purple-700  text-white  md:text-purple-700" name="" placeholder=" Set password " id="password1">
 
-                        <input type="password"  class=" appearance-none index-2 bg-transparent w-full md:w-[45%] focus:outline-none md:placeholder:text-black placeholder:text-white lg:p-2 p-1 md:placeholder:text-[15px] md:text-[15px] placeholder:text-[17px] text-[17px] border-b border-purple-700  text-purple-700" name="" placeholder="Confirm password" id="password2">
+                        <input type="password"  class=" appearance-none index-2 bg-transparent w-full md:w-[45%] focus:outline-none md:placeholder:text-black placeholder:text-white lg:p-2 p-1 md:placeholder:text-[15px] md:text-[15px] placeholder:text-[17px] text-[17px] border-b border-purple-700  text-white  md:text-purple-700" name="" placeholder="Confirm password" id="password2">
 
                         <div class=" relative w-[10%] flex items-center ">
                           <i class="fa  fa-eye-slash md:text-purple-700 text-white text-[20px] " id="hide" aria-hidden="true" onclick="showme()"></i>
@@ -160,12 +182,12 @@
                               <input type="radio"  class=" text-[17px]" name="sex" placeholder="Confirm password" id=""> Female
                           </div>
 
-                          <input type="email"  class=" index-2 bg-transparent w-full md:w-[50%] focus:outline-none md:placeholder:text-black placeholder:text-white lg:p-2 p-1 md:placeholder:text-[15px] md:text-[15px] placeholder:text-[17px] text-[17px] border-b border-purple-700  text-purple-700" name="" placeholder="Email" id="">
+                          <input type="email"  class=" index-2 bg-transparent w-full md:w-[50%] focus:outline-none md:placeholder:text-black placeholder:text-white lg:p-2 p-1 md:placeholder:text-[15px] md:text-[15px] placeholder:text-[17px] text-[17px] border-b border-purple-700  text-white  md:text-purple-700" name="" placeholder="Email" id="">
                           
                       </div>
 
                       <div class="  w-full flex items-center my-4 gap-4 ">
-                          <i class="fa  fa-cloud-upload md:text-purple-700 text-white text-[18px] md:text-[20px] lg:w-[30%] w-[50%] " id="" aria-hidden="true" ><span class=" text-[12px] md:text-[15px]">  Means of ID </span></i>
+                          <i class="fa  fa-cloud-upload md:text-purple-700 text-white text-[18px] md:text-[20px] lg:w-[30%] w-[80%] " id="" aria-hidden="true" ><span class=" text-[12px] md:text-[15px]">  Means of ID </span></i>
 
                           <input type="file" name="" id="" placeholder="" value="" class="text-white md:text-black "> 
                       </div>
@@ -173,12 +195,15 @@
 
                       <div class="flex justify-between items-center mx-2 text-white md:text-black ">
                           <div class="flex items-center gap-2 ">
-                              <input type="checkbox" checked name="" id=""  class="text-white md:text-black" value=""><p class="text-[11px]">  I, agree to the <span class="text-purple-700 cursor-pointer" onclick="popopen()">Terms and Conditions </span> of using Mestate Services.</p>
+                              <input type="checkbox" checked name="" id=""  class="text-white md:text-black" value="">
+
+                              <p class="text-[12px]">  I, agree to the <span class="text-purple-700 font-bold cursor-pointer" onclick="popopen()">Terms and Conditions </span> of using Mestate Services.</p>
+
                           </div>
                       </div>
 
                       <div class="flex justify-between gap-3 md:gap-4 items-center flex-col lg:flex-row md:w-[85%] xl:w-[80%] mt-6 mx-auto">
-                          <input type="submit" value="Create" class="text-[18px]  text-white bg-purple-700 px-5 py-2 shadow-lg  rounded-[10px] hover:text-purple-700 hover:border-purple-700 hover:border hover:bg-transparent">
+                          <input type="submit" value="Create" class="text-[18px] but  text-white bg-purple-700 px-5 py-2 shadow-lg  rounded-[10px] hover:text-purple-700 hover:border-purple-700 hover:border hover:bg-transparent">
 
                           <p class="text-white md:text-[15px] text-[14px] md:text-black">Already have an account? <a href="login.html"  class=" text-center  underline text-purple-700 items-center cursor-pointer ">Login</a>
                           </p>
@@ -215,7 +240,7 @@
             <li class="my-4"><b>COMMISSION:</b> KINDLY BE AWARE THAT FOR EVERY LEASE TRANSACTION ON OUR MESTATE PLATFORM, IT ATTRACTS 5% COMMISSION. ALSO NOTE THAT YOU CAN HAVE ACCESS TO A LAWYER ONLY IF YOU SUBSCRIBE FOR THAT ON MESTATE’S PLATFORM.</li>
 
 
-            <li class="my-4"><b>RENT PAYMENT: </b>RENT MUST BE PAID IN FULL AND ON TIME, AS SPECIFIED IN THE LEASE AGREEMENT. LATE PAYMENTS MAY INCUR ADDITIONAL FEES. ALL TRANSACTIONS MUST BE MADE ON MESTATE APP/WEBSITE. ANY TRANSACTION AND ISSUES THEREIN OUTSIDE OUR PLATFORM IS AT THE RISK OF THE TENANT.</li>
+            <li class="my-4"><b>RENT PAYMENT: </b>RENT MUST BE PAID IN FULL AND ON TIME, AS SPECIFIED IN THE LEASE AGREEMENT. LATE PAYMENTS MAY INCUR ADDITIONAL FEES. ALL TRANSACTIONS MUST BE MADE ON MESTATE APP/WEBSITE. ANY TRANSACTION AND ISSUES THEREIN OUTSIDE OUR PLATFORM IS AT THE RISK OF THE TENANT, ANY PAYMENT MADE OUTSIDE THIS PLATFORM IS AT THE RSIK THOSE INVOLVED AND MAY ATTRACT LRGAL ACOTION.</li>
 
             <li class="my-4"><b>SECURITY DEPOSIT:</b> A SECURITY DEPOSIT IS REQUIRED AT THE START OF YOUR LEASE. THIS WILL BE HELD TO COVER ANY DAMAGES OR UNPAID RENT AT THE END OF THE TENANCY. OUR LAWYERS ARE, HOWEVER, ON STAND-BY FOR SMOOTH SERVICE DELIVERY.</li>
 
@@ -249,6 +274,24 @@
             <li class="my-4"><b>MAINTENANCE AND REPAIR:</b> LANDLORD IS RESPONSIBLE FOR ANY MAINTENANCE, REPAIR AND REPLACEMENT BEFORE THE PROPERTY IS GIVEN TO TENANT(S).</li>
 
             <li class="my-4"><b>COMMISSION:</b> A 5% COMMISSION WILL BE DEDUCTED FROM THE LANDLORD’S FINAL PAYMENT. IF HE SUBSCRIBES FOR LEGAL COVERAGE, THEN, 10% COMMISSION FROM THE HIS (LANDLORD’S) FINAL PAYMENT..</li>
+
+            <li class="my-4"> LANDLORDS ARE EXPECTED TO LAISE WITH <b>MESTATE</b> DIRECTLY AND NOT THE TENANTS ON ANY ISSUE</li>
+        </ol>
+
+        <p class="md:text-[20px] text-[15px] my-4 w-full px-3 text-justify font-bold ">TRANSPORTATION AND LOGISTICS</p>
+
+        <ol class="text-[13px] my-2 w-full px-3 text-justify">
+            
+          <li class="my-4"><b>MESTATE</b> IS ONLY RESPONSIBLE FOR MOVING THE PROPERTIES FROM ONE LOCATION TO THE OTHER.</li>
+
+          <li class="my-4"> PROPERTY OWNERS ARE EXPECTED TO MONITOR EVERY SINGLE UNIT OF THEIR PROPERTY. DO NOT ALLOW ANY PACKING IN ABSENTIAL, BECAUSE <b>MESTATE</b> WILL NOT BE RESPONSIBLE FOR LOST OR STOLEN PROPERTY.</li>
+
+          <li class="my-4"> ALL THE MONEY FOR TRANSPORTATION MUST BE RECEIVED BEFORE ANY TRUCK CAN BE ASSIGNED TO A TENANT</li>
+
+          <li class="my-4"> PLEASE, ALWAYS FOLLOW THE GUIDE OF MESTATE REPRESENTATIVE FOR PROPER ARRAGEMENT IN MOVING YOUR PROPERTY.</li>
+
+          <li class="my-4"> KINDLY MAKE SURE TO SIGN THE OPENING ANG CLOSING DOCUMENT FOR MOVEMENT OF PROPERTY</li>
+          
         </ol>
 
        </div>

@@ -1,6 +1,12 @@
 
 
-document.documentElement.style.setProperty('--animate-duration', '2s');
+// document.documentElement.style.setProperty('--animate-duration', '2s');
+
+document.addEventListener("DOMContentLoaded", function(){
+    setTimeout(function(){
+        document.getElementById('preloader').style.display = 'none'},1500)
+    
+})
 
 function  Openp() {
 
@@ -68,4 +74,9 @@ function  popopen() {
         x.style.overflow = "hidden";
     }
     
-    }
+}
+
+
+
+
+    

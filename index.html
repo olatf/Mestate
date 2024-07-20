@@ -18,13 +18,15 @@
       rel="stylesheet"
     />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="lost.css">
+    <link rel="stylesheet" href="preloader.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- <script src="index.js"></script> -->
     <title>Mestate</title>
@@ -68,7 +70,28 @@
 
   <body class="bg-white" id="class">
 
+    
+
    <main id="body" class="">
+
+    <div id="preloader" class="flex items-center  justify-center ">
+
+      <div class="md:w-[40%]  pulse w-full md:mx-4  mx-auto flex justify-center  ">
+
+          <div class=" bg-white  mx-auto glow shadow-lg rounded-full w-[40%] flex justify-center items-center flex px-4 gap-2  my-4">
+
+            <a href="" class="lg:w-[22%] w-[30%] flex  items-center"
+            ><img
+              src="assests/images/logo 2.jpeg"
+              class=" "
+              alt="logo"
+            /></a>
+
+            <a href="" class=" lg:text-[18px]  md:text-[20px] text-[16px] lg:p-0 p-1 text-purple-700 "> Mestate </a>
+
+          </div>
+    </div>
+    </div>
 
     <header class="bg-white hidden lg:block shadow-lg m-2">
 
@@ -124,32 +147,32 @@
 
         <div class="xl:w-[25%] mx-1 flex justify-start items-center gap-2">
           <a href="profile-create.html"
-            class="p-3 hover:animate__animated animate__pulse hover:text-purple-700 hover:bg-gray-200 bg-purple-700 text-white text-[13px] rounded-[10px]" 
+            class="p-3 but  hover:text-purple-700 hover:bg-gray-200 bg-purple-700 text-white text-[13px] rounded-[10px]" 
           >
             Create Profile
           </a href="profile-create.html">
 
           <a href="login.html"
-            class="p-3 hover:animate__animated animate__pulse hover:text-purple-700 hover:bg-gray-200 bg-purple-700 text-white text-[14px] rounded-[10px]"
+            class="p-3 but hover:text-purple-700 hover:bg-gray-200 bg-purple-700 text-white text-[14px] rounded-[10px]"
           >
             Login
           </a href="login.html">
 
           <div class="flex justify-center mx-2 gap-2">
-            <a href="#"
+            <a href="https://web.facebook.com/profile.php?id=61561403431960" target="_blank"
               ><i
-                class="fa fa-facebook p-3 bg-purple-700 text-white rounded-[12px] hover:text-purple-700 hover:bg-gray-200"
+                class="fa fa-facebook but p-3 bg-purple-700 text-white rounded-[12px] hover:text-purple-700 hover:bg-gray-200"
               ></i
             ></a>
-            <a href="#"
+            <a href="https://whatsapp.com/channel/0029VaeVXL8Chq6HOGAkvg3j" target="_blank"
               ><i
-                class="fa fa-linkedin p-3 bg-purple-700 text-white rounded-[12px] hover:text-purple-700 hover:bg-gray-200"
+                class="fa fa-whatsapp but p-3 bg-purple-700 text-white rounded-[12px] hover:text-purple-700 hover:bg-gray-200"
               ></i
             ></a>
-            <a href="#"
+            <a href="https://www.x.com/MestateHouse" target="_blank"
               ><i
                 aria-hidden="true"
-                class="fa fa-twitter p-3 bg-purple-700 rounded-[12px] hover:text-purple-700 hover:bg-gray-200 text-white"
+                class="fa fa-twitter but p-3 bg-purple-700 rounded-[12px] hover:text-purple-700 hover:bg-gray-200 text-white"
               ></i
             ></a>
           </div>
@@ -186,7 +209,7 @@
         </div>
       </nav>
 
-      <div class="hidden" loading="lazy" id="neck">
+      <div class="hidden slide"  loading="lazy" id="neck">
         <div
           class="sm:right-[0px] absolute sm:top-[27px] md:right-[170px] md:top-[25px] top-[17px] right-[62px]"
         >
@@ -200,7 +223,7 @@
         </div>
 
         <div
-          class="navhead md:top-[80px] top-[68px] absolute w-full rounded-b-[20px] shadow-lg h-[50vh]"
+          class="navhead animate__animated animate__slideInRight md:top-[80px] top-[68px] absolute w-full rounded-b-[20px] shadow-lg h-[50vh]"
         >
           <div class="h-[60%]">
             <ul class="p-2 mx-4">
@@ -236,37 +259,39 @@
 
           <div class="justify-center flex-col mt-[15px]">
             <a href="profile-create.html"
-              class="p-3 mx-9 hover:animate__animated animate__pulse hover:text-purple-700 bg-purple-700 hover:bg-white text-white text-[13px] rounded-[10px]" 
+              class="p-3 mx-9 but hover:text-purple-700 bg-purple-700 hover:bg-white text-white text-[13px] rounded-[10px]" 
             >
               Create Profile
             </a href="profile-create.html">
             <a href="login.html"
-              class="p-3 hover:animate__animated animate__pulse hover:text-purple-700 bg-purple-700 text-white hover:bg-white text-[14px] rounded-[10px]"
+              class="p-3 but hover:text-purple-700 bg-purple-700 text-white hover:bg-white text-[14px] rounded-[10px]"
             >
               Login
             </a href="login.html">
 
             <div class="flex justify-center my-[20px] mx-2 gap-2">
-              <a href="#"
+              <a href="https://web.facebook.com/profile.php?id=61561403431960" target="_blank"
                 ><i
-                  class="fa fa-facebook p-3 bg-purple-700 text-white rounded-[12px] hover:text-purple-700 hover:bg-white"
+                  class="fa fa-facebook  but p-3 bg-purple-700 text-white rounded-[12px] hover:text-purple-700 hover:bg-white"
                 ></i
               ></a>
-              <a href="#"
+              <a href="https://whatsapp.com/channel/0029VaeVXL8Chq6HOGAkvg3j" target="_blank"
                 ><i
-                  class="fa fa-linkedin p-3 bg-purple-700 text-white rounded-[12px] hover:text-purple-700 hover:bg-white"
+                  class="fa fa-whatsapp but p-3 bg-purple-700 text-white rounded-[12px] hover:text-purple-700 hover:bg-white"
                 ></i
               ></a>
-              <a href="#"
+              <a href="https://www.x.com/MestateHouse" target="_blank"
                 ><i
                   aria-hidden="true"
-                  class="fa fa-twitter p-3 bg-purple-700 rounded-[12px] hover:text-purple-700 hover:bg-white text-white"
+                  class="fa fa-twitter p-3 but bg-purple-700 rounded-[12px] hover:text-purple-700 hover:bg-white text-white"
                 ></i
               ></a>
             </div>
           </div>
         </div>
+
       </div>
+      
     </header>
 
     <section class="mx-2 lg:h-[80vh] h-[50vh] hero text-purple-700">
@@ -294,12 +319,12 @@
 
           <div class="flex justify-center gap-4 max-w-[350px] mx-auto">
             <button
-              class="p-3 hover:animate__animated animate__pulse hover:text-purple-700 hover:bg-white bg-purple-700 text-white text-[13px] rounded-[10px]" onclick="popopen()" 
+              class="p-3 but hover:text-purple-700 hover:bg-white bg-purple-700 text-white text-[13px] rounded-[10px]" onclick="popopen()" 
             >
               Get Started
             </button>
             <a href="#proper"
-              class="p-3 hover:animate__animated animate__pulse hover:text-purple-700 hover:bg-white bg-purple-700 text-white text-[13px] rounded-[10px]"
+              class="p-3 but hover:text-purple-700 hover:bg-white bg-purple-700 text-white text-[13px] rounded-[10px]"
             >
               View Listing
             </a>
@@ -308,7 +333,7 @@
       </div>
     </section>
 
-    <section class="mx-2 flex flex-col shadow-lg md:flex-row">
+    <section class="mx-2 animate__animated animate__slideInDown flex flex-col shadow-lg md:flex-row">
 
       <div
         class="flex bg-[#f0f0f0] md:w-[78%] w-full justify-center lg:gap-3 move"
@@ -357,7 +382,7 @@
       </div>
     </section>
 
-    <section class="mx-2 my-2">
+    <section class="mx-2 my-2 animate__animated animate__slideInRight">
 
       <h2
         class="mx-[20px] text-[26px] md:text-[45px] mt-7 text-purple-700 font-bold"
@@ -469,14 +494,14 @@
         <a
           href="contact.html"
           target="_blank"
-          class="text-[18px] p-3 hover:bg-[#f0f0f0] hover:text-purple-700 rounded-[5px] shadow-lg text-white bg-purple-700"
+          class="text-[18px] but p-3 hover:bg-[#f0f0f0] hover:text-purple-700 rounded-[5px] shadow-lg text-white bg-purple-700"
           >Contact Us</a
         >
       </div>
 
     </section>
 
-    <section class="m-2">
+    <section class="m-2 animate__animated animate__slideInLeft " loading="lazy">
 
       <h2
         class="mx-[20px] text-[26px] md:text-[45px] text-right mx-3 mt-7 text-purple-700 font-bold"
@@ -511,7 +536,7 @@
             <input
               type="submit"
               value="Subscribe"
-              class="text-[20px] text-white bg-purple-700 p-3 shadow-lg md:mt-3 my-4 rounded-[10px] hover:text-purple-700 hover:border-purple-700 hover:border hover:bg-transparent"
+              class="text-[20px] but text-white bg-purple-700 p-3 shadow-lg md:mt-3 my-4 rounded-[10px] hover:text-purple-700 hover:border-purple-700 hover:border hover:bg-transparent"
             />
           </form>
         </div>

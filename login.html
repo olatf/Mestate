@@ -28,7 +28,9 @@
       rel="stylesheet"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <script src="index.js"></script> -->
+    <link rel="stylesheet" href="lost.css">
+    <link rel="stylesheet" href="preloader.css">
+    <script src="index.js"></script>
     <title>Mestate Login</title>
 
     <style>
@@ -72,6 +74,25 @@
   <body class="bg-white" id="class">
 
     <main id="body" class="relative">
+      
+      <div id="preloader" class="flex items-center  justify-center ">
+
+        <div class="md:w-[40%]  pulse w-full md:mx-4  mx-auto flex justify-center  ">
+  
+            <div class=" bg-white  mx-auto glow shadow-lg rounded-full w-[40%] flex justify-center items-center flex px-4 gap-2  my-4">
+  
+              <a href="" class="lg:w-[22%] w-[30%] flex  items-center"
+              ><img
+                src="assests/images/logo 2.jpeg"
+                class=" "
+                alt="logo"
+              /></a>
+  
+              <a href="" class=" lg:text-[18px]  md:text-[20px] text-[16px] lg:p-0 p-1 text-purple-700 "> Mestate </a>
+  
+            </div>
+      </div>
+      </div>
 
         <section class="lg:m-2 m-0 h-[100vh] relative md:overflow-y-hide flex justify-center items-center opacity-90 md:opacity-100 hero">
 
@@ -131,7 +152,7 @@
                             </div>
     
                             <div class="flex relative justify-between w-[80%] md:w-[70%] mt-7 mx-auto">
-                                <input type="submit" value="Login"  class="text-[18px] text-white bg-purple-700 px-5 py-2 shadow-lg  rounded-[10px] hover:text-purple-700 hover:border-purple-700 hover:border hover:bg-transparent">
+                                <input type="submit" value="Login"  class="text-[18px] text-white but bg-purple-700 px-5 py-2 shadow-lg  rounded-[10px] hover:text-purple-700 hover:border-purple-700 hover:border hover:bg-transparent">
                                 <a href="profile-create.html"  class="text-[15px] text-center flex justify-center items-center cursor-pointer text-white md:text-black bg-purple-700 md:bg-transparent px-2 py-1 border border-purple-700 shadow-lg  rounded-[10px] hover:text-white hover:border-purple-700 hover:border hover:bg-purple-700">Create Profile</a>
     
                             </div>

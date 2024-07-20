@@ -27,6 +27,8 @@
       rel="stylesheet"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="lost.css">
+    <link rel="stylesheet" href="preloader.css">
     <!-- <script src="index.js"></script> -->
     <title> Contact Mestate</title>
 
@@ -49,210 +51,233 @@
         clip-path: polygon(0 0, 100% 0, 91% 100%, 0 100%);
       }
     </style>
+
   </head>
 
   <body class="bg-white" id="class">
 
     <main id="body" class="">
 
-        <header class="bg-white hidden lg:block shadow-lg m-2">
+      <div id="preloader" class="flex items-center  justify-center ">
 
-            <nav class="flex justify-between">
-      
-              <div class="mx-auto items-center lg:w-[10%] xl:w-[15%]">
-                <a href="index.html" class="flex items-center justify-end"
-                  ><img
-                    src="assests/images/logo 2.jpeg"
-                    class="lg:w-[40%] xl:w-[35%] flex justify-center"
-                    alt="logo"
-                /></a>
-                <!-- <p class="text-[12px] ml-0">Mestate </p> -->
-              </div>
-      
-              <div class="navhead lg:w-[50%] xl:w-[60%]">
-      
-                <ul class="flex justify-center items-center gap-8 p-2 m-4">
-                  <li>
-                    <a
-                      href="index.html"
-                      class="text-[18px] text-black hover:text-purple-700 "
-                      >Home</a
-                    >
-                  </li>
-      
-                  <li>
-                    <a href="about.html" class="text-[18px] text-black hover:text-purple-700"
-                      >About</a
-                    >
-                  </li>
-      
-                  <li>
-                    <a href="#proper" class=" scroll-behavior-smooth !important  text-[18px] text-black hover:text-purple-700"
-                      >Properties</a
-                    >
-                  </li>
-      
-                  <li>
-                    <a href="#review" class="text-[18px] text-black hover:text-purple-700"
-                      >Reviews</a
-                    >
-                  </li>
-      
-                  <li>
-                    <a href="contact.html" class="text-[18px] border-b-2 border-purple-700 text-black hover:text-purple-700"
-                      >Contact</a
-                    >
-                  </li>
-                </ul>
-      
-              </div>
-      
-              <div class="xl:w-[25%] mx-1 flex justify-start items-center gap-2">
-                <a href="profile-create.html"
-                  class="p-3 hover:animate__animated animate__pulse hover:text-purple-700 hover:bg-gray-200 bg-purple-700 text-white text-[13px] rounded-[10px]" 
+        <div class="md:w-[40%]  pulse w-full md:mx-4  mx-auto flex justify-center  ">
+  
+            <div class=" bg-white  mx-auto glow shadow-lg rounded-full w-[40%] flex justify-center items-center flex px-4 gap-2  my-4">
+  
+              <a href="" class="lg:w-[22%] w-[30%] flex  items-center"
+              ><img
+                src="assests/images/logo 2.jpeg"
+                class=" "
+                alt="logo"
+              /></a>
+  
+              <a href="" class=" lg:text-[18px]  md:text-[20px] text-[16px] lg:p-0 p-1 text-purple-700 "> Mestate </a>
+  
+            </div>
+      </div>
+      </div>
+
+      <header class="bg-white hidden lg:block shadow-lg m-2">
+
+        <nav class="flex justify-between">
+  
+          <div class="mx-auto items-center lg:w-[10%] xl:w-[15%]">
+            <a href="index.html" class="flex items-center justify-end"
+              ><img
+                src="assests/images/logo 2.jpeg"
+                class="lg:w-[40%] xl:w-[35%] flex justify-center"
+                alt="logo"
+            /></a>
+            <!-- <p class="text-[12px] ml-0">Mestate </p> -->
+          </div>
+  
+          <div class="navhead lg:w-[50%] xl:w-[60%]">
+  
+            <ul class="flex justify-center items-center gap-8 p-2 m-4">
+              <li>
+                <a
+                  href="index.html"
+                  class="text-[18px] text-black hover:text-purple-700 "
+                  >Home</a
                 >
-                  Create Profile
-                </a href="profile-create.html">
-      
-                <a href="login.html"
-                  class="p-3 hover:animate__animated animate__pulse hover:text-purple-700 hover:bg-gray-200 bg-purple-700 text-white text-[14px] rounded-[10px]"
+              </li>
+  
+              <li>
+                <a href="about.html" class="text-[18px] text-black hover:text-purple-700"
+                  >About</a
                 >
-                  Login
-                </a href="login.html">
-      
-                <div class="flex justify-center mx-2 gap-2">
-                  <a href="#"
-                    ><i
-                      class="fa fa-facebook p-3 bg-purple-700 text-white rounded-[12px] hover:text-purple-700 hover:bg-gray-200"
-                    ></i
-                  ></a>
-                  <a href="#"
-                    ><i
-                      class="fa fa-linkedin p-3 bg-purple-700 text-white rounded-[12px] hover:text-purple-700 hover:bg-gray-200"
-                    ></i
-                  ></a>
-                  <a href="#"
-                    ><i
-                      aria-hidden="true"
-                      class="fa fa-twitter p-3 bg-purple-700 rounded-[12px] hover:text-purple-700 hover:bg-gray-200 text-white"
-                    ></i
-                  ></a>
-                </div>
-              </div>
-      
-            </nav>
-      
-        </header>
-      
-        <header class="lg:hidden relative mx-2 lg:my-2 my-1">
-      
-            <nav
-              class="flex md:h-[100px] justify-between shadow-lg item-center p-2 md:p-0"
+              </li>
+  
+              <li>
+                <a href="#proper" class=" scroll-behavior-smooth !important  text-[18px] text-black hover:text-purple-700"
+                  >Properties</a
+                >
+              </li>
+  
+              <li>
+                <a href="#review" class="text-[18px] text-black hover:text-purple-700"
+                  >Reviews</a
+                >
+              </li>
+  
+              <li>
+                <a href="contact.html" class="text-[18px] text-black border-b-2 border-purple-700 hover:text-purple-700"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+  
+          </div>
+  
+          <div class="xl:w-[25%] mx-1 flex justify-start items-center gap-2">
+            <a href="profile-create.html"
+              class="p-3 but  hover:text-purple-700 hover:bg-gray-200 bg-purple-700 text-white text-[13px] rounded-[10px]" 
             >
-              <div class="mx-auto items-center w-[50%]">
-      
-                <a href="index.html" class="flex items-center justify-center"
-                  ><img
-                    src="assests/images/logo 2.jpeg"
-                    class="w-[40%] md:[w-25%] md:h-[90px] md:w-[100px] flex justify-center"
-                    alt="logo"
-                /></a>
-                <!-- <p class="text-[12px] ml-0">Mestate </p> -->
-              </div>
-      
-              <div class="w-[50%] bg-[#f0f0f0] flex justify-center items-center">
-                <a href="#">
-                  <i
-                    id="finger"
-                    class="fa fa-bars p-3 bg-purple-700 rounded-[6px] hover:text-purple-700 hover:bg-white text-white md:text-[20px]"
-                    onclick="Openp()"
-                  ></i>
-                </a>
-              </div>
-            </nav>
-      
-            <div class="hidden" loading="lazy" id="neck">
-              <div
-                class="sm:right-[0px] absolute sm:top-[27px] md:right-[170px] md:top-[25px] top-[17px] right-[62px]"
-              >
-                <a href="#">
-                  <i
-                    id="short"
-                    class="fa fa-close p-3 rounded-[6px] border-purple-700 border text-purple-700 text-[18px] md:text-[20px]"
-                    onclick="Openp()"
-                  ></i>
-                </a>
-              </div>
-      
-              <div
-                class="navhead md:top-[80px] top-[68px] absolute w-full rounded-b-[20px] shadow-lg h-[50vh]"
-              >
-                <div class="h-[60%]">
-                  <ul class="p-2 mx-4">
-                    <li class="my-[10px]">
-                      <a
-                        href="index.html"
-                        class="text-[18px] text-black hover:text-purple-700"
-                        >Home</a
-                      >
-                    </li>
-                    <li class="my-[10px]">
-                      <a href="about.html" class="text-[18px] text-black hover:text-purple-700"
-                        >About</a
-                      >
-                    </li>
-                    <li class="my-[10px]">
-                      <a href="#proper" class=" scroll-smooth text-[18px] text-black hover:text-purple-700"
-                        >Properties</a
-                      >
-                    </li>
-                    <li class="my-[10px]">
-                      <a href="#review" class="text-[18px] text-black hover:text-purple-700"
-                        >Reviews</a
-                      >
-                    </li>
-                    <li class="my-[10px]">
-                      <a href="contact.html" class="text-[18px] border-b-2 border-purple-700 text-black hover:text-purple-700"
-                        >Contact</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-      
-                <div class="justify-center flex-col mt-[15px]">
-                  <a href="profile-create.html"
-                    class="p-3 mx-9 hover:animate__animated animate__pulse hover:text-purple-700 bg-purple-700 hover:bg-white text-white text-[13px] rounded-[10px]" 
+              Create Profile
+            </a href="profile-create.html">
+  
+            <a href="login.html"
+              class="p-3 but hover:text-purple-700 hover:bg-gray-200 bg-purple-700 text-white text-[14px] rounded-[10px]"
+            >
+              Login
+            </a href="login.html">
+  
+            <div class="flex justify-center mx-2 gap-2">
+              <a href="https://web.facebook.com/profile.php?id=61561403431960" target="_blank"
+                ><i
+                  class="fa fa-facebook but p-3 bg-purple-700 text-white rounded-[12px] hover:text-purple-700 hover:bg-gray-200"
+                ></i
+              ></a>
+              <a href="https://whatsapp.com/channel/0029VaeVXL8Chq6HOGAkvg3j" target="_blank"
+                ><i
+                  class="fa fa-whatsapp but p-3 bg-purple-700 text-white rounded-[12px] hover:text-purple-700 hover:bg-gray-200"
+                ></i
+              ></a>
+              <a href="https://www.x.com/MestateHouse" target="_blank"
+                ><i
+                  aria-hidden="true"
+                  class="fa fa-twitter but p-3 bg-purple-700 rounded-[12px] hover:text-purple-700 hover:bg-gray-200 text-white"
+                ></i
+              ></a>
+            </div>
+          </div>
+  
+        </nav>
+  
+      </header>
+  
+      <header class="lg:hidden relative mx-2 lg:my-2 my-1">
+  
+        <nav
+          class="flex md:h-[100px] justify-between shadow-lg item-center p-2 md:p-0"
+        >
+          <div class="mx-auto items-center w-[50%]">
+  
+            <a href="index.html" class="flex items-center justify-center"
+              ><img
+                src="assests/images/logo 2.jpeg"
+                class="w-[40%] md:[w-25%] md:h-[90px] md:w-[100px] flex justify-center"
+                alt="logo"
+            /></a>
+            <!-- <p class="text-[12px] ml-0">Mestate </p> -->
+          </div>
+  
+          <div class="w-[50%] bg-[#f0f0f0] flex justify-center items-center">
+            <a href="#">
+              <i
+                id="finger"
+                class="fa fa-bars p-3 bg-purple-700 rounded-[6px] hover:text-purple-700 hover:bg-white text-white md:text-[20px]"
+                onclick="Openp()"
+              ></i>
+            </a>
+          </div>
+
+        </nav>
+  
+        <div class="hidden slide"  loading="lazy" id="neck">
+          <div
+            class="sm:right-[0px] absolute sm:top-[27px] md:right-[170px] md:top-[25px] top-[17px] right-[62px]"
+          >
+            <a href="#">
+              <i
+                id="short"
+                class="fa fa-close p-3 rounded-[6px] border-purple-700 border text-purple-700 text-[18px] md:text-[20px]"
+                onclick="Openp()"
+              ></i>
+            </a>
+          </div>
+  
+          <div
+            class="navhead animate__animated animate__slideInRight md:top-[80px] top-[68px] absolute w-full rounded-b-[20px] shadow-lg h-[50vh]"
+          >
+            <div class="h-[60%]">
+              <ul class="p-2 mx-4">
+                <li class="my-[10px]">
+                  <a
+                    href="index.html"
+                    class="text-[18px] text-black hover:text-purple-700 "
+                    >Home</a
                   >
-                    Create Profile
-                  </a href="profile-create.html">
-                  <a href="login.html"
-                    class="p-3 hover:animate__animated animate__pulse hover:text-purple-700 bg-purple-700 text-white hover:bg-white text-[14px] rounded-[10px]"
+                </li>
+                <li class="my-[10px]">
+                  <a href="about.html" class="text-[18px] text-black hover:text-purple-700"
+                    >About</a
                   >
-                    Login
-                  </a href="login.html">
-      
-                  <div class="flex justify-center my-[20px] mx-2 gap-2">
-                    <a href="#"
-                      ><i
-                        class="fa fa-facebook p-3 bg-purple-700 text-white rounded-[12px] hover:text-purple-700 hover:bg-white"
-                      ></i
-                    ></a>
-                    <a href="#"
-                      ><i
-                        class="fa fa-linkedin p-3 bg-purple-700 text-white rounded-[12px] hover:text-purple-700 hover:bg-white"
-                      ></i
-                    ></a>
-                    <a href="#"
-                      ><i
-                        aria-hidden="true"
-                        class="fa fa-twitter p-3 bg-purple-700 rounded-[12px] hover:text-purple-700 hover:bg-white text-white"
-                      ></i
-                    ></a>
-                  </div>
-                </div>
+                </li>
+                <li class="my-[10px]">
+                  <a href="#proper" class=" scroll-smooth text-[18px] text-black hover:text-purple-700"
+                    >Properties</a
+                  >
+                </li>
+                <li class="my-[10px]">
+                  <a href="#review" class="text-[18px] text-black hover:text-purple-700"
+                    >Reviews</a
+                  >
+                </li>
+                <li class="my-[10px]">
+                  <a href="contact.html" class="text-[18px] border-b-2 border-purple-700 text-black hover:text-purple-700"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+  
+            <div class="justify-center flex-col mt-[15px]">
+              <a href="profile-create.html"
+                class="p-3 mx-9 but hover:text-purple-700 bg-purple-700 hover:bg-white text-white text-[13px] rounded-[10px]" 
+              >
+                Create Profile
+              </a href="profile-create.html">
+              <a href="login.html"
+                class="p-3 but hover:text-purple-700 bg-purple-700 text-white hover:bg-white text-[14px] rounded-[10px]"
+              >
+                Login
+              </a href="login.html">
+  
+              <div class="flex justify-center my-[20px] mx-2 gap-2">
+                <a href="https://web.facebook.com/profile.php?id=61561403431960" target="_blank"
+                  ><i
+                    class="fa fa-facebook  but p-3 bg-purple-700 text-white rounded-[12px] hover:text-purple-700 hover:bg-white"
+                  ></i
+                ></a>
+                <a href="https://whatsapp.com/channel/0029VaeVXL8Chq6HOGAkvg3j" target="_blank"
+                  ><i
+                    class="fa fa-whatsapp but p-3 bg-purple-700 text-white rounded-[12px] hover:text-purple-700 hover:bg-white"
+                  ></i
+                ></a>
+                <a href="https://www.x.com/MestateHouse" target="_blank"
+                  ><i
+                    aria-hidden="true"
+                    class="fa fa-twitter p-3 but bg-purple-700 rounded-[12px] hover:text-purple-700 hover:bg-white text-white"
+                  ></i
+                ></a>
               </div>
             </div>
-        </header>
+          </div>
+  
+        </div>
+        
+      </header>
 
         <section class="mx-2 lg:h-[80vh] h-[50vh] hero text-purple-700">
         <div
@@ -321,6 +346,7 @@
         </section>
 
         <section class="m-2">
+
         <h2
           class="mx-[20px] text-[20px] md:text-[45px] text-left mx-3 mt-7 text-purple-700 font-bold"
         >
@@ -445,6 +471,183 @@
       </p>
       <hr class="w-[95%] mx-auto" />
 
+      <div class=" h-full flex md:flex-row flex-col w-full lg:w-[90%] xl:w-[80%] rounded shadow-lg my-5 p-3  gap-2 md:gap-5 justify-between  md:mx-auto ">
+
+        <div class="flex md:w-[50%] w-full flex-col ">
+
+          <div class="my-3 md:px-0 px-3 transition-none dart  rounded-[15px] accordion-tab   border border-purple-700">
+
+            <h3 class="accordion overflow-hidden  text-[16px] md:text-[18px] text-[#444] flex justify-between items-center cursor-pointer p-[5px] md:p-[16px] text-left transition-0.4s font-bold" > How do I apply for a rental property?</h3>
+  
+            <div class="panel  text-[14px] flex justify-center items-center  overflow-hidden" 
+            style="display: none">
+              <p class="text-justify p-[10px] md:p-[15px]">To apply for a rental property, visit our website and fill out the online application form. Pay for inspection fee and our Representative will immediately get in touch with you to tidy up the rest of the documentations</p>
+            </div>
+  
+          </div>
+  
+          <div class="my-3 md:px-0 px-3 transition-none  rounded-[15px] border  accordion-tab  border-purple-700">
+  
+            <h3 class="accordion overflow-hidden text-[16px] md:text-[18px] text-[#444] flex justify-between items-center cursor-pointer p-[5px] md:p-[16px] text-left transition-0.4s font-bold" > What documents do I need to provide with my application?</h3>
+  
+            <div class="panel  text-[14px] flex justify-center items-center  overflow-hidden" 
+            style="display: none">
+              <p class="text-justify p-[10px] md:p-[15px]">You will need to provide a valid government-issued ID, proof of income (bank statement for the past six {6} months), work address and rental history references.</p>
+            </div>
+  
+          </div>
+  
+          <div class="my-3 md:px-0 px-3 transition-none  rounded-[15px] border accordion-tab   border-purple-700">
+  
+            <h3 class="accordion overflow-hidden text-[16px] md:text-[18px] text-[#444] flex justify-between items-center cursor-pointer p-[5px] md:p-[16px] text-left transition-0.4s font-bold" > Is there an application fee?</h3>
+  
+            <div class="panel  text-[14px] flex justify-center items-center  overflow-hidden" 
+            style="display: none">
+              <p class="text-justify p-[10px] md:p-[15px]"> Yes, there is a non-refundable application fee of Two thousand naira Only (NGN2,000.00). This fee covers the cost of processing your application, including a credit and background check.</p>
+            </div>
+  
+          </div>
+  
+          <div class="my-3 md:px-0 px-3 transition-none  rounded-[15px] border accordion-tab   border-purple-700">
+  
+            <h3 class="accordion overflow-hidden text-[16px] md:text-[18px] text-[#444] flex justify-between items-center cursor-pointer p-[5px] md:p-[16px] text-left transition-0.4s font-bold" > How long is the lease term?</h3>
+  
+            <div class="panel  text-[14px] flex justify-center items-center  overflow-hidden" 
+            style="display: none">
+              <p class="text-justify p-[10px] md:p-[15px]">Our standard lease term is 12 months. However, we may offer shorter or longer lease terms depending on the property and your needs.</p>
+            </div>
+  
+          </div>
+  
+          <div class="my-3 md:px-0 px-3 transition-none  rounded-[15px] border accordion-tab   border-purple-700">
+  
+            <h3 class="accordion overflow-hidden text-[16px] md:text-[18px] text-[#444] flex justify-between items-center cursor-pointer p-[5px] md:p-[16px] text-left transition-0.4s font-bold" > How is the rent payment processed?</h3>
+  
+            <div class="panel  text-[14px] flex justify-center items-center  overflow-hidden" 
+            style="display: none">
+              <p class="text-justify p-[10px] md:p-[15px]"> Rent can be paid online through our tenant portal or direct transfer to Dynamest Ltd. We accept various payment methods including bank transfers, credit/debit cards, and checks.</p>
+            </div>
+  
+          </div>
+
+          <div class="my-3 md:px-0 px-3 transition-none  rounded-[15px] border accordion-tab   border-purple-700">
+  
+            <h3 class="accordion overflow-hidden text-[16px] md:text-[18px] text-[#444] flex justify-between items-center cursor-pointer p-[5px] md:p-[16px] text-left transition-0.4s font-bold" > When is rent due?</h3>
+  
+            <div class="panel  text-[14px] flex justify-center items-center  overflow-hidden" 
+            style="display: none">
+              <p class="text-justify p-[10px] md:p-[15px]"> Rent is due on the first of each month. Late fees may apply if rent is not received by the fifth of the month.</p>
+            </div>
+  
+          </div>
+
+          <div class="my-3 md:px-0 px-3 transition-none  rounded-[15px] border accordion-tab   border-purple-700">
+  
+            <h3 class="accordion overflow-hidden text-[16px] md:text-[18px] text-[#444] flex justify-between items-center cursor-pointer p-[5px] md:p-[16px] text-left transition-0.4s font-bold" > Can I make modifications to the rental property?</h3>
+  
+            <div class="panel  text-[14px] flex justify-center items-center  overflow-hidden" 
+            style="display: none">
+              <p class="text-justify p-[10px] md:p-[15px]"> Any modifications to the property must be approved by our office in writing. Unauthorized modifications may result in penalties.</p>
+            </div>
+  
+          </div>
+
+        </div>
+
+        <div class="flex flex-col w-full md:w-[50%] "> 
+
+          <div class="my-3 md:px-0 px-3 transition-none dart  rounded-[15px] accordion-tab   border border-purple-700">
+
+            <h3 class="accordion overflow-hidden  text-[16px] md:text-[18px] text-[#444] flex justify-between items-center cursor-pointer p-[5px] md:p-[16px] text-left transition-0.4s font-bold" > Can I break my lease early?</h3>
+  
+            <div class="panel  text-[14px] flex justify-center items-center  overflow-hidden" 
+            style="display: none">
+              <p class="text-justify p-[10px] md:p-[15px]"> Breaking a lease early may result in penalties. Please contact our office to discuss your specific situation and the possible fees involved./p>
+            </div>
+  
+          </div>
+  
+          <div class="my-3 md:px-0 px-3 transition-none  rounded-[15px] border  accordion-tab  border-purple-700">
+  
+            <h3 class="accordion overflow-hidden text-[16px] md:text-[18px] text-[#444] flex justify-between items-center cursor-pointer p-[5px] md:p-[16px] text-left transition-0.4s font-bold" > How do I request maintenance or repairs?</h3>
+  
+            <div class="panel  text-[14px] flex justify-center items-center  overflow-hidden" 
+            style="display: none">
+              <p class="text-justify p-[10px] md:p-[15px]"> Maintenance requests can be submitted through our online tenant portal or by calling our office during business hours. For emergency repairs, please contact our 24/7 emergency hotline.</p>
+            </div>
+  
+          </div>
+  
+          <div class="my-3 md:px-0 px-3 transition-none  rounded-[15px] border accordion-tab   border-purple-700">
+  
+            <h3 class="accordion overflow-hidden text-[16px] md:text-[18px] text-[#444] flex justify-between items-center cursor-pointer p-[5px] md:p-[16px] text-left transition-0.4s font-bold" > Who is responsible for yard maintenance?</h3>
+  
+            <div class="panel  text-[14px] flex justify-center items-center  overflow-hidden" 
+            style="display: none">
+              <p class="text-justify p-[10px] md:p-[15px]"> Yard maintenance responsibilities vary by property. Please refer to your lease agreement for specific details regarding your rental property. </p>
+            </div>
+  
+          </div>
+  
+          <div class="my-3 md:px-0 px-3 transition-none  rounded-[15px] border accordion-tab   border-purple-700">
+  
+            <h3 class="accordion overflow-hidden text-[16px] md:text-[18px] text-[#444] flex justify-between items-center cursor-pointer p-[5px] md:p-[16px] text-left transition-0.4s font-bold" > What should I do if I have a pest problem?</h3>
+  
+            <div class="panel  text-[14px] flex justify-center items-center  overflow-hidden" 
+            style="display: none">
+              <p class="text-justify p-[10px] md:p-[15px]"> Please report any pest issues to our office immediately. We will arrange for pest control services to address the problem.</p>
+            </div>
+  
+          </div>
+  
+          <div class="my-3 md:px-0 px-3 transition-none  rounded-[15px] border accordion-tab   border-purple-700">
+  
+            <h3 class="accordion overflow-hidden text-[16px] md:text-[18px] text-[#444] flex justify-between items-center cursor-pointer p-[5px] md:p-[16px] text-left transition-0.4s font-bold" > What is the move-in process?</h3>
+  
+            <div class="panel  text-[14px] flex justify-center items-center  overflow-hidden" 
+            style="display: none">
+              <p class="text-justify p-[10px] md:p-[15px]"> After your application is approved and the lease is signed, we will schedule a move-in date. On this date, you will receive the keys and a move-in checklist to document the condition of the property.</p>
+            </div>
+  
+          </div>
+
+          <div class="my-3 md:px-0 px-3 transition-none  rounded-[15px] border accordion-tab   border-purple-700">
+  
+            <h3 class="accordion overflow-hidden text-[16px] md:text-[18px] text-[#444] flex justify-between items-center cursor-pointer p-[5px] md:p-[16px] text-left transition-0.4s font-bold" > What is the move-out process?</h3>
+  
+            <div class="panel  text-[14px] flex justify-center items-center  overflow-hidden" 
+            style="display: none">
+              <p class="text-justify p-[10px] md:p-[15px]"> Prior to moving out, you will need to provide written notice as specified in your lease. On your move-out date, you should return the keys and ensure the property is clean and in good condition, exactly you met it. A final inspection will be conducted to assess any damages.</p>
+            </div>
+  
+          </div>
+
+          <div class="my-3 md:px-0 px-3 transition-none  rounded-[15px] border accordion-tab   border-purple-700">
+  
+            <h3 class="accordion overflow-hidden text-[16px] md:text-[18px] text-[#444] flex justify-between items-center cursor-pointer p-[5px] md:p-[16px] text-left transition-0.4s font-bold" > Will I get my security deposit back?</h3>
+  
+            <div class="panel  text-[14px] flex justify-center items-center  overflow-hidden" 
+            style="display: none">
+              <p class="text-justify p-[10px] md:p-[15px]"> Your security deposit will be refunded within 3 days after you move out, provided there are no damages or unpaid rent. Deductions may be made for any necessary repairs or cleaning.</p>
+            </div>
+  
+          </div>
+
+          <!-- <div class="my-3 md:px-0 px-3 transition-none  rounded-[15px] border accordion-tab   border-purple-700">
+  
+            <h3 class="accordion overflow-hidden text-[16px] md:text-[18px] text-[#444] flex justify-between items-center cursor-pointer p-[5px] md:p-[16px] text-left transition-0.4s font-bold" > Are pets allowed in the rental properties?</h3>
+  
+            <div class="panel  text-[14px] flex justify-center items-center  overflow-hidden" 
+            style="display: none">
+              <p class="text-justify p-[10px] md:p-[15px]"> Pet policies vary by property. Some properties allow pets with an additional pet deposit and monthly fee, while others do not allow pets. Please check the specific listing or contact our office for more information.</p>
+            </div>
+  
+          </div> -->
+
+        </div>
+
+      </div>
+
         </section>
 
         <footer
@@ -456,6 +659,36 @@
         </footer>
       
     </main>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+         /* Toggle between adding and removing the "active" class,
+          to highlight the button that controls the panel */
+          this.classList.toggle("active");
+
+          /* Toggle between hiding and showing the active panel */
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+            console.log('Am clicked')
+          } else {
+            panel.style.display = "block";
+            console.log("Am not clicked")
+          }
+        });
+      } 
+
+      const tabs = document.querySelectorAll('.accordion-tab') 
+      const firstTabHeight = tab[0].offsetHeight
+      tabs.forEach( tab => tab.style.height = firstTabHeight + "px")
+
+
+
+    </script>
 
     <script src="index.js"></script>
   </body>
