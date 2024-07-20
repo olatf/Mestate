@@ -1,0 +1,266 @@
+
+
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" sizes="180x180" href="/assests/images/favicon.jpeg" type="image/x-icon">
+    <link href="assests/font-awesome-4.7.0/" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="assests/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdn.tailwindcss.com/2.2.19/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="index.js"></script> -->
+    <title>Mestate create-profile</title>
+
+    <style>
+
+      .hero {
+        background-image: url(assests/images/Mestate9.jpg);
+        background-position: center;
+        background-size: cover;
+      }
+
+      .navhead {
+        background-color: #f0f0f0;
+      }
+
+      .textbgrung {
+        background-color: #efeff099;
+      }
+
+      .move {
+        clip-path: polygon(0 0, 100% 0, 91% 100%, 0 100%);
+      }
+
+      .review{
+        display: none;
+      }
+
+      .review.show{
+        display: block;
+      }
+
+      .prev1, .next1{
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+      }
+      
+    </style>
+
+  </head>
+
+  <body class="bg-white" id="class">
+
+    <main id="body" class="relative ">
+
+        <section class="lg:m-2 m-0 md:p-0 p-2 h-[100vh]  flex justify-center items-center  hero">
+
+          <div class=" w-full h-[100vh] md:hidden block absolute  md:bg-transparent bg-black opacity-50 md:opacity-100 md:top-[8%]  text-black"></div>
+
+
+          <div class="md:mx-3  relative rounded-[16px] border shadow-lg md:w-[95%] lg:w-[85%] xl:w-[70%] w-full flex flex-col md:flex-row justify-between  mx-6  lg:mx-auto md:h-[85vh] z-99 ">
+    
+            <div class="md:w-[40%] w-full md:mx-4  mx-auto md:block flex justify-center  ">
+
+                  <div class=" bg-white glow shadow-lg rounded-full w-[40%] mx-4 items-center flex px-4 gap-2  my-4">
+
+                    <a href="index.html" class="lg:w-[22%] w-[30%] flex  items-center"
+                    ><img
+                      src="assests/images/logo 2.jpeg"
+                      class=" "
+                      alt="logo"
+                    /></a>
+
+                    <a href="index.html" class=" lg:text-[18px]  md:text-[20px] text-[16px] lg:p-0 p-1 text-purple-700 "> Mestate </a>
+
+                  </div>
+            </div>
+
+            <div class="md:bg-white bg-transparent  md:h-full md:overflow-hidden overflow-y-auto w-full h-[70vh] md:w-[55%] px-3 py-2 rounded-r-[16px]  ">
+
+              <h2 class="md:text-purple-700 text-white text-[26px] lg:text-[35px]  md:mt-1 text-center" >Create Profile</h2>
+              <p class="md:text-[14px] text-[13px] my-1 px-1 md:text-black text-white text-center">Join our platform and get access to numerous dream accommodation at affordable price</p>
+
+              <div class=" mt-1 ">
+
+                </div>
+
+                  <form action="" method="post" novalidate>
+
+                     <div class="flex items-center mx-4 gap-3 md:mt-0 mt-4">
+                          <span class="text-white md:text-black"> User Type </span>
+                          <select name="" id="" class=" block p-1 md:p-2 md:text-sm text-[13px] text-purple-700 shadow-sm focus:outline-none rounded border-[#f0f0f0] border focus:ring-2 focus:ring-purple-700 disabled:opacity-50">
+                              <option value="">Tenant</option>
+                              <option value="">Landlord</option>
+                          </select>
+                     </div>
+
+                      <div class=" mt-3 bg-transparent flex md:flex-row flex-col gap-2 w-full items-center px-2   " >
+                          <input type="text" class="index-2 bg-transparent w-full md:w-[30%] focus:outline-none md:placeholder:text-black placeholder:text-white lg:p-2 p-1 md:placeholder:text-[15px] md:text-[15px] placeholder:text-[17px] text-[17px] border-b border-purple-700  text-purple-700" name="" placeholder="First name" id="">
+
+                          <input type="text" class="index-2 bg-transparent w-full md:w-[30%] focus:outline-none md:placeholder:text-black placeholder:text-white lg:p-2 p-1 md:placeholder:text-[15px] md:text-[15px] placeholder:text-[17px] text-[17px] border-b border-purple-700  text-purple-700" name="" placeholder="Other names" id="">
+
+                          <input type="text" class="index-2 bg-transparent w-full md:w-[30%] focus:outline-none md:placeholder:text-black placeholder:text-white lg:p-2 p-1 md:placeholder:text-[15px] md:text-[15px] placeholder:text-[17px] text-[17px] border-b border-purple-700  text-purple-700" name="" placeholder="Surname" id="">
+
+                      </div>
+
+                      <div class=" mt-2 bg-transparent flex gap-2 w-full items-center px-2   " >
+                          <input type="text" class="index-2 bg-transparent md:w-[90%] w-full  focus:outline-none md:placeholder:text-black placeholder:text-white lg:p-2 p-1 md:placeholder:text-[15px] md:text-[15px] placeholder:text-[17px] text-[17px] border-b border-purple-700  text-purple-700" name="" placeholder="Address" id="">
+
+                      </div>
+
+                      <div class=" mt-3 bg-transparent flex md:flex-row flex-col gap-3 w-full items-center px-2   " >
+                          <input type="text" class="index-2 bg-transparent md:w-[45%] w-full focus:outline-none md:placeholder:text-black placeholder:text-white lg:p-2 p-1 md:placeholder:text-[15px] md:text-[15px] placeholder:text-[17px] text-[17px] border-b border-purple-700  text-purple-700" name="" placeholder=" Occupation " id="">
+
+                          <input type="text"  class=" appearance-none index-2 bg-transparent md:w-[45%] w-full focus:outline-none md:placeholder:text-black placeholder:text-white lg:p-2 p-1 md:placeholder:text-[15px] md:text-[15px] placeholder:text-[17px] text-[17px] border-b border-purple-700  text-purple-700" name="" pattern=" [0-9]* " placeholder="Phone Number" id="num">
+                          
+                      </div>
+
+                      <div class=" mt-3 bg-transparent flex md:flex-row flex-col gap-3 w-full items-center px-2 ">
+
+                        <input type="password" class="index-2 bg-transparent w-full md:w-[45%] focus:outline-none md:placeholder:text-black placeholder:text-white lg:p-2 p-1 md:placeholder:text-[15px] md:text-[15px] placeholder:text-[17px] text-[17px] border-b border-purple-700  text-purple-700" name="" placeholder=" Set password " id="password1">
+
+                        <input type="password"  class=" appearance-none index-2 bg-transparent w-full md:w-[45%] focus:outline-none md:placeholder:text-black placeholder:text-white lg:p-2 p-1 md:placeholder:text-[15px] md:text-[15px] placeholder:text-[17px] text-[17px] border-b border-purple-700  text-purple-700" name="" placeholder="Confirm password" id="password2">
+
+                        <div class=" relative w-[10%] flex items-center ">
+                          <i class="fa  fa-eye-slash md:text-purple-700 text-white text-[20px] " id="hide" aria-hidden="true" onclick="showme()"></i>
+
+                          <i class="fa fa-eye md:text-purple-700 text-white hidden text-[20px]  "  id="show" aria-hidden="true" onclick="showme()"></i>
+                        </div>
+
+                      </div>
+
+                      <div class=" mt-3 bg-transparent flex md:flex-row flex-col justify-between  gap-3 w-full items-center px-2 " >
+
+                          <div class=" md:w-[40%] w-full text-white md:text-black flex gap-3">
+                              <input type="radio" checked class="md:text-[15px] checked:bg-[#f0f0f0] checked:border-[#f0f0f0] " name="sex" placeholder=" Set password " id=""> Male
+
+                              <input type="radio"  class=" text-[17px]" name="sex" placeholder="Confirm password" id=""> Female
+                          </div>
+
+                          <input type="email"  class=" index-2 bg-transparent w-full md:w-[50%] focus:outline-none md:placeholder:text-black placeholder:text-white lg:p-2 p-1 md:placeholder:text-[15px] md:text-[15px] placeholder:text-[17px] text-[17px] border-b border-purple-700  text-purple-700" name="" placeholder="Email" id="">
+                          
+                      </div>
+
+                      <div class="  w-full flex items-center my-4 gap-4 ">
+                          <i class="fa  fa-cloud-upload md:text-purple-700 text-white text-[18px] md:text-[20px] lg:w-[30%] w-[50%] " id="" aria-hidden="true" ><span class=" text-[12px] md:text-[15px]">  Means of ID </span></i>
+
+                          <input type="file" name="" id="" placeholder="" value="" class="text-white md:text-black "> 
+                      </div>
+
+
+                      <div class="flex justify-between items-center mx-2 text-white md:text-black ">
+                          <div class="flex items-center gap-2 ">
+                              <input type="checkbox" checked name="" id=""  class="text-white md:text-black" value=""><p class="text-[11px]">  I, agree to the <span class="text-purple-700 cursor-pointer" onclick="popopen()">Terms and Conditions </span> of using Mestate Services.</p>
+                          </div>
+                      </div>
+
+                      <div class="flex justify-between gap-3 md:gap-4 items-center flex-col lg:flex-row md:w-[85%] xl:w-[80%] mt-6 mx-auto">
+                          <input type="submit" value="Create" class="text-[18px]  text-white bg-purple-700 px-5 py-2 shadow-lg  rounded-[10px] hover:text-purple-700 hover:border-purple-700 hover:border hover:bg-transparent">
+
+                          <p class="text-white md:text-[15px] text-[14px] md:text-black">Already have an account? <a href="login.html"  class=" text-center  underline text-purple-700 items-center cursor-pointer ">Login</a>
+                          </p>
+
+                      </div>
+
+                  </form>
+            </div>
+
+          </div>
+
+        </section>
+
+    </main>
+
+    <div id="create" class="xl:w-[40%] lg:w-[50%] md:w-[60%] hidden w-[95%] mx-3 mx-auto shadow-lg rounded-[14px] fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white md:mx-0 mx-3 p-3">
+
+        <i id="dead" class="fa fa-close p-3 rounded-[6px] border-purple-700 border text-purple-700 text-[18px] md:text-[20px]" onclick="popopen()" ></i>
+    
+        <p class="lg:text-[25px] md:text-[20px] text-[16px] lg:p-0 p-1 text-purple-700 shadow-md  float-right glow lg:w-[20%] text-center">Mestate</p>
+    
+        <h2 class="md:text-[25px] text-[20px] font-bold mt-3 text-purple-700 text-center">TERMS AND CONDITIONS</h2>
+
+       <div class="h-[50vh] overflow-auto mt-3">
+
+        <p class="text-[13px] my-2 w-full px-3 text-justify ">WELCOM TO <b>MESTATE</b>. THESE TERMS AND CONDITIONS (“TERMS") GOVERN YOUR USE OF RENTAL SERVICES AND, OUTLINE THE RESPONSIBILITIES AND EXPECTATIONS FOR BOTH TENANTS AND PROPERTY OWNERS (“LANDLORDS”). BY SIGNING UP AND TRANSACTING ON THIS PLATFORM, EITHER OF YOU IS BOUND BY HIS RESPSCTIVE TERMS AND CONDITIONS. OF COURSE, THE AGREEMENTS FOR LEASE ARE ALSO BINDING.</p>
+
+        <p class="text-[20px] my-2 w-full px-3 text-left font-bold ">TENANTS</p>
+
+        <ol class="text-[13px]  w-full px-3 text-justify">
+
+            <li class="my-4"><b>LEASE TERM:</b> THESE LEASE AGREEMENT OUTLINES THE DURATION OF YOUR TENANCY. THE TERM MAY BE FIXED OR PERIODIC AS SPECIFIED IN YOUR AGREEMENT.</li>
+
+            <li class="my-4"><b>COMMISSION:</b> KINDLY BE AWARE THAT FOR EVERY LEASE TRANSACTION ON OUR MESTATE PLATFORM, IT ATTRACTS 5% COMMISSION. ALSO NOTE THAT YOU CAN HAVE ACCESS TO A LAWYER ONLY IF YOU SUBSCRIBE FOR THAT ON MESTATE’S PLATFORM.</li>
+
+
+            <li class="my-4"><b>RENT PAYMENT: </b>RENT MUST BE PAID IN FULL AND ON TIME, AS SPECIFIED IN THE LEASE AGREEMENT. LATE PAYMENTS MAY INCUR ADDITIONAL FEES. ALL TRANSACTIONS MUST BE MADE ON MESTATE APP/WEBSITE. ANY TRANSACTION AND ISSUES THEREIN OUTSIDE OUR PLATFORM IS AT THE RISK OF THE TENANT.</li>
+
+            <li class="my-4"><b>SECURITY DEPOSIT:</b> A SECURITY DEPOSIT IS REQUIRED AT THE START OF YOUR LEASE. THIS WILL BE HELD TO COVER ANY DAMAGES OR UNPAID RENT AT THE END OF THE TENANCY. OUR LAWYERS ARE, HOWEVER, ON STAND-BY FOR SMOOTH SERVICE DELIVERY.</li>
+
+            <li class="my-4"><b>OCCUPANCY:</b> THE RENTAL PROPERTY IS TO BE USED SOLELY FOR RESIDENTIAL PURPOSES AS AGREED. ONLY INDIVIDUALS LISTED ON THE AGREEMENT ARE PERMITTED TO RESIDE ON THE PROPERTY.</li>
+
+            <li class="my-4"><b>LOCAL TENANCY LAWS:</b> PLEASE NOTE THAT YOU ARE EXPECTED TO COMPLY WITH ALL LOCAL TENANCY LAWS (LOCAL, STATE AND FEDERAL) AS THEY WILL BE EXPLORED IN HANDLING ANY ARISING ISSUES EITHER ON THE PART OF THE TENANTS OR LANDLORDS.</li>
+
+            <li class="my-4"><b>MAINTENANCE AND REPAIR:</b> TENANTS AR ERESPONSIBLE FOR KEEPING THE PROPERTY IN GOOD CONDITION AT ALL TIMES. ANY DAMAGE OR NECESSARY REPAIRS SHOULD BE REPORTED TO <b>MESTATE</b> IMMEDIATELY.</li>
+
+            <li class="my-4"><b>ALTERATIONS:</b> TENANTS MUST OBTAIN WRITTEN PERMISSION FROM THE LANDLORD THROUGH <b>MESTATE</b>, BEFORE MAKING ANY ALTERATIONS OR MODIFICATIONS TO THE PROPERTY.</li>
+
+            <li class="my-4"><b>NOISE AND DISTURBANCE:</b> TENANTS MUST AVOID CAUSING ANY DISTURBANCES THAT MAY INTERFERE WITH THE PEACE AND SERENITY OF THE NEIGHBOURHOOD. OBSERVE LOCAL NIGHT RULES (E.G EVERYONE MUST BE IN THE HOUSE LATEST 11PM)</li>
+
+            <li class="my-4"><b>UTILITIES:</b> TENANTS ARE RESPONSIBLE FOR PAYING ALL UTILITY BILLS (ELECTRICITY, WATER, SECURITY ETC.) UNLESS OTHERWISE STATED IN THE LEASE AGREEMENT.</li>
+        </ol>
+
+        <p class="md:text-[20px] text-[15px] my-4 w-full px-3 text-justify font-bold ">LANDLORDS (PROPERTY OWNERS)</p>
+
+        <ol class="text-[13px] my-2 w-full px-3 text-justify">
+            
+            <li class="my-4"><b>PROPERTY STATUS:</b> LANDLORD IS EXPECTED TO DECLEAR THE TRUE CONDITION OF THE PROPERTY. THESE INVOLVE LEAKING ROOFS, BROKEN PIPES, CRACKED WALLS AND OTHER HIDDEN DAMAGES TO THE HOUSE REQUIRING REPAIRS BEFORE TENANT MOVES IN.</li>
+
+            <li class="my-4"><b>PROOF OF OWNERSHIP:</b> LANDLORD NEEDS TO PRESENT ALL PROOFS OF OWNERSHIP WHICH INCLUDE CERTIFICATE OF OCCUPANCY (C OF O), HOUSE PLAN. THESE DOCUMENTS WILL BE USED FOR VERIFYING THE PROPERTY ON <b>MESTATE</b> PLATFORM. ANY MEANS OF IDENTIFICATION WILL HELP A LOT. <b>MESTATE</b> DEALS ONLY WITH PROPERTY OWNERS, NOT ANY AGENTS.</li>
+
+            <li class="my-4"><b>PROOF OF IDENTITY:</b> THIS SHOULD BE SUBMITTED IN FORM ID CARD, INTERNATIONAL PASSPORT, NIN ID, DRIVERS’ LICENSE OR VOTER’S REGISTRATION CARD. ANY OF THESE CAN SERVE AS A MEANS OF IDENTITY. THE NAME ON IT MUST BE THE SAME WITH THE NAME ON THE HOUSE DOCUMENTS.</li>
+
+            <li class="my-4"><b>LEGAL:</b> LANDLORD CAN ONLY HAVE ACCESS TO LEGAL COVERAGE ON MESTATE IF HE/SHE SUBSCRIBES FOR THE PACKAGE ON OUR PLATFORM. LEGAL COVERAGE FOR PROPERTY OWNERS IS 5% APART FROM THE USUAL TENANCY AGREEMENT PERCENTAGE (%).</li>
+
+            <li class="my-4"><b>PROPERTY VERIFICATION:</b> LANDLORD WILL ALLOW FULL PROPERTY VERIFICATION BEFORE APPROVAL CAN BE GIVEN FOR TENANT’S OCCUPANCY</li>
+
+            <li class="my-4"><b>MAINTENANCE AND REPAIR:</b> LANDLORD IS RESPONSIBLE FOR ANY MAINTENANCE, REPAIR AND REPLACEMENT BEFORE THE PROPERTY IS GIVEN TO TENANT(S).</li>
+
+            <li class="my-4"><b>COMMISSION:</b> A 5% COMMISSION WILL BE DEDUCTED FROM THE LANDLORD’S FINAL PAYMENT. IF HE SUBSCRIBES FOR LEGAL COVERAGE, THEN, 10% COMMISSION FROM THE HIS (LANDLORD’S) FINAL PAYMENT..</li>
+        </ol>
+
+       </div>
+    
+    
+        
+    
+    </div>
+
+
+    <script src="index.js"></script>
+    <script src="login.js"></script>
+  </body>
+
+</html>

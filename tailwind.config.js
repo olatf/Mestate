@@ -29,6 +29,12 @@ module.exports = {
                 'black-rgba': 'rgb(107, 70, 193)',
                 'blue-rgba': 'rgb(107 70 193 / 20%) 0px 0px 50px 0px',
                 'gray-rgba': 'rgb(204, 204, 204)',
+            },
+
+            inputs:{
+                number:{
+                    appearance:"none"
+                }
             }
        
             

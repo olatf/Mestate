@@ -1,0 +1,462 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" sizes="180x180" href="/assests/images/favicon.jpeg" type="image/x-icon">
+    <link href="assests/font-awesome-4.7.0/" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="assests/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdn.tailwindcss.com/2.2.19/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="index.js"></script> -->
+    <title> Contact Mestate</title>
+
+    <style>
+      .hero {
+        background-image: url(assests/images/Mestate9.jpg);
+        background-position: center;
+        background-size: cover;
+      }
+
+      .navhead {
+        background-color: #f0f0f0;
+      }
+
+      .textbgrung {
+        background-color: #efeff099;
+      }
+
+      .move {
+        clip-path: polygon(0 0, 100% 0, 91% 100%, 0 100%);
+      }
+    </style>
+  </head>
+
+  <body class="bg-white" id="class">
+
+    <main id="body" class="">
+
+        <header class="bg-white hidden lg:block shadow-lg m-2">
+
+            <nav class="flex justify-between">
+      
+              <div class="mx-auto items-center lg:w-[10%] xl:w-[15%]">
+                <a href="index.html" class="flex items-center justify-end"
+                  ><img
+                    src="assests/images/logo 2.jpeg"
+                    class="lg:w-[40%] xl:w-[35%] flex justify-center"
+                    alt="logo"
+                /></a>
+                <!-- <p class="text-[12px] ml-0">Mestate </p> -->
+              </div>
+      
+              <div class="navhead lg:w-[50%] xl:w-[60%]">
+      
+                <ul class="flex justify-center items-center gap-8 p-2 m-4">
+                  <li>
+                    <a
+                      href="index.html"
+                      class="text-[18px] text-black hover:text-purple-700 "
+                      >Home</a
+                    >
+                  </li>
+      
+                  <li>
+                    <a href="about.html" class="text-[18px] text-black hover:text-purple-700"
+                      >About</a
+                    >
+                  </li>
+      
+                  <li>
+                    <a href="#proper" class=" scroll-behavior-smooth !important  text-[18px] text-black hover:text-purple-700"
+                      >Properties</a
+                    >
+                  </li>
+      
+                  <li>
+                    <a href="#review" class="text-[18px] text-black hover:text-purple-700"
+                      >Reviews</a
+                    >
+                  </li>
+      
+                  <li>
+                    <a href="contact.html" class="text-[18px] border-b-2 border-purple-700 text-black hover:text-purple-700"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+      
+              </div>
+      
+              <div class="xl:w-[25%] mx-1 flex justify-start items-center gap-2">
+                <a href="profile-create.html"
+                  class="p-3 hover:animate__animated animate__pulse hover:text-purple-700 hover:bg-gray-200 bg-purple-700 text-white text-[13px] rounded-[10px]" 
+                >
+                  Create Profile
+                </a href="profile-create.html">
+      
+                <a href="login.html"
+                  class="p-3 hover:animate__animated animate__pulse hover:text-purple-700 hover:bg-gray-200 bg-purple-700 text-white text-[14px] rounded-[10px]"
+                >
+                  Login
+                </a href="login.html">
+      
+                <div class="flex justify-center mx-2 gap-2">
+                  <a href="#"
+                    ><i
+                      class="fa fa-facebook p-3 bg-purple-700 text-white rounded-[12px] hover:text-purple-700 hover:bg-gray-200"
+                    ></i
+                  ></a>
+                  <a href="#"
+                    ><i
+                      class="fa fa-linkedin p-3 bg-purple-700 text-white rounded-[12px] hover:text-purple-700 hover:bg-gray-200"
+                    ></i
+                  ></a>
+                  <a href="#"
+                    ><i
+                      aria-hidden="true"
+                      class="fa fa-twitter p-3 bg-purple-700 rounded-[12px] hover:text-purple-700 hover:bg-gray-200 text-white"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+      
+            </nav>
+      
+        </header>
+      
+        <header class="lg:hidden relative mx-2 lg:my-2 my-1">
+      
+            <nav
+              class="flex md:h-[100px] justify-between shadow-lg item-center p-2 md:p-0"
+            >
+              <div class="mx-auto items-center w-[50%]">
+      
+                <a href="index.html" class="flex items-center justify-center"
+                  ><img
+                    src="assests/images/logo 2.jpeg"
+                    class="w-[40%] md:[w-25%] md:h-[90px] md:w-[100px] flex justify-center"
+                    alt="logo"
+                /></a>
+                <!-- <p class="text-[12px] ml-0">Mestate </p> -->
+              </div>
+      
+              <div class="w-[50%] bg-[#f0f0f0] flex justify-center items-center">
+                <a href="#">
+                  <i
+                    id="finger"
+                    class="fa fa-bars p-3 bg-purple-700 rounded-[6px] hover:text-purple-700 hover:bg-white text-white md:text-[20px]"
+                    onclick="Openp()"
+                  ></i>
+                </a>
+              </div>
+            </nav>
+      
+            <div class="hidden" loading="lazy" id="neck">
+              <div
+                class="sm:right-[0px] absolute sm:top-[27px] md:right-[170px] md:top-[25px] top-[17px] right-[62px]"
+              >
+                <a href="#">
+                  <i
+                    id="short"
+                    class="fa fa-close p-3 rounded-[6px] border-purple-700 border text-purple-700 text-[18px] md:text-[20px]"
+                    onclick="Openp()"
+                  ></i>
+                </a>
+              </div>
+      
+              <div
+                class="navhead md:top-[80px] top-[68px] absolute w-full rounded-b-[20px] shadow-lg h-[50vh]"
+              >
+                <div class="h-[60%]">
+                  <ul class="p-2 mx-4">
+                    <li class="my-[10px]">
+                      <a
+                        href="index.html"
+                        class="text-[18px] text-black hover:text-purple-700"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="my-[10px]">
+                      <a href="about.html" class="text-[18px] text-black hover:text-purple-700"
+                        >About</a
+                      >
+                    </li>
+                    <li class="my-[10px]">
+                      <a href="#proper" class=" scroll-smooth text-[18px] text-black hover:text-purple-700"
+                        >Properties</a
+                      >
+                    </li>
+                    <li class="my-[10px]">
+                      <a href="#review" class="text-[18px] text-black hover:text-purple-700"
+                        >Reviews</a
+                      >
+                    </li>
+                    <li class="my-[10px]">
+                      <a href="contact.html" class="text-[18px] border-b-2 border-purple-700 text-black hover:text-purple-700"
+                        >Contact</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+      
+                <div class="justify-center flex-col mt-[15px]">
+                  <a href="profile-create.html"
+                    class="p-3 mx-9 hover:animate__animated animate__pulse hover:text-purple-700 bg-purple-700 hover:bg-white text-white text-[13px] rounded-[10px]" 
+                  >
+                    Create Profile
+                  </a href="profile-create.html">
+                  <a href="login.html"
+                    class="p-3 hover:animate__animated animate__pulse hover:text-purple-700 bg-purple-700 text-white hover:bg-white text-[14px] rounded-[10px]"
+                  >
+                    Login
+                  </a href="login.html">
+      
+                  <div class="flex justify-center my-[20px] mx-2 gap-2">
+                    <a href="#"
+                      ><i
+                        class="fa fa-facebook p-3 bg-purple-700 text-white rounded-[12px] hover:text-purple-700 hover:bg-white"
+                      ></i
+                    ></a>
+                    <a href="#"
+                      ><i
+                        class="fa fa-linkedin p-3 bg-purple-700 text-white rounded-[12px] hover:text-purple-700 hover:bg-white"
+                      ></i
+                    ></a>
+                    <a href="#"
+                      ><i
+                        aria-hidden="true"
+                        class="fa fa-twitter p-3 bg-purple-700 rounded-[12px] hover:text-purple-700 hover:bg-white text-white"
+                      ></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </header>
+
+        <section class="mx-2 lg:h-[80vh] h-[50vh] hero text-purple-700">
+        <div
+          class="xl:w-[60%] lg:w-[50%] w-full p-[30px] h-full lg:h-[65vh] flex justify-center items-center textbgrung lg:ml-[165px] xl:ml-[200px]"
+        >
+          <div class="xl:w-[500px] w-[250px] mx-auto my-8">
+            <span class="md:p-5 p-2"
+              ><hr class="w-[40%] h-[10px] bg-purple-700"
+            /></span>
+            <h2 class="text-center my-5 text-[30px] md:text-[50px] lg:text-[70px] font-bold">Contact Us</h2>
+            <span class="flex md:p-5 p-2 justify-end"
+              ><hr class="w-[40%] h-[10px] bg-purple-700"
+            /></span>
+          </div>
+        </div>
+        </section>
+
+        <section class="mx-2 flex flex-col shadow-lg md:flex-row">
+        <div
+          class="flex bg-[#f0f0f0] md:w-[78%] w-full justify-center lg:gap-3 move"
+        >
+          <div
+            class="w-full px-1 py-4 lg:p-4 flex md:px-4 lg:justify-around justify-between"
+          >
+            <div
+              class="w-[30%] lg:mx-auto text-center flex justify-center flex-col"
+            >
+              <h3
+                class="text-purple-700 text-[20px] md:text-[30px] font-bold text-center mx-auto"
+              >
+                356k+
+              </h3>
+              <p class="text-[12px] md:text-[15px]">Reviews</p>
+            </div>
+
+            <div
+              class="w-[30%] lg:mx-auto text-center flex justify-center flex-col"
+            >
+              <h3
+                class="text-purple-700 text-[20px] md:text-[30px] font-bold text-center mx-auto"
+              >
+                97%
+              </h3>
+              <p class="text-[12px] md:text-[15px]">Posetive Rating</p>
+            </div>
+
+            <div
+              class="w-[30%] mx-auto text-center flex justify-center flex-col"
+            >
+              <h3
+                class="text-purple-700 text-[20px] md:text-[30px] font-bold text-center mx-auto"
+              >
+                43+
+              </h3>
+              <p class="text-[12px] md:text-[15px]">Projects</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hidden md:flex justify-center flex-col text-center w-[30%]">
+          <h2 class="text-purple-700 text-[30px] font-bold text-center mx-auto">
+            Trusted By
+          </h2>
+          <p class="">15,000+ Famous brands</p>
+        </div>
+        </section>
+
+        <section class="m-2">
+        <h2
+          class="mx-[20px] text-[20px] md:text-[45px] text-left mx-3 mt-7 text-purple-700 font-bold"
+        >
+          Our Billing & Mailing Address
+        </h2>
+        <p
+          class="mx-[20px] text-[10px] md:text-[13px] text-center mb-3 text-black md:text-left md:mx-3"
+        >
+          <span class="text-purple-700 text-[10px] md:text-[13px]">.......</span
+          >Get across to us via any of our platform, we would love to hear from you.<span
+            class="text-purple-700 text-[10px]"
+            >.......</span
+          >
+        </p>
+        <hr class="w-[95%] mx-auto" />
+
+        <div class="flex flex-col py-3 gap-7 lg:gap-0 justify-between">
+
+          <div
+            class="flex flex-col lg:mt-0 mt-3 md:flex-wrap md:flex-row md:justify-center gap-[30px] lg:gap-4 md:gap-[60px] lg:justify-between md:items-center md:p-3 xl:p-5"
+          >
+            <div
+              class="lg:w-[30%] w-full md:w-[40%] bg-[#f0f0f0] shadow-lg rounded-[12px] flex justify-center"
+            >
+              <div class="md:p-3 lg:p-6 p-3">
+                <span
+                  class="flex justify-center mx-auto items-center bg-purple-700 h-[50px] w-[50px] rounded-full"
+                  ><i class="text-[25px] text-center text-white fa fa-phone" aria-hidden="true"
+                    ></i
+                  ></span
+                >
+                <h3
+                  class="my-2 xl:text-[25px] text-[20px] font-bold text-center text-purple-700"
+                >
+                  +234 (0)90-1114-1926
+                </h3>
+                <!-- <p
+                  class="xl:px-4 lg:px-2 px-1 md:text-[14px] text-[12px] text-justify my-3"
+                >
+                  We are committed to staying ahead of the curve, constantly new
+                  ideas and technologies to offer the best and most affordable
+                  solutions.
+                </p> -->
+              </div>
+
+            </div>
+
+            <div
+              class="lg:w-[30%] w-full md:w-[40%] bg-[#f0f0f0] shadow-lg rounded-[12px] flex justify-center"
+            >
+              <div class="md:p-3 lg:p-6 p-3">
+                <span
+                  class="flex justify-center mx-auto items-center bg-purple-700 h-[50px] w-[50px] rounded-full"
+                  ><i
+                    class="text-center text-[25px] fa fa-envelope text-white"
+                    aria-hidden="true"
+                    ></i
+                  ></span
+                >
+                <h3
+                  class="my-2 text-[20px] xl:text-[25px] font-bold text-center text-purple-700"
+                >
+                  mestatehouse@gmail.com
+                </h3>
+                <!-- <p
+                  class="xl:px-4 lg:px-2 px-1 md:text-[14px] text-[12px] text-justify my-3"
+                >
+                  We are bringing solutions that make renting apartments,
+                  offices and event centres very affordable for everyone.
+                </p> -->
+              </div>
+            </div>
+
+            <div
+              class="lg:w-[30%] w-full md:w-[40%] bg-[#f0f0f0] shadow-lg rounded-[12px] flex justify-center"
+            >
+              <div class="md:p-3 lg:p-6 p-3">
+                <span
+                  class="flex justify-center mx-auto items-center bg-purple-700 h-[50px] w-[50px] rounded-full"
+                  ><i
+                    class="text-center fa fa-map-marker text-[25px] text-white"
+                    aria-hidden="true"
+                    ></i
+                  ></span
+                >
+                <h3
+                  class="my-2 text-[20px] xl:text-[22px] font-bold text-center text-purple-700"
+                >
+                  SW9/226 Ago Taylor, Odo-Ona, Ibadan, Oyo State.
+                </h3>
+                <!-- <p
+                  class="xl:px-4 lg:px-2 px-1 md:text-[14px] text-[12px] text-justify my-3"
+                >
+                  Neither tenants nor landlords can be disturbed with any legal
+                  issues because each one has access to a lawyer at any point in
+                  time.
+                </p> -->
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        </section>
+
+        <section class="m-2">
+
+        <h2
+        class="mx-[20px] text-[26px] md:text-[45px] text-right mx-3 mt-7 text-purple-700 font-bold"
+      >
+        FAQ
+      </h2>
+      <p
+        class="mx-[20px] text-[10px] md:text-[13px] text-center mb-3 text-black md:text-right md:mx-3"
+      >
+        <span class="text-purple-700 text-[10px] md:text-[13px]">.......</span
+        >Our well detailed FAQ can help you navigate our site fully<span
+          class="text-purple-700 text-[10px]"
+          >.......</span
+        >
+      </p>
+      <hr class="w-[95%] mx-auto" />
+
+        </section>
+
+        <footer
+        class="m-2 bg-black flex text-white justify-between p-4 items-center"
+      >
+        <i class="fa fa-copyright md:text-[18px] text-[13px]"> 2024 </i>
+        <h2 class="md:text-[20px] text-[14px] text-center">Mestate</h2>
+        <h3 class="text-right md:text-[15px] text-[13px]">Shadow-Dev</h3>
+        </footer>
+      
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
