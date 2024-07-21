@@ -76,6 +76,16 @@ function  popopen() {
     
 }
 
+let btnx = document.querySelectorAll('.shine');
+
+btnx.forEach((btn) => { 
+    btn.addEventListener('click', ()=>{
+        btnx.forEach( (b) => b.classList.remove('dart') )
+        btn.classList.add('dart')
+
+    })
+})
+
 
 
 

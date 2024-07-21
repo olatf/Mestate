@@ -1,0 +1,955 @@
+
+
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" sizes="180x180" href="/assests/images/favicon.jpeg" type="image/x-icon">
+    <link href="assests/font-awesome-4.7.0/" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="assests/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdn.tailwindcss.com/2.2.19/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="preloader.css">
+    <title> Mestate </title>
+
+    <style>
+
+      .active {
+        background-color:  #f0f0f0;
+        color: white;
+      }
+    
+      .dart {
+        background-color:  #f0f0f0;
+        color:  rgb(181, 129, 226);
+        border: solid;
+        border-radius: 10px;
+        padding: 2px;
+      }
+    
+    </style>
+
+  </head>
+
+  <body class="bg-white" id="class">
+
+    <main id="body" class="">
+
+      <div id="preloader" class="flex items-center  justify-center ">
+
+        <div class="md:w-[40%]  pulse w-full md:mx-4  mx-auto flex justify-center  ">
+  
+            <div class=" bg-white  mx-auto glow shadow-lg rounded-full w-[40%] flex justify-center items-center flex px-4 gap-2  my-4">
+  
+              <a href="" class="lg:w-[22%] w-[30%] flex  items-center"
+              ><img
+                src="assests/images/logo 2.jpeg"
+                class=" "
+                alt="logo"
+              /></a>
+  
+              <a href="" class=" lg:text-[18px]  md:text-[20px] text-[16px] lg:p-0 p-1 text-purple-700 "> Mestate </a>
+  
+            </div>
+        </div>
+
+      </div>
+
+      <section class="mx-2 my-2   flex justify-center items-center ">
+
+        <div class="flex  relative p-1 w-full  mx-auto ">
+
+          <div class=" h-[100vh] relative w-[20%] rounded-l-[25px]  p-3 shadow-lg">
+
+            <div class="  relative flex flex-col">
+
+              <!-- <h3 class="text-[20px] text-purple-700 text-left font-bold">Mestate</h3> -->
+               
+              <div class="  w-full ">
+  
+                <div class=" bg-white w-full mx-auto glow shadow-md rounded-full flex justify-center items-center flex px-4 gap-2  my-2">
+      
+                  <a href="" class="lg:w-[22%] w-[30%] flex  items-center"
+                  ><img
+                    src="assests/images/logo 2.jpeg"
+                    class=" "
+                    alt="logo"
+                  /></a>
+      
+                  <a href="" class=" lg:text-[18px]  md:text-[20px] text-[16px] lg:p-0 p-1 text-purple-700 "> Mestate </a>
+      
+                </div>
+
+              </div>
+
+              <i class=" fa fa-sitemap flex gap-3 px-2 py-3 items-center text-[20px] text-purple-700 my-2  " aria-hidden="true">Dashboard</i>
+  
+              <div class=" flex flex-col items-center justify-center text-center gap-[10px] " id="oga">
+  
+                <i class=" form-links  fa fa-laptop w-full   gap-3 items-center text-[20px] text-purple-700 flex px-2 py-3 rounded-[8px] cursor-pointer  border " aria-hidden="true"  onclick="opentab(event,'form1')" >Marketplace</i>
+
+                <i class="form-links active  fa fa-database gap-3  w-full items-center text-[20px] text-purple-700 flex px-2 py-3 rounded-[8px] cursor-pointer border  " aria-hidden="true" onclick="opentab(event,'form2')" id="defaultOpen"  >My Properties</i>
+
+                <i class=" form-links  fa fa-bank gap-3 w-full items-center text-[20px] text-purple-700  flex px-2 py-3 rounded-[8px] cursor-pointer border " onclick="opentab(event,'form3')" > Add Bank</i>
+
+                <i class=" form-links fa fa-podcast gap-3 w-full items-center text-[20px] text-purple-700 flex px-2 py-3 rounded-[8px] cursor-pointer border" aria-hidden="true" onclick="opentab(event,'form4')" >Auction</i>
+
+                <i class="fa fa-sign-out gap-3 w-full items-center text-[20px] text-purple-700 text-center  flex px-2 py-3 rounded-[8px] cursor-pointer border  " aria-hidden="true">Log Out</i>
+  
+              </div>
+
+            </div>
+
+            <div class="bottom-0 absolute">
+
+              <i class=" fa fa-cog flex gap-3 px-2 items-center text-[18px] text-purple-700 my-2  " aria-hidden="true">Settings</i>
+
+              <div class=" flex px-2 gap-2 my-3 items-center justify-between ">
+
+                <i class=" fa fa-user flex gap-3 p-2 rounded-full items-center text-[18px] text-purple-700 my-2 border bg-[#f0f0f0] " aria-hidden="true" ></i>
+
+                <div class="">
+                  <h2 class=" text-[15px] font-bold "> John Wilson </h2>
+                  <p class=" text-[12px] text-purple-700">Wilson@example.com</p>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="w-full px-1">
+
+            <div class="p-2  shadow-lg flex justify-between items-center  rounded-tr-[25px]">
+
+              <h2 class="text-[25px] mx-5">Welcome <b class="text-purple-700 ">John</b></h2>
+
+              <div class=" flex mx-3">
+                <i class=" fa fa-battery flex gap-3 px-2 py-3 items-center text-[20px] text-purple-700 my-2  " aria-hidden="true"></i>
+
+                <i class=" fa fa-signal flex gap-3 px-2 py-3 items-center text-[20px] text-purple-700 my-2  " aria-hidden="true"></i>
+
+              </div>
+
+            </div>
+
+            <div class=" sugar w-full shadow-lg p-2 rounded-br-[25px]" id="form1" style="display: none">
+
+              <h2 class="text-[20px] text-purple-700 my-3 px-3">Marketplace</h2>
+
+              <div class="w-full flex flex-col justify-center items-center  mx-1 ">
+
+                <div class=" flex xl:flex-row flex-col lg:justify-between w-full p-2 bg-white shadow-lg">
+        
+                  <div class="md:p-2 p-1 flex md:flex-nowrap w-[70%] flex-wrap justify-between items-center gap-2 md:gap-3">
+        
+                    <select name="" id="" class=" block p-1 md:p-2 md:text-sm text-[13px] text-black shadow-sm focus:outline-none rounded border-[#f0f0f0] border focus:ring-2 focus:ring-purple-700 disabled:opacity-50">
+                      <option value="">Property Type <b>All</b></option>
+                      <option value="">Single Room</option>
+                      <option value="">Self Con </option>
+                      <option value="">Single Room Self Con</option>
+                      <option value="">Bedroom Flat</option>
+                    </select>
+          
+                    <select name="" id="" class=" block p-1 md:p-2 md:text-sm text-[13px] text-black shadow-sm focus:outline-none rounded border-[#f0f0f0] border focus:ring-2 focus:ring-purple-700 disabled:opacity-50">
+                      <option value="">Min. Price <b>All</b></option>
+                      <option value="">100k</option>
+                      <option value="">250k</option>
+                      <option value="">500k</option>
+                    </select>
+          
+                    <select name="" id="" class=" block p-1 md:p-2 md:text-sm text-[13px] text-black shadow-sm focus:outline-none rounded border-[#f0f0f0] border focus:ring-2 focus:ring-purple-700 disabled:opacity-50">
+                      <option value="">Max. Price <b>All</b></option>
+                      <option value="">300k</option>
+                      <option value="">500k</option>
+                      <option value="">1M</option>
+                    </select>
+          
+                    <input type="text" name="" class="bg-transparent p-2 md:w-[80%] w-[55%] border-b border-purple-700 index-2 rounded-[7px] focus:outline-none placeholder:text-purple-700 placeholder:text-[15px] text-[15px] text-purple-700" placeholder="Location.." id="">
+        
+                  </div>
+        
+                  <div class=" bg-[#f0f0f0] mt-1  px-1 text-black">
+                    <button class="md:text-[15px] shine text-[14px] dart  my-2 shne  py-2 px-3 " >All</button>
+                    <button class="md:text-[15px] text-[14px]  py-2 px-3  my-2 shine " >Rent</button>
+                    <button class="md:text-[15px] text-[14px]  py-2 px-3  my-2  shine " >Lease</button>
+                    <button class="md:text-[15px] text-[14px]  py-2 px-3  my-2 shine  " >Purchase</button>
+                  </div>
+        
+                </div>
+        
+                <div class="flex flex-wrap justify-between w-full gap-3 p-3  mx-auto my-2 overflow-auto h-[65vh] bg-white ">
+        
+                  <div class="md:w-[32%] w-full p-2 border shadow-sm rounded-[15px] relative ">
+        
+        
+                    <div class="relative">
+                      <img src="assests/images/background.jpeg" class="w-full" alt="">
+                    <div class="inset-0 bg-black opacity-50 absolute text-white"></div>
+                    </div>
+        
+                    <p class="text-[10px] absolute left-4 top-5 bg-white p-1 rounded text-purple-700 "><i class="fa fa-dot-circle-o text-blue-300" aria-hidden="true"></i> Lease </p>
+        
+                    <div class="flex justify-between items-center">
+        
+                      <div class=" my-2">
+                        <h2 class="text-[15px] font-bold">God's Love Villa</h2>
+                        <p class="text-[13px]">Oluoyle Estate, Ibadan</p>
+                        <p class="text-[13px] text-purple-700">Single Room Self Con</p>
+                      </div>
+                      <div class=" p-1">
+        
+                        <h2 class="text-[20px]">Price</h2>
+                        <p class="text-[18px] text-purple-700 font-bold">$1,500</p>
+        
+                      </div>
+                    </div>
+        
+                    <hr>
+        
+                    <div class="">
+        
+                      <h2 class="text-[20px] px-1">Description</h2>
+                      <p class="text-[12px] px-1 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia minus voluptatibus id eligendi dolor inventore libero repellendus at eveniet molestias.</p>
+        
+                      <h3 class="text-[20px] px-1">Specifications</h3>
+                      <p class="text-[15px] px-1 text-justify"><i class="fa fa-tint text-[15px] mx-2" aria-hidden="true"></i>Borehole Water</p>
+                      <p class="text-[15px] px-1 text-justify"><i class="fa fa-lightbulb-o text-[15px] mx-2 " aria-hidden="true"></i>Prepaid</p>
+                      <p class="text-[15px] px-1 text-justify mx-2">Tiles: <b>Yes</b>  POP: <b>Yes</b>  Fenced: <b>Yes</b></p>
+        
+                      <!-- <div class="float-right mt-3">
+                        <h2 class="text-[13px] px-1">Available Space</h2>
+                        <p class="text-center text-[20px] text-purple-700">5</p>
+                      </div> -->
+        
+                    </div>
+        
+                    <div class="md:w-[70%] w-[50%] mx-auto  lg:mt-0">
+                    <button class="md:text-[14px] text-[13px] my-3 flex justify-center md:px-3 px-2 py-2 hover:bg-[#f0f0f0] hover:text-purple-700 rounded-[5px] shadow-lg text-white bg-purple-700" onclick="popopen()" >Book Reservations</button>
+                    </div>
+                    
+        
+                  </div>
+        
+                  <div class="md:w-[32%] w-full p-2 border shadow-sm rounded-[15px] relative ">
+        
+        
+                    <div class="relative">
+                      <img src="assests/images/background.jpeg" class="w-full" alt="">
+                    <div class="inset-0 bg-black opacity-50 absolute text-white"></div>
+                    </div>
+        
+                    <p class="text-[10px] absolute left-4 top-5 bg-white p-1 rounded text-purple-700 "><i class="fa fa-dot-circle-o text-green-300" aria-hidden="true"></i> Purchase </p>
+        
+                    <div class="flex justify-between items-center">
+        
+                      <div class=" my-2">
+                        <h2 class="text-[15px] font-bold">God's Love Villa</h2>
+                        <p class="text-[13px]">Oluoyle Estate, Ibadan</p>
+                        <p class="text-[13px] text-purple-700">Single Room Self Con</p>
+                      </div>
+                      <div class=" p-1">
+        
+                        <h2 class="text-[20px]">Price</h2>
+                        <p class="text-[18px] text-purple-700 font-bold">$1,500</p>
+        
+                      </div>
+                    </div>
+        
+                    <hr>
+        
+                    <div class="">
+        
+                      <h2 class="text-[20px] px-1">Description</h2>
+                      <p class="text-[12px] px-1 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia minus voluptatibus id eligendi dolor inventore libero repellendus at eveniet molestias.</p>
+        
+                      <h3 class="text-[20px] px-1">Specifications</h3>
+                      <p class="text-[15px] px-1 text-justify"><i class="fa fa-tint text-[15px] mx-2" aria-hidden="true"></i>Borehole Water</p>
+                      <p class="text-[15px] px-1 text-justify"><i class="fa fa-lightbulb-o text-[15px] mx-2 " aria-hidden="true"></i>Prepaid</p>
+                      <p class="text-[15px] px-1 text-justify mx-2">Tiles: <b>Yes</b>  POP: <b>Yes</b>  Fenced: <b>Yes</b></p>
+        
+                      <!-- <div class="float-right mt-3">
+                        <h2 class="text-[13px] px-1">Available Space</h2>
+                        <p class="text-center text-[20px] text-purple-700">5</p>
+                      </div> -->
+        
+                    </div>
+        
+                    <div class="md:w-[70%] w-[50%] mx-auto  lg:mt-0">
+                    <button class="md:text-[14px] text-[13px] my-3 flex justify-center md:px-3 px-2 py-2 hover:bg-[#f0f0f0] hover:text-purple-700 rounded-[5px] shadow-lg text-white bg-purple-700" onclick="popopen()"  >Book Reservations</button>
+                    </div>
+                    
+        
+                  </div>
+        
+                  <div class="md:w-[32%] w-full p-2 border shadow-sm rounded-[15px] relative ">
+        
+        
+                    <div class="relative">
+                      <img src="assests/images/background.jpeg" class="w-full" alt="">
+                    <div class="inset-0 bg-black opacity-50 absolute text-white"></div>
+                    </div>
+        
+                    <p class="text-[10px] absolute left-4 top-5 bg-white p-1 rounded text-purple-700 "><i class="fa fa-dot-circle-o text-blue-300" aria-hidden="true"></i> Lease </p>
+        
+                    <div class="flex justify-between items-center">
+        
+                      <div class=" my-2">
+                        <h2 class="text-[15px] font-bold">DivineLove Villa</h2>
+                        <p class="text-[13px]">Akala Express, Ibadan</p>
+                        <p class="text-[13px] text-purple-700">Bedroom Flat</p>
+                      </div>
+                      <div class=" p-1">
+        
+                        <h2 class="text-[20px]">Price</h2>
+                        <p class="text-[18px] text-purple-700 font-bold">$500</p>
+        
+                      </div>
+                    </div>
+        
+                    <hr>
+        
+                    <div class="">
+        
+                      <h2 class="text-[20px] px-1">Description</h2>
+                      <p class="text-[12px] px-1 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia minus voluptatibus id eligendi dolor inventore libero repellendus at eveniet molestias.</p>
+        
+                      <h3 class="text-[20px] px-1">Specifications</h3>
+                      <p class="text-[15px] px-1 text-justify"><i class="fa fa-tint text-[15px] mx-2" aria-hidden="true"></i>Well Water</p>
+                      <p class="text-[15px] px-1 text-justify"><i class="fa fa-lightbulb-o text-[15px] mx-2 " aria-hidden="true"></i>Prepaid</p>
+                      <p class="text-[15px] px-1 text-justify mx-2">Tiles: <b>Yes</b>  POP: <b>Yes</b>  Fenced: <b>Yes</b></p>
+        
+                      <!-- <div class="float-right mt-3">
+                        <h2 class="text-[13px] px-1">Available Space</h2>
+                        <p class="text-center text-[20px] text-purple-700">5</p>
+                      </div> -->
+        
+                    </div>
+        
+                    <div class="md:w-[70%] w-[50%] mx-auto  lg:mt-0">
+                    <button class="md:text-[14px] text-[13px] my-3 flex justify-center md:px-3 px-2 py-2 hover:bg-[#f0f0f0] hover:text-purple-700 rounded-[5px] shadow-lg text-white bg-purple-700" onclick="popopen()"  >Book Reservations</button>
+                    </div>
+                    
+        
+                  </div>
+        
+                  <div class="md:w-[32%] w-full p-2 border shadow-sm rounded-[15px] relative ">
+        
+        
+                    <div class="relative">
+                      <img src="assests/images/background.jpeg" class="w-full" alt="">
+                    <div class="inset-0 bg-black opacity-50 absolute text-white"></div>
+                    </div>
+        
+                    <p class="text-[10px] absolute left-4 top-5 bg-white p-1 rounded text-purple-700 "><i class="fa fa-dot-circle-o text-red-300" aria-hidden="true"></i> Rent </p>
+        
+                    <div class="flex justify-between items-center">
+        
+                      <div class=" my-2">
+                        <h2 class="text-[15px] font-bold">God's Love Villa</h2>
+                        <p class="text-[13px]">Oluoyle Estate, Ibadan</p>
+                        <p class="text-[13px] text-purple-700">Single Room Self Con</p>
+                      </div>
+                      <div class=" p-1">
+        
+                        <h2 class="text-[20px]">Price</h2>
+                        <p class="text-[18px] text-purple-700 font-bold">$1,500</p>
+        
+                      </div>
+                    </div>
+        
+                    <hr>
+        
+                    <div class="">
+        
+                      <h2 class="text-[20px] px-1">Description</h2>
+                      <p class="text-[12px] px-1 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia minus voluptatibus id eligendi dolor inventore libero repellendus at eveniet molestias.</p>
+        
+                      <h3 class="text-[20px] px-1">Specifications</h3>
+                      <p class="text-[15px] px-1 text-justify"><i class="fa fa-tint text-[15px] mx-2" aria-hidden="true"></i>Borehole Water</p>
+                      <p class="text-[15px] px-1 text-justify"><i class="fa fa-lightbulb-o text-[15px] mx-2 " aria-hidden="true"></i>Prepaid</p>
+                      <p class="text-[15px] px-1 text-justify mx-2">Tiles: <b>Yes</b>  POP: <b>Yes</b>  Fenced: <b>Yes</b></p>
+        
+                      <!-- <div class="float-right mt-3">
+                        <h2 class="text-[13px] px-1">Available Space</h2>
+                        <p class="text-center text-[20px] text-purple-700">5</p>
+                      </div> -->
+        
+                    </div>
+        
+                    <div class="md:w-[70%] w-[50%] mx-auto  lg:mt-0">
+                    <button class="md:text-[14px] text-[13px] my-3 flex justify-center md:px-3 px-2 py-2 hover:bg-[#f0f0f0] hover:text-purple-700 rounded-[5px] shadow-lg text-white bg-purple-700" onclick="popopen()"  >Book Reservations</button>
+                    </div>
+                    
+        
+                  </div>
+        
+                  <div class=" md:w-[32%] w-full p-2 border shadow-sm rounded-[15px] relative ">
+        
+        
+                    <div class="relative">
+                      <img src="assests/images/background.jpeg" class="w-full" alt="">
+                    <div class="inset-0 bg-black opacity-50 absolute text-white"></div>
+                    </div>
+        
+                    <p class="text-[10px] absolute left-4 top-5 bg-white p-1 rounded text-purple-700 "><i class="fa fa-dot-circle-o text-red-300" aria-hidden="true"></i> Rent </p>
+        
+                    <div class="flex justify-between items-center">
+        
+                      <div class=" my-2">
+                        <h2 class="text-[15px] font-bold">Cruise Place</h2>
+                        <p class="text-[13px]">Bodija Estate, Ibadan</p>
+                        <p class="text-[13px] text-purple-700">Self Con</p>
+                      </div>
+                      <div class=" p-1">
+        
+                        <h2 class="text-[20px]">Price</h2>
+                        <p class="text-[18px] text-purple-700 font-bold">$2,500</p>
+        
+                      </div>
+                    </div>
+        
+                    <hr>
+        
+                    <div class="">
+        
+                      <h2 class="text-[20px] px-1">Description</h2>
+                      <p class="text-[12px] px-1 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia minus voluptatibus id eligendi dolor inventore libero repellendus at eveniet molestias.</p>
+        
+                      <h3 class="text-[20px] px-1">Specifications</h3>
+                      <p class="text-[15px] px-1 text-justify"><i class="fa fa-tint text-[15px] mx-2" aria-hidden="true"></i>Borehole Water</p>
+                      <p class="text-[15px] px-1 text-justify"><i class="fa fa-lightbulb-o text-[15px] mx-2 " aria-hidden="true"></i>Postpaid</p>
+                      <p class="text-[15px] px-1 text-justify mx-2">Tiles: <b>Yes</b>  POP: <b>Yes</b>  Fenced: <b>Yes</b></p>
+        
+                      <!-- <div class="float-right mt-3">
+                        <h2 class="text-[13px] px-1">Available Space</h2>
+                        <p class="text-center text-[20px] text-purple-700">5</p>
+                      </div> -->
+        
+                    </div>
+        
+                    <div class="md:w-[70%] w-[50%] mx-auto  lg:mt-0">
+                    <button class="md:text-[14px] text-[13px] my-3 flex justify-center md:px-3 px-2 py-2 hover:bg-[#f0f0f0] hover:text-purple-700 rounded-[5px] shadow-lg text-white bg-purple-700" onclick="popopen()"  >Book Reservations</button>
+                    </div>
+                    
+        
+                  </div>
+        
+                  <div class=" md:w-[32%] w-full p-2 border shadow-sm rounded-[15px] relative ">
+        
+        
+                    <div class="relative">
+                      <img src="assests/images/background.jpeg" class="w-full" alt="">
+                    <div class="inset-0 bg-black opacity-50 absolute text-white"></div>
+                    </div>
+        
+                    <p class="text-[10px] absolute left-4 top-5 bg-white p-1 rounded text-purple-700 "><i class="fa fa-dot-circle-o text-green-300" aria-hidden="true"></i> Purchase </p>
+        
+                    <div class="flex justify-between items-center">
+        
+                      <div class=" my-2">
+                        <h2 class="text-[15px] font-bold">God's Love Villa</h2>
+                        <p class="text-[13px]">Oluoyle Estate, Ibadan</p>
+                        <p class="text-[13px] text-purple-700">Single Room Self Con</p>
+                      </div>
+                      <div class=" p-1">
+        
+                        <h2 class="text-[20px]">Price</h2>
+                        <p class="text-[18px] text-purple-700 font-bold">$1,500</p>
+        
+                      </div>
+                    </div>
+        
+                    <hr>
+        
+                    <div class="">
+        
+                      <h2 class="text-[20px] px-1">Description</h2>
+                      <p class="text-[12px] px-1 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia minus voluptatibus id eligendi dolor inventore libero repellendus at eveniet molestias.</p>
+        
+                      <h3 class="text-[20px] px-1">Specifications</h3>
+                      <p class="text-[15px] px-1 text-justify"><i class="fa fa-tint text-[15px] mx-2" aria-hidden="true"></i>Borehole Water</p>
+                      <p class="text-[15px] px-1 text-justify"><i class="fa fa-lightbulb-o text-[15px] mx-2 " aria-hidden="true"></i>Prepaid</p>
+                      <p class="text-[15px] px-1 text-justify mx-2">Tiles: <b>Yes</b>  POP: <b>Yes</b>  Fenced: <b>Yes</b></p>
+        
+                      <!-- <div class="float-right mt-3">
+                        <h2 class="text-[13px] px-1">Available Space</h2>
+                        <p class="text-center text-[20px] text-purple-700">5</p>
+                      </div> -->
+        
+                    </div>
+        
+                    <div class="md:w-[70%] w-[50%] mx-auto  lg:mt-0">
+                    <button class="md:text-[14px] text-[13px] my-3 flex justify-center md:px-3 px-2 py-2 hover:bg-[#f0f0f0] hover:text-purple-700 rounded-[5px] shadow-lg text-white bg-purple-700" onclick="popopen()"  >Book Reservations</button>
+                    </div>
+                    
+        
+                  </div>
+        
+                  <div class=" md:w-[32%] w-full p-2 border shadow-sm rounded-[15px] relative ">
+        
+        
+                    <div class="relative">
+                      <img src="assests/images/background.jpeg" class="w-full" alt="">
+                    <div class="inset-0 bg-black opacity-50 absolute text-white"></div>
+                    </div>
+        
+                    <p class="text-[10px] absolute left-4 top-5 bg-white p-1 rounded text-purple-700 "><i class="fa fa-dot-circle-o text-green-300" aria-hidden="true"></i> Purchase </p>
+        
+                    <div class="flex justify-between items-center">
+        
+                      <div class=" my-2">
+                        <h2 class="text-[15px] font-bold">God's Love Villa</h2>
+                        <p class="text-[13px]">Oluoyle Estate, Ibadan</p>
+                        <p class="text-[13px] text-purple-700">Single Room Self Con</p>
+                      </div>
+                      <div class=" p-1">
+        
+                        <h2 class="text-[20px]">Price</h2>
+                        <p class="text-[18px] text-purple-700 font-bold">$1,500</p>
+        
+                      </div>
+                    </div>
+        
+                    <hr>
+        
+                    <div class="">
+        
+                      <h2 class="text-[20px] px-1">Description</h2>
+                      <p class="text-[12px] px-1 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia minus voluptatibus id eligendi dolor inventore libero repellendus at eveniet molestias.</p>
+        
+                      <h3 class="text-[20px] px-1">Specifications</h3>
+                      <p class="text-[15px] px-1 text-justify"><i class="fa fa-tint text-[15px] mx-2" aria-hidden="true"></i>Borehole Water</p>
+                      <p class="text-[15px] px-1 text-justify"><i class="fa fa-lightbulb-o text-[15px] mx-2 " aria-hidden="true"></i>Prepaid</p>
+                      <p class="text-[15px] px-1 text-justify mx-2">Tiles: <b>Yes</b>  POP: <b>Yes</b>  Fenced: <b>Yes</b></p>
+        
+                      <!-- <div class="float-right mt-3">
+                        <h2 class="text-[13px] px-1">Available Space</h2>
+                        <p class="text-center text-[20px] text-purple-700">5</p>
+                      </div> -->
+        
+                    </div>
+        
+                    <div class="md:w-[70%] w-[50%] mx-auto  lg:mt-0">
+                    <button class="md:text-[14px] text-[13px] my-3 flex justify-center md:px-3 px-2 py-2 hover:bg-[#f0f0f0] hover:text-purple-700 rounded-[5px] shadow-lg text-white bg-purple-700" onclick="popopen()"  >Book Reservations</button>
+                    </div>
+                    
+        
+                  </div>
+        
+                  <div class=" md:w-[32%] w-full p-2 border shadow-sm rounded-[15px] relative ">
+        
+        
+                    <div class="relative">
+                      <img src="assests/images/background.jpeg" class="w-full" alt="">
+                    <div class="inset-0 bg-black opacity-50 absolute text-white"></div>
+                    </div>
+        
+                    <p class="text-[10px] absolute left-4 top-5 bg-white p-1 rounded text-purple-700 "><i class="fa fa-dot-circle-o text-red-300" aria-hidden="true"></i> Rent </p>
+        
+                    <div class="flex justify-between items-center">
+        
+                      <div class=" my-2">
+                        <h2 class="text-[15px] font-bold">God's Love Villa</h2>
+                        <p class="text-[13px]">Oluoyle Estate, Ibadan</p>
+                        <p class="text-[13px] text-purple-700">Single Room </p>
+                      </div>
+                      <div class=" p-1">
+        
+                        <h2 class="text-[20px]">Price</h2>
+                        <p class="text-[18px] text-purple-700 font-bold">$1,200</p>
+        
+                      </div>
+                    </div>
+        
+                    <hr>
+        
+                    <div class="">
+        
+                      <h2 class="text-[20px] px-1">Description</h2>
+                      <p class="text-[12px] px-1 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia minus voluptatibus id eligendi dolor inventore libero repellendus at eveniet molestias.</p>
+        
+                      <h3 class="text-[20px] px-1">Specifications</h3>
+                      <p class="text-[15px] px-1 text-justify"><i class="fa fa-tint text-[15px] mx-2" aria-hidden="true"></i>Borehole Water</p>
+                      <p class="text-[15px] px-1 text-justify"><i class="fa fa-lightbulb-o text-[15px] mx-2 " aria-hidden="true"></i>Prepaid</p>
+                      <p class="text-[15px] px-1 text-justify mx-2">Tiles: <b>Yes</b>  POP: <b>Yes</b>  Fenced: <b>Yes</b></p>
+        
+                      <!-- <div class="float-right mt-3">
+                        <h2 class="text-[13px] px-1">Available Space</h2>
+                        <p class="text-center text-[20px] text-purple-700">5</p>
+                      </div> -->
+        
+                    </div>
+        
+                    <div class="md:w-[70%] w-[50%] mx-auto  lg:mt-0">
+                    <button class="md:text-[14px] text-[13px] my-3 flex justify-center md:px-3 px-2 py-2 hover:bg-[#f0f0f0] hover:text-purple-700 rounded-[5px] shadow-lg text-white bg-purple-700" onclick="popopen()"  >Book Reservations</button>
+                    </div>
+                    
+        
+                  </div>
+
+                  <div class=" md:w-[32%] w-full p-2 border shadow-sm rounded-[15px] relative ">
+        
+        
+                    <div class="relative">
+                      <img src="assests/images/background.jpeg" class="w-full" alt="">
+                    <div class="inset-0 bg-black opacity-50 absolute text-white"></div>
+                    </div>
+        
+                    <p class="text-[10px] absolute left-4 top-5 bg-white p-1 rounded text-purple-700 "><i class="fa fa-dot-circle-o text-red-300" aria-hidden="true"></i> Rent </p>
+        
+                    <div class="flex justify-between items-center">
+        
+                      <div class=" my-2">
+                        <h2 class="text-[15px] font-bold">God's Love Villa</h2>
+                        <p class="text-[13px]">Oluoyle Estate, Ibadan</p>
+                        <p class="text-[13px] text-purple-700">Single Room </p>
+                      </div>
+                      <div class=" p-1">
+        
+                        <h2 class="text-[20px]">Price</h2>
+                        <p class="text-[18px] text-purple-700 font-bold">$1,200</p>
+        
+                      </div>
+                    </div>
+        
+                    <hr>
+        
+                    <div class="">
+        
+                      <h2 class="text-[20px] px-1">Description</h2>
+                      <p class="text-[12px] px-1 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia minus voluptatibus id eligendi dolor inventore libero repellendus at eveniet molestias.</p>
+        
+                      <h3 class="text-[20px] px-1">Specifications</h3>
+                      <p class="text-[15px] px-1 text-justify"><i class="fa fa-tint text-[15px] mx-2" aria-hidden="true"></i>Borehole Water</p>
+                      <p class="text-[15px] px-1 text-justify"><i class="fa fa-lightbulb-o text-[15px] mx-2 " aria-hidden="true"></i>Prepaid</p>
+                      <p class="text-[15px] px-1 text-justify mx-2">Tiles: <b>Yes</b>  POP: <b>Yes</b>  Fenced: <b>Yes</b></p>
+        
+                      <!-- <div class="float-right mt-3">
+                        <h2 class="text-[13px] px-1">Available Space</h2>
+                        <p class="text-center text-[20px] text-purple-700">5</p>
+                      </div> -->
+        
+                    </div>
+        
+                    <div class="md:w-[70%] w-[50%] mx-auto  lg:mt-0">
+                    <button class="md:text-[14px] text-[13px] my-3 flex justify-center md:px-3 px-2 py-2 hover:bg-[#f0f0f0] hover:text-purple-700 rounded-[5px] shadow-lg text-white bg-purple-700" onclick="popopen()"  >Book Reservations</button>
+                    </div>
+                    
+        
+                  </div>
+        
+                </div>
+        
+              </div>
+
+            </div>
+
+            <div class=" sugar w-full h-[89vh] shadow-lg p-2 rounded-br-[25px]" id="form2" style="display: none">
+
+              <div class=" flex justify-between items-center px-3">
+
+                <h2 class="text-[20px] text-purple-700 my-3 px-3">My Properties</h2>
+
+                <i class="fa fa-plus float-right gap-3 items-center text-[20px] text-purple-700 flex px-2 py-3 rounded-[8px] cursor-pointer hover:bg-[#f0f0f0]  border"> Add New</i>
+
+              </div>
+
+              <div class="w-full flex  justify-around my-4 flex-wrap items-center gap-6  items-center  mx-1 ">
+
+                <div class="md:w-[40%]  flex gap-3 w-full p-3 border shadow-sm rounded-[15px] relative ">
+        
+        
+                  <div class="relative w-[40%]">
+                    <img src="assests/images/background.jpeg" class="w-full" alt="">
+                    <div class="inset-0 bg-black opacity-50 absolute h-auto text-white"></div>
+                  </div>
+      
+                  <!-- <p class="text-[10px] absolute left-4 top-5 bg-white p-1 rounded text-purple-700 "><i class="fa fa-dot-circle-o text-blue-300" aria-hidden="true"></i> Lease </p> -->
+      
+                  <div class="flex flex-col w-[50%] ">
+      
+                    <div class="w-full px-1">
+                      <h2 class="text-[20px] font-bold">God's Love Villa</h2>
+                      <p class="text-[15px]">Oluoyle Estate, Ibadan</p>
+                      <p class="text-[14px] text-purple-700">Single Room Self Con</p>
+                    </div>
+
+                    <div class="flex items-center px-1 gap-2">
+      
+                      <h2 class="text-[20px] text-left"> Price</h2>
+                      <p class="text-[18px] text-purple-700 font-bold">$1,500</p>
+      
+                    </div>
+                    
+                  </div>
+
+                  <div class="flex flex-col gap-3 dam">
+
+                    <i class="  fa fa-edit w-full   gap-3 items-center text-[20px] text-purple-700 flex px-2 py-3 rounded-[8px] cursor-pointer  border  hover:bg-[#f0f0f0] " aria-hidden="true" id="hover-btn"  onclick="" ></i>
+
+                    <p class="text-[18px] text-green-500 px-2 absolute top-0 cursor-pointer hidden" id="hover-text" >Edit</p>
+
+                    <i class=" fa fa-trash w-full   gap-3 items-center text-[20px] text-red-700 flex px-2 py-3 rounded-[8px] cursor-pointer  border hover:bg-[#f0f0f0]  " aria-hidden="true" id="hover-btn2"  onclick="" ></i>
+
+                    <p class="text-[18px] text-red-500 px-2 absolute bottom-0 right-1 cursor-pointer hidden" id="hover-text2" >Delete</p>
+
+                  </div>
+
+                </div>
+
+                <div class="md:w-[40%]  flex gap-3 w-full p-3 border shadow-sm rounded-[15px] relative ">
+        
+        
+                  <div class="relative w-[40%]">
+                    <img src="assests/images/background.jpeg" class="w-full" alt="">
+                    <div class="inset-0 bg-black opacity-50 absolute h-auto text-white"></div>
+                  </div>
+      
+                  <!-- <p class="text-[10px] absolute left-4 top-5 bg-white p-1 rounded text-purple-700 "><i class="fa fa-dot-circle-o text-blue-300" aria-hidden="true"></i> Lease </p> -->
+      
+                  <div class="flex flex-col w-[50%] ">
+      
+                    <div class="w-full px-1">
+                      <h2 class="text-[20px] font-bold">God's Love Villa</h2>
+                      <p class="text-[15px]">Oluoyle Estate, Ibadan</p>
+                      <p class="text-[14px] text-purple-700">Single Room Self Con</p>
+                    </div>
+
+                    <div class="flex items-center px-1 gap-2">
+      
+                      <h2 class="text-[20px] text-left"> Price</h2>
+                      <p class="text-[18px] text-purple-700 font-bold">$1,500</p>
+      
+                    </div>
+                    
+                  </div>
+
+                  <div class="flex flex-col gap-3 dam">
+
+                    <i class="  fa fa-edit w-full   gap-3 items-center text-[20px] text-purple-700 flex px-2 py-3 rounded-[8px] cursor-pointer  border  hover:bg-[#f0f0f0] " aria-hidden="true" id="hover-btn"  onclick="" ></i>
+
+                    <p class="text-[18px] text-green-500 px-2 absolute top-0 cursor-pointer hidden" id="hover-text" >Edit</p>
+
+                    <i class=" fa fa-trash w-full   gap-3 items-center text-[20px] text-red-700 flex px-2 py-3 rounded-[8px] cursor-pointer  border hover:bg-[#f0f0f0]  " aria-hidden="true" id="hover-btn2"  onclick="" ></i>
+
+                    <p class="text-[18px] text-red-500 px-2 absolute bottom-0 right-1 cursor-pointer hidden" id="hover-text2" >Delete</p>
+
+                  </div>
+
+                </div>
+
+                <div class="md:w-[40%]  flex gap-3 w-full p-3 border shadow-sm rounded-[15px] relative ">
+        
+        
+                  <div class="relative w-[40%]">
+                    <img src="assests/images/background.jpeg" class="w-full" alt="">
+                    <div class="inset-0 bg-black opacity-50 absolute h-auto text-white"></div>
+                  </div>
+      
+                  <!-- <p class="text-[10px] absolute left-4 top-5 bg-white p-1 rounded text-purple-700 "><i class="fa fa-dot-circle-o text-blue-300" aria-hidden="true"></i> Lease </p> -->
+      
+                  <div class="flex flex-col w-[50%] ">
+      
+                    <div class="w-full px-1">
+                      <h2 class="text-[20px] font-bold">God's Love Villa</h2>
+                      <p class="text-[15px]">Oluoyle Estate, Ibadan</p>
+                      <p class="text-[14px] text-purple-700">Single Room Self Con</p>
+                    </div>
+
+                    <div class="flex items-center px-1 gap-2">
+      
+                      <h2 class="text-[20px] text-left"> Price</h2>
+                      <p class="text-[18px] text-purple-700 font-bold">$1,500</p>
+      
+                    </div>
+                    
+                  </div>
+
+                  <div class="flex flex-col gap-3 dam">
+
+                    <i class="  fa fa-edit w-full   gap-3 items-center text-[20px] text-purple-700 flex px-2 py-3 rounded-[8px] cursor-pointer  border  hover:bg-[#f0f0f0] " aria-hidden="true" id="hover-btn"  onclick="" ></i>
+
+                    <p class="text-[18px] text-green-500 px-2 absolute top-0 cursor-pointer hidden" id="hover-text" >Edit</p>
+
+                    <i class=" fa fa-trash w-full   gap-3 items-center text-[20px] text-red-700 flex px-2 py-3 rounded-[8px] cursor-pointer  border hover:bg-[#f0f0f0]  " aria-hidden="true" id="hover-btn2"  onclick="" ></i>
+
+                    <p class="text-[18px] text-red-500 px-2 absolute bottom-0 right-1 cursor-pointer hidden" id="hover-text2" >Delete</p>
+
+                  </div>
+
+                </div>
+
+                <div class="md:w-[40%]  flex gap-3 w-full p-3 border shadow-sm rounded-[15px] relative ">
+        
+        
+                  <div class="relative w-[40%]">
+                    <img src="assests/images/background.jpeg" class="w-full" alt="">
+                    <div class="inset-0 bg-black opacity-50 absolute h-auto text-white"></div>
+                  </div>
+      
+                  <!-- <p class="text-[10px] absolute left-4 top-5 bg-white p-1 rounded text-purple-700 "><i class="fa fa-dot-circle-o text-blue-300" aria-hidden="true"></i> Lease </p> -->
+      
+                  <div class="flex flex-col w-[50%] ">
+      
+                    <div class="w-full px-1">
+                      <h2 class="text-[20px] font-bold">God's Love Villa</h2>
+                      <p class="text-[15px]">Oluoyle Estate, Ibadan</p>
+                      <p class="text-[14px] text-purple-700">Single Room Self Con</p>
+                    </div>
+
+                    <div class="flex items-center px-1 gap-2">
+      
+                      <h2 class="text-[20px] text-left"> Price</h2>
+                      <p class="text-[18px] text-purple-700 font-bold">$1,500</p>
+      
+                    </div>
+                    
+                  </div>
+
+                  <div class="flex flex-col gap-3 dam">
+
+                    <i class="  fa fa-edit w-full   gap-3 items-center text-[20px] text-purple-700 flex px-2 py-3 rounded-[8px] cursor-pointer  border  hover:bg-[#f0f0f0] " aria-hidden="true" id="hover-btn"  onclick="" ></i>
+
+                    <p class="text-[18px] text-green-500 px-2 absolute top-0 cursor-pointer hidden" id="hover-text" >Edit</p>
+
+                    <i class=" fa fa-trash w-full   gap-3 items-center text-[20px] text-red-700 flex px-2 py-3 rounded-[8px] cursor-pointer  border hover:bg-[#f0f0f0]  " aria-hidden="true" id="hover-btn2"  onclick="" ></i>
+
+                    <p class="text-[18px] text-red-500 px-2 absolute bottom-0 right-1 cursor-pointer hidden" id="hover-text2" >Delete</p>
+
+                  </div>
+
+                </div>
+
+                <div class="md:w-[40%]  flex gap-3 w-full p-3 border shadow-sm rounded-[15px] relative ">
+        
+        
+                  <div class="relative w-[40%]">
+                    <img src="assests/images/background.jpeg" class="w-full" alt="">
+                    <div class="inset-0 bg-black opacity-50 absolute h-auto text-white"></div>
+                  </div>
+      
+                  <!-- <p class="text-[10px] absolute left-4 top-5 bg-white p-1 rounded text-purple-700 "><i class="fa fa-dot-circle-o text-blue-300" aria-hidden="true"></i> Lease </p> -->
+      
+                  <div class="flex flex-col w-[50%] ">
+      
+                    <div class="w-full px-1">
+                      <h2 class="text-[20px] font-bold">God's Love Villa</h2>
+                      <p class="text-[15px]">Oluoyle Estate, Ibadan</p>
+                      <p class="text-[14px] text-purple-700">Single Room Self Con</p>
+                    </div>
+
+                    <div class="flex items-center px-1 gap-2">
+      
+                      <h2 class="text-[20px] text-left"> Price</h2>
+                      <p class="text-[18px] text-purple-700 font-bold">$1,500</p>
+      
+                    </div>
+                    
+                  </div>
+
+                  <div class="flex flex-col gap-3 dam">
+
+                    <i class="  fa fa-edit w-full   gap-3 items-center text-[20px] text-purple-700 flex px-2 py-3 rounded-[8px] cursor-pointer  border  hover:bg-[#f0f0f0] " aria-hidden="true" id="hover-btn"  onclick="" ></i>
+
+                    <p class="text-[18px] text-green-500 px-2 absolute top-0 cursor-pointer hidden" id="hover-text" >Edit</p>
+
+                    <i class=" fa fa-trash w-full   gap-3 items-center text-[20px] text-red-700 flex px-2 py-3 rounded-[8px] cursor-pointer  border hover:bg-[#f0f0f0]  " aria-hidden="true" id="hover-btn2"  onclick="" ></i>
+
+                    <p class="text-[18px] text-red-500 px-2 absolute bottom-0 right-1 cursor-pointer hidden" id="hover-text2" >Delete</p>
+
+                  </div>
+
+                </div>
+
+                <div class="md:w-[40%]  flex gap-3 w-full p-3 border shadow-sm rounded-[15px] relative ">
+        
+        
+                  <div class="relative w-[40%]">
+                    <img src="assests/images/background.jpeg" class="w-full" alt="">
+                    <div class="inset-0 bg-black opacity-50 absolute h-auto text-white"></div>
+                  </div>
+      
+                  <!-- <p class="text-[10px] absolute left-4 top-5 bg-white p-1 rounded text-purple-700 "><i class="fa fa-dot-circle-o text-blue-300" aria-hidden="true"></i> Lease </p> -->
+      
+                  <div class="flex flex-col w-[50%] ">
+      
+                    <div class="w-full px-1">
+                      <h2 class="text-[20px] font-bold">God's Love Villa</h2>
+                      <p class="text-[15px]">Oluoyle Estate, Ibadan</p>
+                      <p class="text-[14px] text-purple-700">Single Room Self Con</p>
+                    </div>
+
+                    <div class="flex items-center px-1 gap-2">
+      
+                      <h2 class="text-[20px] text-left"> Price</h2>
+                      <p class="text-[18px] text-purple-700 font-bold">$1,500</p>
+      
+                    </div>
+                    
+                  </div>
+
+                  <div class="flex flex-col gap-3 dam">
+
+                    <i class="  fa fa-edit w-full   gap-3 items-center text-[20px] text-purple-700 flex px-2 py-3 rounded-[8px] cursor-pointer  border  hover:bg-[#f0f0f0] " aria-hidden="true" id="hover-btn"  onclick="" ></i>
+
+                    <p class="text-[18px] text-green-500 px-2 absolute top-0 cursor-pointer hidden" id="hover-text" >Edit</p>
+
+                    <i class=" fa fa-trash w-full   gap-3 items-center text-[20px] text-red-700 flex px-2 py-3 rounded-[8px] cursor-pointer  border hover:bg-[#f0f0f0]  " aria-hidden="true" id="hover-btn2"  onclick="" ></i>
+
+                    <p class="text-[18px] text-red-500 px-2 absolute bottom-0 right-1 cursor-pointer hidden" id="hover-text2" >Delete</p>
+
+                  </div>
+
+                </div>
+
+                
+               
+        
+              </div>
+
+            </div>
+
+            </div>
+
+          </div>
+
+        </div>
+        
+      </section>
+
+      <!-- <footer class="m-2 bg-black flex text-white justify-between p-4 items-center">
+
+          <i class="fa fa-copyright md:text-[18px] text-[13px]"> 2024 </i>
+          <h2 class="md:text-[20px] text-[14px] text-center">Mestate</h2>
+          <h3 class="text-right md:text-[15px] text-[13px]">Shadow-Dev</h3>
+      </footer> -->
+      
+    </main>
+
+    <script src="dashboard.js"></script>
+
+  </body>
+</html>

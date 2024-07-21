@@ -87,10 +87,6 @@
     animation-play-state: running;
   }
   
-  .active {
-    border-bottom: solid 1px #6b46c1;
-    color: #6b46c1;
-  }
   .accordion::after {
   
     content: "+"; /* Unicode character for "plus" sign (+) */
