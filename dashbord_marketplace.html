@@ -2,6 +2,8 @@
 
 
 
+
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -31,12 +33,17 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="dashboard.css">
     <link rel="stylesheet" href="preloader.css">
-    <title> Mestate </title>
+    <title> Mestate-user </title>
 
     <style>
 
       .active {
         background-color:  #f0f0f0;
+        color: white;
+      }
+
+      .actives {
+        background-color:  #fff;
         color: white;
       }
     
@@ -52,7 +59,7 @@
 
   </head>
 
-  <body class="bg-white" id="class">
+  <body class="bg-white relative" id="class">
 
     <main id="body" class="">
 
@@ -80,11 +87,10 @@
 
         <div class="flex  relative p-1 w-full  mx-auto ">
 
-          <div class=" h-[100vh] relative w-[20%] rounded-l-[25px]  p-3 shadow-lg">
+          <div class=" h-[100vh] hidden lg:block relative w-[20%] rounded-l-[25px]  p-3 shadow-lg">
 
             <div class="  relative flex flex-col">
 
-              <!-- <h3 class="text-[20px] text-purple-700 text-left font-bold">Mestate</h3> -->
                
               <div class="  w-full ">
   
@@ -107,13 +113,13 @@
   
               <div class=" flex flex-col items-center justify-center text-center gap-[10px] " id="oga">
   
-                <i class=" form-links  fa fa-laptop w-full   gap-3 items-center text-[20px] text-purple-700 flex px-2 py-3 rounded-[8px] cursor-pointer  border " aria-hidden="true"  onclick="opentab(event,'form1')" >Marketplace</i>
+                <a href="dashbord_marketplace.html" class="w-full"><i class=" active form-links  fa fa-laptop w-full   gap-3 items-center text-[20px] text-purple-700 flex px-2 py-3 rounded-[8px] cursor-pointer  border " aria-hidden="true"  >Marketplace</i></a>
 
-                <i class="form-links active  fa fa-database gap-3  w-full items-center text-[20px] text-purple-700 flex px-2 py-3 rounded-[8px] cursor-pointer border  " aria-hidden="true" onclick="opentab(event,'form2')" id="defaultOpen"  >My Properties</i>
+                <a href="dashboard_landlord.html" class="w-full"><i class="form-links   fa fa-database gap-3  w-full items-center text-[20px] text-purple-700 flex px-2 py-3 rounded-[8px] cursor-pointer border  " aria-hidden="true"   >My Properties</i></a>
 
-                <i class=" form-links  fa fa-bank gap-3 w-full items-center text-[20px] text-purple-700  flex px-2 py-3 rounded-[8px] cursor-pointer border " onclick="opentab(event,'form3')" > Add Bank</i>
+                <i class=" form-links  fa fa-bank gap-3 w-full items-center text-[20px] text-purple-700  flex px-2 py-3 rounded-[8px] cursor-pointer border "  > Add Bank</i>
 
-                <i class=" form-links fa fa-podcast gap-3 w-full items-center text-[20px] text-purple-700 flex px-2 py-3 rounded-[8px] cursor-pointer border" aria-hidden="true" onclick="opentab(event,'form4')" >Auction</i>
+                <i class=" form-links fa fa-podcast gap-3 w-full items-center text-[20px] text-purple-700 flex px-2 py-3 rounded-[8px] cursor-pointer border" aria-hidden="true" >Auction</i>
 
                 <i class="fa fa-sign-out gap-3 w-full items-center text-[20px] text-purple-700 text-center  flex px-2 py-3 rounded-[8px] cursor-pointer border  " aria-hidden="true">Log Out</i>
   
@@ -140,22 +146,24 @@
 
           </div>
 
-          <div class="w-full px-1">
+          <i id="lead" class=" lg:hidden absolute fa fa-align-left top-[10px] left-[12px] flex gap-3 px-2 items-center text-[18px] text-purple-700 my-2  items-center  shadow-lg flex px-2 py-3 hover:bg-[#f0f0f0] rounded-[8px] cursor-pointer  border  " aria-hidden="true" onclick="fist()"></i>
+
+          <div class="w-full  px-1">
 
             <div class="p-2  shadow-lg flex justify-between items-center  rounded-tr-[25px]">
 
-              <h2 class="text-[25px] mx-5">Welcome <b class="text-purple-700 ">John</b></h2>
+              <h2 class="md:text-[25px] text-[18px] ml-[38px] lg:mx-5">Welcome <b class="text-purple-700 ">John</b></h2>
 
-              <div class=" flex mx-3">
-                <i class=" fa fa-battery flex gap-3 px-2 py-3 items-center text-[20px] text-purple-700 my-2  " aria-hidden="true"></i>
+              <div class=" flex md:mx-3 mx-2">
+                <i class=" fa fa-battery flex gap-3 px-2 py-3 items-center text-[15px] md:text-[20px] text-purple-700 my-2  " aria-hidden="true"></i>
 
-                <i class=" fa fa-signal flex gap-3 px-2 py-3 items-center text-[20px] text-purple-700 my-2  " aria-hidden="true"></i>
+                <i class=" fa fa-signal flex gap-3 px-2 py-3 items-center text-[15px] md:text-[20px] text-purple-700 my-2  " aria-hidden="true"></i>
 
               </div>
 
             </div>
 
-            <div class=" sugar w-full shadow-lg p-2 rounded-br-[25px]" id="form1" style="display: none">
+            <div class="  w-full shadow-lg p-2 rounded-br-[25px]">
 
               <h2 class="text-[20px] text-purple-700 my-3 px-3">Marketplace</h2>
 
@@ -200,7 +208,7 @@
         
                 </div>
         
-                <div class="flex flex-wrap justify-between w-full gap-3 p-3  mx-auto my-2 overflow-auto h-[65vh] bg-white ">
+                <div class="flex flex-wrap justify-between w-full gap-3 p-3  mx-auto my-2 overflow-auto h-[65vh] xl:h-[65vh] lg:h-[55vh] bg-white ">
         
                   <div class="md:w-[32%] w-full p-2 border shadow-sm rounded-[15px] relative ">
         
@@ -667,276 +675,11 @@
 
             </div>
 
-            <div class=" sugar w-full h-[89vh] shadow-lg p-2 rounded-br-[25px]" id="form2" style="display: none">
-
-              <div class=" flex justify-between items-center px-3">
-
-                <h2 class="text-[20px] text-purple-700 my-3 px-3">My Properties</h2>
-
-                <i class="fa fa-plus float-right gap-3 items-center text-[20px] text-purple-700 flex px-2 py-3 rounded-[8px] cursor-pointer hover:bg-[#f0f0f0]  border"> Add New</i>
-
-              </div>
-
-              <div class="w-full flex  justify-around my-4 flex-wrap items-center gap-6  items-center  mx-1 ">
-
-                <div class="md:w-[40%]  flex gap-3 w-full p-3 border shadow-sm rounded-[15px] relative ">
-        
-        
-                  <div class="relative w-[40%]">
-                    <img src="assests/images/background.jpeg" class="w-full" alt="">
-                    <div class="inset-0 bg-black opacity-50 absolute h-auto text-white"></div>
-                  </div>
-      
-                  <!-- <p class="text-[10px] absolute left-4 top-5 bg-white p-1 rounded text-purple-700 "><i class="fa fa-dot-circle-o text-blue-300" aria-hidden="true"></i> Lease </p> -->
-      
-                  <div class="flex flex-col w-[50%] ">
-      
-                    <div class="w-full px-1">
-                      <h2 class="text-[20px] font-bold">God's Love Villa</h2>
-                      <p class="text-[15px]">Oluoyle Estate, Ibadan</p>
-                      <p class="text-[14px] text-purple-700">Single Room Self Con</p>
-                    </div>
-
-                    <div class="flex items-center px-1 gap-2">
-      
-                      <h2 class="text-[20px] text-left"> Price</h2>
-                      <p class="text-[18px] text-purple-700 font-bold">$1,500</p>
-      
-                    </div>
-                    
-                  </div>
-
-                  <div class="flex flex-col gap-3 dam">
-
-                    <i class="  fa fa-edit w-full   gap-3 items-center text-[20px] text-purple-700 flex px-2 py-3 rounded-[8px] cursor-pointer  border  hover:bg-[#f0f0f0] " aria-hidden="true" id="hover-btn"  onclick="" ></i>
-
-                    <p class="text-[18px] text-green-500 px-2 absolute top-0 cursor-pointer hidden" id="hover-text" >Edit</p>
-
-                    <i class=" fa fa-trash w-full   gap-3 items-center text-[20px] text-red-700 flex px-2 py-3 rounded-[8px] cursor-pointer  border hover:bg-[#f0f0f0]  " aria-hidden="true" id="hover-btn2"  onclick="" ></i>
-
-                    <p class="text-[18px] text-red-500 px-2 absolute bottom-0 right-1 cursor-pointer hidden" id="hover-text2" >Delete</p>
-
-                  </div>
-
-                </div>
-
-                <div class="md:w-[40%]  flex gap-3 w-full p-3 border shadow-sm rounded-[15px] relative ">
-        
-        
-                  <div class="relative w-[40%]">
-                    <img src="assests/images/background.jpeg" class="w-full" alt="">
-                    <div class="inset-0 bg-black opacity-50 absolute h-auto text-white"></div>
-                  </div>
-      
-                  <!-- <p class="text-[10px] absolute left-4 top-5 bg-white p-1 rounded text-purple-700 "><i class="fa fa-dot-circle-o text-blue-300" aria-hidden="true"></i> Lease </p> -->
-      
-                  <div class="flex flex-col w-[50%] ">
-      
-                    <div class="w-full px-1">
-                      <h2 class="text-[20px] font-bold">God's Love Villa</h2>
-                      <p class="text-[15px]">Oluoyle Estate, Ibadan</p>
-                      <p class="text-[14px] text-purple-700">Single Room Self Con</p>
-                    </div>
-
-                    <div class="flex items-center px-1 gap-2">
-      
-                      <h2 class="text-[20px] text-left"> Price</h2>
-                      <p class="text-[18px] text-purple-700 font-bold">$1,500</p>
-      
-                    </div>
-                    
-                  </div>
-
-                  <div class="flex flex-col gap-3 dam">
-
-                    <i class="  fa fa-edit w-full   gap-3 items-center text-[20px] text-purple-700 flex px-2 py-3 rounded-[8px] cursor-pointer  border  hover:bg-[#f0f0f0] " aria-hidden="true" id="hover-btn"  onclick="" ></i>
-
-                    <p class="text-[18px] text-green-500 px-2 absolute top-0 cursor-pointer hidden" id="hover-text" >Edit</p>
-
-                    <i class=" fa fa-trash w-full   gap-3 items-center text-[20px] text-red-700 flex px-2 py-3 rounded-[8px] cursor-pointer  border hover:bg-[#f0f0f0]  " aria-hidden="true" id="hover-btn2"  onclick="" ></i>
-
-                    <p class="text-[18px] text-red-500 px-2 absolute bottom-0 right-1 cursor-pointer hidden" id="hover-text2" >Delete</p>
-
-                  </div>
-
-                </div>
-
-                <div class="md:w-[40%]  flex gap-3 w-full p-3 border shadow-sm rounded-[15px] relative ">
-        
-        
-                  <div class="relative w-[40%]">
-                    <img src="assests/images/background.jpeg" class="w-full" alt="">
-                    <div class="inset-0 bg-black opacity-50 absolute h-auto text-white"></div>
-                  </div>
-      
-                  <!-- <p class="text-[10px] absolute left-4 top-5 bg-white p-1 rounded text-purple-700 "><i class="fa fa-dot-circle-o text-blue-300" aria-hidden="true"></i> Lease </p> -->
-      
-                  <div class="flex flex-col w-[50%] ">
-      
-                    <div class="w-full px-1">
-                      <h2 class="text-[20px] font-bold">God's Love Villa</h2>
-                      <p class="text-[15px]">Oluoyle Estate, Ibadan</p>
-                      <p class="text-[14px] text-purple-700">Single Room Self Con</p>
-                    </div>
-
-                    <div class="flex items-center px-1 gap-2">
-      
-                      <h2 class="text-[20px] text-left"> Price</h2>
-                      <p class="text-[18px] text-purple-700 font-bold">$1,500</p>
-      
-                    </div>
-                    
-                  </div>
-
-                  <div class="flex flex-col gap-3 dam">
-
-                    <i class="  fa fa-edit w-full   gap-3 items-center text-[20px] text-purple-700 flex px-2 py-3 rounded-[8px] cursor-pointer  border  hover:bg-[#f0f0f0] " aria-hidden="true" id="hover-btn"  onclick="" ></i>
-
-                    <p class="text-[18px] text-green-500 px-2 absolute top-0 cursor-pointer hidden" id="hover-text" >Edit</p>
-
-                    <i class=" fa fa-trash w-full   gap-3 items-center text-[20px] text-red-700 flex px-2 py-3 rounded-[8px] cursor-pointer  border hover:bg-[#f0f0f0]  " aria-hidden="true" id="hover-btn2"  onclick="" ></i>
-
-                    <p class="text-[18px] text-red-500 px-2 absolute bottom-0 right-1 cursor-pointer hidden" id="hover-text2" >Delete</p>
-
-                  </div>
-
-                </div>
-
-                <div class="md:w-[40%]  flex gap-3 w-full p-3 border shadow-sm rounded-[15px] relative ">
-        
-        
-                  <div class="relative w-[40%]">
-                    <img src="assests/images/background.jpeg" class="w-full" alt="">
-                    <div class="inset-0 bg-black opacity-50 absolute h-auto text-white"></div>
-                  </div>
-      
-                  <!-- <p class="text-[10px] absolute left-4 top-5 bg-white p-1 rounded text-purple-700 "><i class="fa fa-dot-circle-o text-blue-300" aria-hidden="true"></i> Lease </p> -->
-      
-                  <div class="flex flex-col w-[50%] ">
-      
-                    <div class="w-full px-1">
-                      <h2 class="text-[20px] font-bold">God's Love Villa</h2>
-                      <p class="text-[15px]">Oluoyle Estate, Ibadan</p>
-                      <p class="text-[14px] text-purple-700">Single Room Self Con</p>
-                    </div>
-
-                    <div class="flex items-center px-1 gap-2">
-      
-                      <h2 class="text-[20px] text-left"> Price</h2>
-                      <p class="text-[18px] text-purple-700 font-bold">$1,500</p>
-      
-                    </div>
-                    
-                  </div>
-
-                  <div class="flex flex-col gap-3 dam">
-
-                    <i class="  fa fa-edit w-full   gap-3 items-center text-[20px] text-purple-700 flex px-2 py-3 rounded-[8px] cursor-pointer  border  hover:bg-[#f0f0f0] " aria-hidden="true" id="hover-btn"  onclick="" ></i>
-
-                    <p class="text-[18px] text-green-500 px-2 absolute top-0 cursor-pointer hidden" id="hover-text" >Edit</p>
-
-                    <i class=" fa fa-trash w-full   gap-3 items-center text-[20px] text-red-700 flex px-2 py-3 rounded-[8px] cursor-pointer  border hover:bg-[#f0f0f0]  " aria-hidden="true" id="hover-btn2"  onclick="" ></i>
-
-                    <p class="text-[18px] text-red-500 px-2 absolute bottom-0 right-1 cursor-pointer hidden" id="hover-text2" >Delete</p>
-
-                  </div>
-
-                </div>
-
-                <div class="md:w-[40%]  flex gap-3 w-full p-3 border shadow-sm rounded-[15px] relative ">
-        
-        
-                  <div class="relative w-[40%]">
-                    <img src="assests/images/background.jpeg" class="w-full" alt="">
-                    <div class="inset-0 bg-black opacity-50 absolute h-auto text-white"></div>
-                  </div>
-      
-                  <!-- <p class="text-[10px] absolute left-4 top-5 bg-white p-1 rounded text-purple-700 "><i class="fa fa-dot-circle-o text-blue-300" aria-hidden="true"></i> Lease </p> -->
-      
-                  <div class="flex flex-col w-[50%] ">
-      
-                    <div class="w-full px-1">
-                      <h2 class="text-[20px] font-bold">God's Love Villa</h2>
-                      <p class="text-[15px]">Oluoyle Estate, Ibadan</p>
-                      <p class="text-[14px] text-purple-700">Single Room Self Con</p>
-                    </div>
-
-                    <div class="flex items-center px-1 gap-2">
-      
-                      <h2 class="text-[20px] text-left"> Price</h2>
-                      <p class="text-[18px] text-purple-700 font-bold">$1,500</p>
-      
-                    </div>
-                    
-                  </div>
-
-                  <div class="flex flex-col gap-3 dam">
-
-                    <i class="  fa fa-edit w-full   gap-3 items-center text-[20px] text-purple-700 flex px-2 py-3 rounded-[8px] cursor-pointer  border  hover:bg-[#f0f0f0] " aria-hidden="true" id="hover-btn"  onclick="" ></i>
-
-                    <p class="text-[18px] text-green-500 px-2 absolute top-0 cursor-pointer hidden" id="hover-text" >Edit</p>
-
-                    <i class=" fa fa-trash w-full   gap-3 items-center text-[20px] text-red-700 flex px-2 py-3 rounded-[8px] cursor-pointer  border hover:bg-[#f0f0f0]  " aria-hidden="true" id="hover-btn2"  onclick="" ></i>
-
-                    <p class="text-[18px] text-red-500 px-2 absolute bottom-0 right-1 cursor-pointer hidden" id="hover-text2" >Delete</p>
-
-                  </div>
-
-                </div>
-
-                <div class="md:w-[40%]  flex gap-3 w-full p-3 border shadow-sm rounded-[15px] relative ">
-        
-        
-                  <div class="relative w-[40%]">
-                    <img src="assests/images/background.jpeg" class="w-full" alt="">
-                    <div class="inset-0 bg-black opacity-50 absolute h-auto text-white"></div>
-                  </div>
-      
-                  <!-- <p class="text-[10px] absolute left-4 top-5 bg-white p-1 rounded text-purple-700 "><i class="fa fa-dot-circle-o text-blue-300" aria-hidden="true"></i> Lease </p> -->
-      
-                  <div class="flex flex-col w-[50%] ">
-      
-                    <div class="w-full px-1">
-                      <h2 class="text-[20px] font-bold">God's Love Villa</h2>
-                      <p class="text-[15px]">Oluoyle Estate, Ibadan</p>
-                      <p class="text-[14px] text-purple-700">Single Room Self Con</p>
-                    </div>
-
-                    <div class="flex items-center px-1 gap-2">
-      
-                      <h2 class="text-[20px] text-left"> Price</h2>
-                      <p class="text-[18px] text-purple-700 font-bold">$1,500</p>
-      
-                    </div>
-                    
-                  </div>
-
-                  <div class="flex flex-col gap-3 dam">
-
-                    <i class="  fa fa-edit w-full   gap-3 items-center text-[20px] text-purple-700 flex px-2 py-3 rounded-[8px] cursor-pointer  border  hover:bg-[#f0f0f0] " aria-hidden="true" id="hover-btn"  onclick="" ></i>
-
-                    <p class="text-[18px] text-green-500 px-2 absolute top-0 cursor-pointer hidden" id="hover-text" >Edit</p>
-
-                    <i class=" fa fa-trash w-full   gap-3 items-center text-[20px] text-red-700 flex px-2 py-3 rounded-[8px] cursor-pointer  border hover:bg-[#f0f0f0]  " aria-hidden="true" id="hover-btn2"  onclick="" ></i>
-
-                    <p class="text-[18px] text-red-500 px-2 absolute bottom-0 right-1 cursor-pointer hidden" id="hover-text2" >Delete</p>
-
-                  </div>
-
-                </div>
-
-                
-               
-        
-              </div>
-
-            </div>
-
-            </div>
-
           </div>
 
         </div>
+
+        
         
       </section>
 
@@ -948,6 +691,72 @@
       </footer> -->
       
     </main>
+
+    <div class=" lg:hidden absolute top-0   ">
+
+      <div id="mobile" loading="lazy" class=" bg-[#f0f0f0] top-0 slide h-[100vh] hidden  w-[60%] rounded-r-[25px]  p-2 shadow-lg">
+
+        <div class="  relative flex flex-col">
+           
+          <div class="  w-full ">
+
+            <div class=" bg-white w-full mx-auto glow shadow-md rounded-full flex justify-center items-center flex px-4 gap-2  my-2">
+  
+              <a href="" class="lg:w-[22%] w-[30%] flex  items-center"
+              ><img
+                src="assests/images/logo 2.jpeg"
+                class=" "
+                alt="logo"
+              /></a>
+  
+              <a href="" class=" lg:text-[18px]  md:text-[20px] text-[16px] lg:p-0 p-1 text-purple-700 "> Mestate </a>
+  
+            </div>
+
+          </div>
+
+          <i class=" fa fa-sitemap flex gap-3 px-2 py-3 items-center text-[17px] text-purple-700 my-2  " aria-hidden="true">Dashboard</i>
+
+          <div class=" flex flex-col items-center justify-center text-center gap-[10px] " id="oga">
+
+            <a href="dashbord_marketplace.html" class="w-full"><i class=" form-links actives fa fa-laptop w-full   gap-3 items-center text-[17px] text-purple-700 flex px-2 py-3 rounded-[8px] cursor-pointer  border border-purple-700 " aria-hidden="true" >Marketplace</i></a>
+
+            <a href="dashboard_landlord.html" class="w-full"><i class="form-links   fa fa-database gap-3  w-full items-center text-[17px] text-purple-700 flex px-2 py-3 rounded-[8px] cursor-pointer border border-purple-700  " aria-hidden="true" >My Properties</i></a>
+
+            <a href="#" class="w-full"><i class=" form-links  fa fa-bank gap-3 w-full items-center text-[17px] text-purple-700  flex px-2 py-3 rounded-[8px] cursor-pointer border border-purple-700 "  > Add Bank</i></a>
+
+            <a href="#" class="w-full"><i class=" form-links fa fa-podcast gap-3 w-full items-center text-[17px] text-purple-700 flex px-2 py-3 rounded-[8px] cursor-pointer border border-purple-700" aria-hidden="true"  >Auction</i></a>
+
+            <i class="fa fa-sign-out gap-3 w-full items-center text-[17px] text-purple-700 text-center  flex px-2 py-3 rounded-[8px] cursor-pointer border border-purple-700  " aria-hidden="true">Log Out</i>
+
+          </div>
+
+        </div>
+
+        <i id="leads" class=" absolute fa fa-close z-999 top-[7px] left-[4px] flex gap-3 px-2 items-center text-[18px] text-purple-700 my-2  items-center  shadow-lg flex px-2 py-3 hover:bg-[#f0f0f0] rounded-[8px] cursor-pointer  border border-purple-700  " aria-hidden="true" onclick="fist()"></i>
+
+        <div class="bottom-0 absolute">
+
+          <i class=" fa fa-cog flex gap-3 px-2 items-center text-[18px] text-purple-700 my-2  " aria-hidden="true">Settings</i>
+
+          <div class=" flex px-1 gap-2 my-3 items-center justify-between ">
+
+            <i class=" fa fa-user flex gap-3 p-2 rounded-full items-center text-[18px] text-purple-700 my-2 border bg-[#f0f0f0] " aria-hidden="true" ></i>
+
+            <div class="">
+              <h2 class=" text-[12px] font-bold "> John Wilson </h2>
+              <p class=" text-[11px] text-purple-700">Wilson@example.com</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
 
     <script src="dashboard.js"></script>
 
