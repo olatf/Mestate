@@ -19,22 +19,6 @@ btns.forEach((btn) => {
 })
 
 
-// function opentab(evnt,Tab){
-//     let i
-//     let sugar
-
-//         sugar = document.getElementsByClassName('sugar');
-//         for (i=0;i<sugar.length;i++){
-//             sugar[i].style.display="none";
-
-//         }
-//         document.getElementById(Tab).style.display="block";
-// }
-// document.getElementById("defaultOpen").click();
-
-
-
-
 const dos = document.querySelectorAll('.dam')
 dos.forEach( (does) => {
     const big = does.querySelector('i')
@@ -72,11 +56,13 @@ const fist = () =>{
         lead.style.display = 'block'
         z.style.filter = "blur(0px)";
         x.style.overflow = "auto";
+        console.log('na me')
     }else{
         mobile.style.display = "block"
         lead.style.display = 'none'
         z.style.filter = "blur(2px)";
         x.style.overflow = "hidden";
+        console.log('no be me')
     }
 
 }
@@ -137,6 +123,9 @@ choice.addEventListener('change', function(){
         lily.style.display = 'block'
     }
 } )
+
+
+
 
 
 

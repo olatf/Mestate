@@ -1,2 +1,641 @@
 
 
+
+
+
+
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" sizes="180x180" href="/assests/images/favicon.jpeg" type="image/x-icon">
+    <link href="assests/font-awesome-4.7.0/" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="assests/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdn.tailwindcss.com/2.2.19/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="preloader.css">
+    
+
+    <title> Mestate-user </title>
+
+    <style>
+
+      .active {
+        background-color:  #f0f0f0;
+        color: white;
+      }
+
+      .actives {
+        background-color:  #fff;
+        color: white;
+      }
+    
+      .dart {
+        background-color:  #f0f0f0;
+        color:  rgb(181, 129, 226);
+        border: solid;
+        border-radius: 10px;
+        padding: 2px;
+      }
+
+      .media-container img.dance, 
+      .media-container video.dance{
+        display: block;
+      }
+
+      .media-container img, 
+      .media-container video {
+
+        display: none;
+        object-fit: cover;
+
+      }
+
+      .disabled-textarea{
+        background-color: #ccc;
+        opacity: 0.5;
+      }
+
+    </style>
+
+  </head>
+
+  <body class="bg-white relative" id="class">
+
+    <main id="body" class="">
+
+      <!-- <div id="preloader" class="flex items-center  justify-center ">
+
+        <div class="md:w-[40%]  pulse w-full md:mx-4  mx-auto flex justify-center  ">
+  
+            <div class=" bg-white  mx-auto glow shadow-lg rounded-full w-[40%] flex justify-center items-center flex px-4 gap-2  my-4">
+  
+              <a href="" class="lg:w-[22%] w-[30%] flex  items-center"
+              ><img
+                src="assests/images/logo 2.jpeg"
+                class=" "
+                alt="logo"
+              /></a>
+  
+              <a href="" class=" lg:text-[18px]  md:text-[20px] text-[16px] lg:p-0 p-1 text-purple-700 "> Mestate </a>
+  
+            </div>
+        </div>
+
+      </div> -->
+
+      <section class="mx-2 my-2   flex justify-center items-center ">
+
+        <div class="flex  relative p-1 w-full  mx-auto ">
+
+          <div class=" h-[100vh] hidden lg:block relative w-[20%] rounded-l-[25px]  p-3 shadow-lg">
+
+            <div class="  relative flex flex-col">
+
+              <!-- <h3 class="text-[20px] text-purple-700 text-left font-bold">Mestate</h3> -->
+               
+              <div class="  w-full ">
+  
+                <div class=" bg-white w-full mx-auto glow shadow-md rounded-full flex justify-center items-center flex px-4 gap-2  my-2">
+      
+                  <a href="" class="lg:w-[22%] w-[30%] flex  items-center"
+                  ><img
+                    src="assests/images/logo 2.jpeg"
+                    class=" "
+                    alt="logo"
+                  /></a>
+      
+                  <a href="" class=" lg:text-[18px]  md:text-[20px] text-[16px] lg:p-0 p-1 text-purple-700 "> Mestate </a>
+      
+                </div>
+
+              </div>
+
+              <i class=" fa fa-sitemap flex gap-3 px-2 py-3 items-center text-[20px] text-purple-700 my-2  " aria-hidden="true">Dashboard</i>
+  
+              <div class=" flex flex-col items-center justify-center text-center gap-[10px] " id="oga">
+  
+                <a href="dashbord_marketplace.html" class="w-full"><i class=" form-links  fa fa-laptop w-full   gap-3 items-center text-[20px] text-purple-700 flex px-2 py-3 rounded-[8px] cursor-pointer  border " aria-hidden="true"  >Marketplace</i></a>
+
+                <a href="dashboard_landlord.html" class="w-full"><i class="form-links active  fa fa-database gap-3  w-full items-center text-[20px] text-purple-700 flex px-2 py-3 rounded-[8px] cursor-pointer border  " aria-hidden="true"   >My Properties</i></a>
+
+                <i class=" form-links  fa fa-bank gap-3 w-full items-center text-[20px] text-purple-700  flex px-2 py-3 rounded-[8px] cursor-pointer border "  > Add Bank</i>
+
+                <i class=" form-links fa fa-podcast gap-3 w-full items-center text-[20px] text-purple-700 flex px-2 py-3 rounded-[8px] cursor-pointer border" aria-hidden="true" >Auction</i>
+
+                <i class="fa fa-sign-out gap-3 w-full items-center text-[20px] text-purple-700 text-center  flex px-2 py-3 rounded-[8px] cursor-pointer border  " aria-hidden="true">Log Out</i>
+  
+  
+              </div>
+
+            </div>
+
+            <div class="bottom-0 absolute">
+
+              <i class=" fa fa-cog flex gap-3 px-2 items-center text-[18px] text-purple-700 my-2  " aria-hidden="true">Settings</i>
+
+              <div class=" flex px-2 gap-2 my-3 items-center justify-between ">
+
+                <i class=" fa fa-user flex gap-3 p-2 rounded-full items-center text-[18px] text-purple-700 my-2 border bg-[#f0f0f0] " aria-hidden="true" ></i>
+
+                <div class="">
+                  <h2 class=" text-[15px] font-bold "> John Wilson </h2>
+                  <p class=" text-[12px] text-purple-700">Wilson@example.com</p>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <i id="lead" class=" lg:hidden absolute fa fa-align-left top-[10px] left-[12px] flex gap-3 px-2 items-center text-[18px] text-purple-700 my-2  items-center  shadow-lg flex px-2 py-3 hover:bg-[#f0f0f0] rounded-[8px] cursor-pointer  border  " aria-hidden="true" onclick="fist()"></i>
+
+          <div class="w-full  px-1">
+
+            <div class="p-2  shadow-lg flex justify-between items-center  rounded-tr-[25px]">
+
+              <h2 class="md:text-[25px] text-[18px] md:ml-[45px] md:text-left text-right  md:w-full w-[60%] lg:mx-5">Welcome <b class="text-purple-700 ">John</b></h2>
+
+              <div class=" flex md:mx-3 mx-2">
+                <i class=" fa fa-battery flex gap-3 px-2 py-3 items-center text-[15px] md:text-[20px] text-purple-700 my-2  " aria-hidden="true"></i>
+
+                <i class=" fa fa-signal flex gap-3 px-2 py-3 items-center text-[15px] md:text-[20px] text-purple-700 my-2  " aria-hidden="true"></i>
+
+              </div>
+
+            </div>
+
+            <div class="  w-full h-[89vh] overflow-auto shadow-lg p-2 rounded-br-[25px]">
+
+                <h2 class="md:text-[25px] text-[17px] text-purple-700 my-3 px-1 md:px-3"> Add new property </h2>
+
+              <div class=" relative border shadow-lg rounded-[16px] md:p-3 p-1 ">
+
+                <form action="" method="post" class="">
+
+                    <div class="flex md:flex-row flex-col items-center justify-center w-[90%] mx-auto  gap-3 ">
+
+                        <div class="w-full">
+
+                            <div class=" mt-3 flex md:flex-row flex-col gap-2 w-full items-center px-2 " >
+    
+                                <input type="text" class="index-2 bg-transparent w-full  focus:outline-none placeholder:text-black lg:p-2 p-1 md:placeholder:text-[17px] md:text-[17px] placeholder:text-[15px] text-[15px] border rounded border-purple-700 text-purple-700" name="" placeholder="Property Name [ short and concise ] " id="">
+    
+                            </div>
+    
+                            <div class=" my-4 bg-transparent flex md:flex-row flex-col gap-2 w-full items-center px-2" >
+    
+                                <input type="text" class="index-2 bg-transparent w-full focus:outline-none placeholder:text-black lg:p-2 p-1 md:placeholder:text-[17px] md:text-[17px] placeholder:text-[15px] text-[15px] border rounded border-purple-700 text-purple-700" name="" placeholder="Property Address [ Nearest/ Popular Bus-stop ]" id="">
+    
+                            </div>
+    
+                            <div class=" flex flex-row gap-2 w-full justify-center items-center  " >
+    
+                                <div class="md:p-2 w-full flex items-center  gap-1 ">
+    
+                                    <h3 class="md:text-[20px] text-[15px] text-purple-700 md:px-2">Price in &#8358;</h3>
+    
+                                     <input type="text"  class=" appearance-none index-2 border rounded bg-transparent md:w-[50%] w-[60%] focus:outline-none md:placeholder:text-black placeholder:text-white  p-1 md:placeholder:text-[17px] md:text-[17px] placeholder:text-[15px] text-[15px]  border-purple-700 text-purple-700" name="" pattern=" [0-9]* " placeholder="" id="day" >
+                                </div>
+    
+                            </div>
+    
+                            <div class=" mt-3 flex  flex-col gap-2 w-full items-center px-2 " >
+    
+                                <div class="flex w-full  items-center justify-between ">
+                                    <h3 class="md:text-[20px] text-[14px] text-purple-700 md:px-2  ">Short description</h3>
+                                    <p class="text-[14px] text-right  "><span id="counted">0</span>/20 words</p>
+    
+                                </div>
+    
+                                <textarea rows="3" cols="45" class="index-2 bg-transparent w-full  focus:outline-none placeholder:text-black lg:p-2 p-1 md:placeholder:text-[17px] md:text-[17px] placeholder:text-[15px] text-[15px] border rounded border-purple-700 text-purple-700" name="" placeholder="Meta description " id="metatext"></textarea>
+    
+                                
+    
+                            </div>
+    
+                            <div class=" mt-3 flex  flex-col gap-2 w-full items-center px-2 " >
+    
+                                <div class="flex w-full  items-center justify-between ">
+                                    <h3 class="md:text-[20px] text-[14px] text-purple-700 md:px-2  ">Full description</h3>
+                                    <p class="text-[14px] text-right  "><span id="counted3">0</span>/150 words</p>
+    
+                                </div>
+    
+                                <textarea rows="5" cols="45" class="index-2 bg-transparent w-full  focus:outline-none placeholder:text-black lg:p-2 p-1 md:placeholder:text-[17px] md:text-[17px] placeholder:text-[15px] text-[15px] border rounded border-purple-700 text-purple-700" name="" placeholder="Comprehensive description " id="metatext3"></textarea>
+    
+                                
+    
+                            </div>
+    
+                            <div class="flex justify-between mt-5 w-full">
+    
+                                <h3 class="md:text-[20px] text-[14px] text-left text-purple-700 md:px-2">Property type</h3>
+    
+                                <h3 class="md:text-[20px] text-[14px] text-right text-purple-700 md:px-2">Property deal type</h3>
+                                
+                            </div>
+    
+                            <div class="md:p-2 w-full justify-between   flex items-center mt-2 gap-1 md:gap-5">
+    
+                                <select name="" id="" class=" block p-1 md:p-2 md:text-sm text-[12px] text-black shadow-sm focus:outline-none rounded border-[#f0f0f0] border focus:ring-2 focus:ring-purple-700 disabled:opacity-50">
+                                  <option value="">Single Room</option>
+                                  <option value="">Self Con </option>
+                                  <option value="">Single Room Self Con</option>
+                                  <option value="">Bedroom Flat</option>
+                                </select>
+    
+                                
+                                <select name="" id="" class="block p-1 md:p-2 md:text-sm text-[15px] text-black shadow-sm focus:outline-none rounded border-[#f0f0f0] border focus:ring-2 focus:ring-purple-700 disabled:opacity-50">
+                                    <option value="">Rent</option>
+                                    <option value="">Purchase </option>
+                                    <option value="">Lease</option>
+                                </select>
+                            </div>
+    
+                            <div class=" flex mt-2 px-1 md:flex-row flex-col  gap-2 w-full items-center  " >
+    
+                                <div class="md:p-2 w-full flex md:flex-row flex-col   items-center  gap-1 ">
+    
+                                    <h3 class="xl:text-[20px] text-[15px]  text-purple-700 md:px-2">Number of Available Space</h3>
+    
+                                    <input type="text"  class=" appearance-none index-2 bg-transparent md:w-[30%] w-full focus:outline-none md:placeholder:text-black placeholder:text-white  md:p-1 md:placeholder:text-[17px] md:text-[17px] placeholder:text-[15px] text-[15px] border rounded border-purple-700 text-purple-700" name="" pattern=" [0-9]* " placeholder="" id="day" >
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>
+    
+                        <div class="w-full md:border-l mx-3">
+    
+                            <div class=" flex mt-2 px-1 md:flex-row flex-col  gap-2 w-full items-center  " >
+    
+                                <div class="md:p-2 w-full flex md:flex-row flex-col   items-center  gap-1 ">
+    
+                                    <h3 class="xl:text-[20px] text-[15px]  text-purple-700 md:px-2">Property Size in sqf</h3>
+    
+                                    <input type="text"  class=" appearance-none index-2 bg-transparent md:w-[30%] w-full focus:outline-none md:placeholder:text-black placeholder:text-white  md:p-1 md:placeholder:text-[17px] md:text-[17px] placeholder:text-[15px] text-[15px] border rounded border-purple-700 text-purple-700" name="" pattern=" [0-9]* " placeholder="" id="day" >
+    
+                                </div>
+    
+                            </div>
+    
+                            <div class=" flex mt-2 px-1 md:flex-row flex-col  gap-2 w-full items-center  " >
+    
+                                <div class="md:p-2 w-full flex md:flex-row flex-col   items-center  gap-1 ">
+    
+                                    <i class=" fa fa-image xl:text-[20px] text-[15px]  text-purple-700 md:px-2"> Feature Image</i>
+    
+                                    <input type="file"  accept=".jpeg, .png, .jpg" class=" appearance-none index-2 bg-transparent md:w-[60%] w-full focus:outline-none md:placeholder:text-black placeholder:text-white  md:p-1 md:placeholder:text-[17px] md:text-[17px] placeholder:text-[15px] text-[15px] border rounded border-purple-700 text-purple-700" name="" placeholder="" id="" >
+    
+                                </div>
+    
+                            </div>
+    
+                            <div class=" flex mt-2 px-1 flex-col  gap-2 w-full items-center  " >
+    
+                                <div class="md:p-2 w-full flex md:flex-row flex-col   items-center  gap-1 ">
+    
+                                    <i class=" fa fa-image xl:text-[20px] text-[15px]  text-purple-700 md:px-2"> Media Files</i>
+    
+                                    <input type="file" multiple="true"  accept=".jpeg, .png, .jpg, .mp4" class=" appearance-none index-2 bg-transparent md:w-[60%] w-full focus:outline-none md:placeholder:text-black placeholder:text-white  md:p-1 md:placeholder:text-[17px] md:text-[17px] placeholder:text-[15px] text-[15px] border rounded border-purple-700 text-purple-700" name=""  placeholder="" id="sdcard" >
+    
+                                </div>
+                                <p  id="ode" class="text-green-500 px-4  w-full text-[15px]">? Select only 5 media images ?</p>
+    
+                            </div>
+    
+                            <div class=" flex mt-2 px-1 flex-col   gap-2 w-full items-center  " >
+    
+                                <p class=" xl:text-[20px] w-full text-[15px] text-left text-purple-700 md:px-2"> Common Specifications </p>
+    
+                                <div class="grid grid-cols-3 w-full px-1 gap-2">
+    
+                                    <div class="flex ">
+    
+                                        <input type="checkbox"  name="" id=""  class=" flex gap-2 text-white md:text-black" value="">
+                                        <span class="mx-2 text-[15px]">Borehole Water</span> 
+                                        
+                                    </div>
+    
+                                    <div class="flex ">
+    
+                                        <input type="checkbox"  name="" id=""  class=" flex gap-2 text-white md:text-black" value="">
+                                        <span class="mx-2 text-[15px]">Well Water</span> 
+    
+                                    </div>
+    
+                                    <div class="flex ">
+    
+                                        <input type="checkbox"  name="" id=""  class=" flex gap-2 text-white md:text-black" value="">
+                                        <span class="mx-2 text-[15px]"> Postpaid meter</span> 
+    
+                                    </div>
+    
+                                    <div class="flex ">
+                                        
+                                        <input type="checkbox"  name="" id=""  class=" flex gap-2 text-white md:text-black" value="">
+                                        <span class="mx-2 text-[15px]"> Estimated meter</span> 
+    
+                                    </div>
+    
+                                    <div class="flex ">
+                                        
+                                        <input type="checkbox"  name="" id=""  class=" flex gap-2 text-white md:text-black" value="">
+                                        <span class="mx-2 text-[15px]"> POP</span> 
+    
+                                    </div>
+    
+                                    <div class="flex ">
+                                        
+                                        <input type="checkbox"  name="" id=""  class=" flex gap-2 text-white md:text-black" value="">
+                                        <span class="mx-2 text-[15px]"> Tiles</span> 
+    
+                                    </div>
+            
+                                    <div class="flex ">
+                                        
+                                        <input type="checkbox"  name="" id=""  class=" flex gap-2 text-white md:text-black" value="">
+                                        <span class="mx-2 text-[15px]"> Staircases </span> 
+    
+                                    </div>
+    
+                                    <div class="flex ">
+                                        
+                                        <input type="checkbox"  name="" id=""  class=" flex gap-2 text-white md:text-black" value="">
+                                        <span class="mx-2 text-[15px]"> Elevators</span> 
+    
+                                    </div>
+    
+                                    <div class="flex ">
+                                        
+                                        <input type="checkbox"  name="" id=""  class=" flex gap-2 text-white md:text-black" value="">
+                                        <span class="mx-2 text-[15px]"> Hallways</span> 
+    
+                                    </div>
+    
+                                    <div class="flex ">
+                                        
+                                        <input type="checkbox"  name="" id=""  class=" flex gap-2 text-white md:text-black" value="">
+                                        <span class="mx-2 text-[15px]"> Lobbies</span> 
+    
+                                    </div>
+    
+                                </div>
+    
+    
+                            </div>
+    
+                            <div class=" flex mt-2 px-1 flex-col   gap-2 w-full items-center  " >
+    
+                                <p class=" xl:text-[20px] w-full text-[15px] text-left text-purple-700 md:px-2"> Parking Specifications </p>
+    
+                                <div class="grid grid-cols-3 w-full px-2 gap-2">
+    
+                                    <div class="flex ">
+    
+                                        <input type="checkbox"  name="" id=""  class=" flex gap-2 text-white md:text-black" value="">
+                                        <span class="mx-2 text-[15px]"> Underground</span> 
+                                        
+                                    </div>
+    
+                                    <div class="flex ">
+    
+                                        <input type="checkbox"  name="" id=""  class=" flex gap-2 text-white md:text-black" value="">
+                                        <span class="mx-2 text-[15px]">Surface</span> 
+    
+                                    </div>
+    
+                                    <div class="flex ">
+    
+                                        <input type="checkbox"  name="" id=""  class=" flex gap-2 text-white md:text-black" value="">
+                                        <span class="mx-2 text-[15px]"> None</span> 
+    
+                                    </div>
+    
+                                </div>
+    
+    
+                            </div>
+    
+                            <div class=" flex mt-2 px-1 flex-col   gap-2 w-full items-center  " >
+    
+                                <p class=" xl:text-[20px] w-full text-[15px] text-left text-purple-700 md:px-2"> Common Specifications </p>
+    
+                                <div class="grid grid-cols-3 w-full px-2 gap-2">
+    
+                                    <div class="flex ">
+    
+                                        <input type="checkbox"  name="" id=""  class=" flex gap-2 text-white md:text-black" value="">
+                                        <span class="mx-2 text-[15px]"> Underground</span> 
+                                        
+                                    </div>
+    
+                                    <div class="flex ">
+    
+                                        <input type="checkbox"  name="" id=""  class=" flex gap-2 text-white md:text-black" value="">
+                                        <span class="mx-2 text-[15px]">Surface</span> 
+    
+                                    </div>
+    
+                                    <div class="flex ">
+    
+                                        <input type="checkbox"  name="" id=""  class=" flex gap-2 text-white md:text-black" value="">
+                                        <span class="mx-2 text-[15px]"> None</span> 
+    
+                                    </div>
+    
+                                </div>
+    
+    
+                            </div>
+    
+    
+                            <div class=" flex mt-2 px-1 flex-col   gap-2 w-full items-center  " >
+    
+                                <p class=" xl:text-[20px] w-full text-[15px] text-left text-purple-700 md:px-2"> Recreational Specifications </p>
+    
+                                <div class="grid grid-cols-3 mx-0 w-full px-2 gap-2">
+    
+                                    <div class="flex ">
+    
+                                        <input type="checkbox"  name="" id=""  class=" flex gap-2 text-white md:text-black" value="">
+                                        <span class="mx-2 text-[15px]"> Gym </span> 
+                                        
+                                    </div>
+    
+                                    <div class="flex ">
+    
+                                        <input type="checkbox"  name="" id=""  class=" flex gap-2 text-white md:text-black" value="">
+                                        <span class="mx-2 text-[15px]"> Pool </span> 
+    
+                                    </div>
+    
+                                    <div class="flex ">
+    
+                                        <input type="checkbox"  name="" id=""  class=" flex gap-2 text-white md:text-black" value="">
+                                        <span class="mx-2 text-[15px]"> Lounge </span> 
+    
+                                    </div>
+    
+                                </div>
+    
+                            </div>
+    
+                            <div class=" flex mt-2 px-1 flex-col   gap-2 w-full items-center  " >
+    
+                                <p class=" xl:text-[20px] w-full text-[15px] text-left text-purple-700 md:px-2"> Outdoor Specifications </p>
+    
+                                <div class="grid grid-cols-3 w-full px-2 gap-2">
+    
+                                    <div class="flex ">
+    
+                                        <input type="checkbox"  name="" id=""  class=" flex gap-2 text-white md:text-black" value="">
+                                        <span class="mx-2 text-[15px]"> Courtyards </span> 
+                                        
+                                    </div>
+    
+                                    <div class="flex ">
+    
+                                        <input type="checkbox"  name="" id=""  class=" flex gap-2 text-white md:text-black" value="">
+                                        <span class="mx-2 text-[15px]"> Gardens </span> 
+    
+                                    </div>
+    
+                                    <div class="flex ">
+    
+                                        <input type="checkbox"  name="" id=""  class=" flex gap-2 text-white md:text-black" value="">
+                                        <span class="mx-2 text-[15px]"> Playgrounds </span> 
+    
+                                    </div>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>
+                        
+                    </div>
+
+                    <div class="w-full my-6 flex justify-center items-center">
+
+                        <button type="submit" class="text-[18px] text-white but bg-purple-700 px-5 py-2 shadow-lg  rounded-[10px] hover:text-purple-700 hover:border-purple-700 hover:border hover:bg-transparent" >Create Property</button>
+                        
+                    </div>
+
+                </form>
+     
+              </div>
+
+            </div>
+            
+          </div>
+      
+        </div>
+
+        
+        
+      </section>
+
+      <!-- <footer class="m-2 bg-black flex text-white justify-between p-4 items-center">
+
+          <i class="fa fa-copyright md:text-[18px] text-[13px]"> 2024 </i>
+          <h2 class="md:text-[20px] text-[14px] text-center">Mestate</h2>
+          <h3 class="text-right md:text-[15px] text-[13px]">Shadow-Dev</h3>
+      </footer> -->
+      
+    </main>
+
+    <div class=" xl:hidden absolute top-0   ">
+
+      <div id="mobile" loading="lazy" class=" bg-[#f0f0f0] top-0 enter h-[100vh] hidden  w-[60%] rounded-r-[25px]  p-2 shadow-lg">
+
+        <div class="  relative flex flex-col">
+           
+          <div class="  w-full ">
+
+            <div class=" bg-white w-full mx-auto glow shadow-md rounded-full flex justify-center items-center flex px-4 gap-2  my-2">
+  
+              <a href="" class="lg:w-[22%] w-[30%] flex  items-center"
+              ><img
+                src="assests/images/logo 2.jpeg"
+                class=" "
+                alt="logo"
+              /></a>
+  
+              <a href="" class=" lg:text-[18px]  md:text-[20px] text-[16px] lg:p-0 p-1 text-purple-700 "> Mestate </a>
+  
+            </div>
+
+          </div>
+
+          <i class=" fa fa-sitemap flex gap-3 px-2 py-3 items-center text-[17px] text-purple-700 my-2  " aria-hidden="true">Dashboard</i>
+
+          <div class=" flex flex-col items-center justify-center text-center gap-[10px] " id="oga">
+
+            <a href="dashbord_marketplace.html" class="w-full"><i class=" form-links  fa fa-laptop w-full   gap-3 items-center text-[17px] text-purple-700 flex px-2 py-3 rounded-[8px] cursor-pointer  border border-purple-700 " aria-hidden="true" >Marketplace</i></a>
+
+            <a href="dashboard_landlord.html" class="w-full"><i class="form-links actives   fa fa-database gap-3  w-full items-center text-[17px] text-purple-700 flex px-2 py-3 rounded-[8px] cursor-pointer border border-purple-700  " aria-hidden="true" >My Properties</i></a>
+
+            <a href="#" class="w-full"><i class=" form-links  fa fa-bank gap-3 w-full items-center text-[17px] text-purple-700  flex px-2 py-3 rounded-[8px] cursor-pointer border border-purple-700 "  > Add Bank</i></a>
+
+            <a href="#" class="w-full"><i class=" form-links fa fa-podcast gap-3 w-full items-center text-[17px] text-purple-700 flex px-2 py-3 rounded-[8px] cursor-pointer border border-purple-700" aria-hidden="true"  >Auction</i></a>
+
+            <i class="fa fa-sign-out gap-3 w-full items-center text-[17px] text-purple-700 text-center  flex px-2 py-3 rounded-[8px] cursor-pointer border border-purple-700  " aria-hidden="true">Log Out</i>
+
+          </div>
+
+        </div>
+
+        <i id="leads" class=" absolute fa fa-close z-999 top-[7px] left-[4px] flex gap-3 px-2 items-center text-[18px] text-purple-700 my-2  items-center  shadow-lg flex px-2 py-3 hover:bg-[#f0f0f0] rounded-[8px] cursor-pointer  border border-purple-700  " aria-hidden="true" onclick="fist()"></i>
+
+        <div class="bottom-0 absolute">
+
+          <i class=" fa fa-cog flex gap-3 px-2 items-center text-[18px] text-purple-700 my-2  " aria-hidden="true">Settings</i>
+
+          <div class=" flex px-1 gap-2 my-3 items-center justify-between ">
+
+            <i class=" fa fa-user flex gap-3 p-2 rounded-full items-center text-[18px] text-purple-700 my-2 border bg-[#f0f0f0] " aria-hidden="true" ></i>
+
+            <div class="">
+              <h2 class=" text-[12px] font-bold "> John Wilson </h2>
+              <p class=" text-[11px] text-purple-700">Wilson@example.com</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+    <script src="dashboard2.js"></script>
+
+  </body>
+</html>

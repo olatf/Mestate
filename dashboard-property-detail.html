@@ -76,7 +76,7 @@
 
     <main id="body" class="">
 
-      <div id="preloader" class="flex items-center  justify-center ">
+      <!-- <div id="preloader" class="flex items-center  justify-center ">
 
         <div class="md:w-[40%]  pulse w-full md:mx-4  mx-auto flex justify-center  ">
   
@@ -94,13 +94,13 @@
             </div>
         </div>
 
-      </div>
+      </div> -->
 
       <section class="mx-2 my-2   flex justify-center items-center ">
 
         <div class="flex  relative p-1 w-full  mx-auto ">
 
-          <div class=" h-[100vh] hidden md:block relative w-[20%] rounded-l-[25px]  p-3 shadow-lg">
+          <div class=" h-[100vh] hidden lg:block relative w-[20%] rounded-l-[25px]  p-3 shadow-lg">
 
             <div class="  relative flex flex-col">
 
@@ -161,13 +161,13 @@
 
           </div>
 
-          <i id="lead" class=" md:hidden absolute fa fa-align-left top-[10px] left-[12px] flex gap-3 px-2 items-center text-[18px] text-purple-700 my-2  items-center  shadow-lg flex px-2 py-3 hover:bg-[#f0f0f0] rounded-[8px] cursor-pointer  border  " aria-hidden="true" onclick="fist()"></i>
+          <i id="lead" class=" lg:hidden absolute fa fa-align-left top-[10px] left-[12px] flex gap-3 px-2 items-center text-[18px] text-purple-700 my-2  items-center  shadow-lg flex px-2 py-3 hover:bg-[#f0f0f0] rounded-[8px] cursor-pointer  border  " aria-hidden="true" onclick="fist()"></i>
 
-          <div class="w-full  relative  px-1">
+          <div class="w-full  px-1">
 
             <div class="p-2  shadow-lg flex justify-between items-center  rounded-tr-[25px]">
 
-              <h2 class="md:text-[25px] text-[18px] ml-[38px] md:mx-5">Welcome <b class="text-purple-700 ">John</b></h2>
+              <h2 class="md:text-[25px] text-[18px] md:ml-[45px] md:text-left text-right  md:w-full w-[60%] lg:mx-5">Welcome <b class="text-purple-700 ">John</b></h2>
 
               <div class=" flex md:mx-3 mx-2">
                 <i class=" fa fa-battery flex gap-3 px-2 py-3 items-center text-[15px] md:text-[20px] text-purple-700 my-2  " aria-hidden="true"></i>
@@ -182,9 +182,9 @@
 
                 <h2 class="md:text-[25px] text-[17px] text-purple-700 my-3 px-1 md:px-3"> Property Details</h2>
 
-              <div class=" relative border shadow-lg rounded-[16px] p-3 ">
+              <div class=" relative border shadow-lg rounded-[16px] md:p-3 p-1 ">
 
-                <div class=" w-[60%] relative h-[50vh] overflow-hidden mx-auto rounded-[10px] media-viewer ">
+                <div class=" w-full md:w-[60%] relative h-[40vh] md:h-[50vh] overflow-hidden mx-auto rounded-[10px] media-viewer ">
 
                     <div class=" w-[100%] h-[100%] media-container   ">
 
@@ -199,48 +199,56 @@
                 </div>
 
                 <div class="  ment">
-                    <button class="prev absolute top-[40%] left-[90px] border shadow-lg px-3 py-1 bg-[#f0f0f0] rounded-[13px] hover:bg-purple-700 hover:text-white text-purple-700 text-[20px] text-center ">Prev << </button>
-                    <button class="next absolute top-[40%] right-[90px] border shadow-lg px-3 py-1 bg-[#f0f0f0] rounded-[13px] hover:bg-purple-700 hover:text-white text-purple-700 text-[20px] text-center  ">Next >></button>
-                    <i class="play-pause absolute bottom-[3%] left-[48%] border shadow-lg px-3 py-2 bg-[#f0f0f0] rounded-[13px] hover:bg-purple-700 hover:text-white text-purple-700 text-[20px] text-center fa fa-play-circle" aria-hidden="true"></i>
-                    <i class="zoom-in absolute bottom-[9%] right-[250px] border shadow-lg px-3 py-2 bg-[#f0f0f0] rounded-[13px] hover:bg-purple-700 hover:text-white text-purple-700 text-[20px] text-center fa fa-search-plus" aria-hidden="true"></i>
-                    <i class="zoom-out absolute bottom-[24%] right-[250px] border shadow-lg px-3 py-2 bg-[#f0f0f0] rounded-[13px] hover:bg-purple-700 hover:text-white text-purple-700 text-[20px] text-center fa fa-search-minus" aria-hidden="true"></i>
-                </div>
+                    <button class="prev hidden md:block absolute top-[30%] top-[40%] left-[90px]  shadow-lg px-3 py-1 bg-[#f0f0f0] rounded-[13px] hover:bg-purple-700 hover:text-white text-purple-700 text-[15px] md:text-[20px] text-center ">Prev << </button>
 
-                
-                
+                    <button class="prev md:hidden block absolute top-[35%] left-0  shadow-lg px-3 py-1 bg-[#f0f0f0] rounded-[13px] hover:bg-purple-700 hover:text-white text-purple-700 text-[15px] md:text-[20px] text-center "> << </button>
+
+                    <button class="next hidden md:block absolute top-[40%] right-[90px]  shadow-lg px-3 py-1 bg-[#f0f0f0] rounded-[13px] hover:bg-purple-700 hover:text-white text-purple-700 text-[15px] md:text-[20px] text-center  ">Next >></button>
+
+                    <button class="next absolute md:hidden block  top-[35%] right-[0px]  shadow-lg px-3 py-1 bg-[#f0f0f0] rounded-[13px] hover:bg-purple-700 hover:text-white text-purple-700 text-[15px] md:text-[20px] text-center  "> >> </button>
+
+                    <i class="play-pause absolute bottom-[3%] left-[48%]  shadow-lg px-3 py-2 bg-[#f0f0f0] rounded-[13px] hover:bg-purple-700 hover:text-white text-purple-700 text-[20px] text-center fa fa-play-circle" aria-hidden="true"></i>
+
+                    <i class="zoom-in absolute bottom-[5%] md:bottom-[9%] md:right-[170px] lg:right-[250px] right-0  shadow-lg px-3 py-2 bg-[#f0f0f0] rounded-[13px] hover:bg-purple-700 hover:text-white text-purple-700 text-[20px] text-center fa fa-search-plus" aria-hidden="true"></i>
+
+                    <i class="zoom-out absolute bottom-[22%] md:bottom-[24%] md:right-[170px] lg:right-[250px] right-0 shadow-lg px-3 py-2 bg-[#f0f0f0] rounded-[13px] hover:bg-purple-700 hover:text-white text-purple-700 text-[20px] text-center fa fa-search-minus" aria-hidden="true"></i>
+
+                </div>
 
               </div>
 
-              <div class="flex w-full items-center justify-between px-4 my-5 ">
+              <div class="flex md:flex-row flex-col w-full items-center justify-between md:px-4 px-2 my-3 md:my-5 ">
 
                 <div class=" my-2">
-                    <h2 class="text-[20px] ">Property Name:<span class="font-bold text-[28px]"> God's Love Villa </span></h2>
-                    <p class="text-[20px]"> Property Location: <span class="font-bold text-[26px]"> Oluoyle Estate, Ibadan </span></p>
-                    <p class="text-[20px]">Property Type: <span class="text-[26px] text-purple-700 font-bold"> Single Room Self Con</span></p>
+                    <h2 class=" text-[17px] md:text-[20px] ">Property Name:<span class="font-bold  text-[17px] md:text-[20px]"> God's Love Villa </span></h2>
+                    <p class=" text-[17px] md:text-[20px]"> Property Location: <span class="font-bold text-[15px] md:text-[20px]"> Oluoyle Estate, Ibadan </span></p>
+                    <p class=" text-[17px] md:text-[20px]">Property Deal Type: <span class=" text-[17px] md:text-[20px] text-red-500 font-bold"> Rent</span></p>
+
+                    <p class=" text-[17px] md:text-[20px]">Property Type: <span class=" text-[14px] md:text-[20px] text-purple-700 font-bold"> Single Room Self Con</span></p>
                 </div>
 
-                <div class=" flex flex-col w-[30%] items-center px-6">
+                <div class=" flex md:flex-col w-full md:w-[30%] gap-2 items-center px-1 md:px-6">
     
-                    <h2 class="text-[26px]">Price</h2>
+                    <h2 class="md:text-[23px] text-[20px]">Price</h2>
                     
-                    <div class="flex gap-1 items-center justify-center">
-                        <img src="assests/images/naria log.png" class="w-[10%]" alt="">
-                        <p class="text-[30px] text-purple-700 font-bold">120,000</p>
+                    <div class="flex  items-center r">
+                      <p class="md:text-[25px] text-[20px] text-purple-700 font-bold"> &#8358;120,000</p>
                     </div>
     
                 </div>
 
               </div>
 
-              <div class="  px-4 flex gap-5">
+              <div class="   px-1 md:px-4 grid md:grid-cols-4 grid-cols-2 gap-2 ">
 
-                <i class=" fa fa-arrows-h flex gap-3 border p-2  items-center text-[20px] text-purple-700 my-2  " aria-hidden="true">5,000 sqft</i>
+                
+                <i class=" fa fa-arrows-h justify-center  flex gap-1 md:gap-3 border p-2 w-full md:w-[80%]  items-center text-[15px] md:text-[20px] text-purple-700 md:my-2  " aria-hidden="true">5,000 sqft</i>
 
-                <i class=" fa fa-bed flex gap-3 border p-2  items-center text-[20px] text-purple-700 my-2  " aria-hidden="true">5 bedrooms</i>
+                <i class=" fa fa-check-circle  justify-center flex gap-1 md:gap-3 border p-2 w-full md:w-[80%]  items-center text-[15px] md:text-[20px] text-green-500 md:my-2  " aria-hidden="true">Approved</i>
 
-                <i class=" fa fa-bath flex gap-3 border p-2  items-center text-[20px] text-purple-700 my-2  " aria-hidden="true">in-suite bathrooms</i>
+                <i class=" fa fa-bath justify-center  flex gap-3 border p-2  items-center w-full md:w-[80%] text-[15px] md:text-[20px] text-purple-700 md:my-2  " aria-hidden="true">5 bathrooms</i>
 
-                <i class=" fa fa-star flex gap-3 border p-2  items-center text-[20px] text-yellow-600 my-2  " aria-hidden="true"><span class="text-purple-700">5+ rating</span></i>
+                <i class=" fa fa-star  justify-center  flex gap-3 border p-2  items-center w-full md:w-[80%] text-[15px] md:text-[20px] text-yellow-600 md:my-2  " aria-hidden="true"><span class="text-purple-700">5+ rating</span></i>
 
               </div>
 
@@ -248,24 +256,24 @@
 
                 <h2 class="md:text-[25px] text-[17px] text-purple-700 my-3 px-1 md:px-3"> Property Description</h2>
 
-                <p class="text-justify px-3 text-[22px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus optio nostrum, alias deserunt quidem quos exercitationem tempore molestias qui facere voluptate nam expedita asperiores mollitia accusamus quae veritatis nemo natus nobis! Incidunt nisi ut quisquam, labore temporibus, dicta a nobis ad consequuntur perspiciatis tenetur cum, quae excepturi expedita impedit? Esse laboriosam repellendus tempora blanditiis ducimus quaerat, vero, nesciunt et voluptas id autem, repudiandae excepturi consequatur quibusdam quia modi maiores placeat deserunt. Repellendus fuga quas ullam nam qui rem ratione voluptates officia. Consequuntur maxime autem ad atque, distinctio similique dolores recusandae esse quae laborum sunt expedita earum! Suscipit, adipisci assumenda. Numquam ut, explicabo alias porro commodi itaque odit rerum maiores at tempora adipisci vero esse culpa laboriosam quam nulla impedit similique corrupti ipsum libero quo exercitationem accusamus? Commodi cum beatae, repellat laudantium eos quasi corrupti ducimus qui ullam sint odit mollitia ex corporis? Laborum natus, obcaecati libero est odio quis tempore.</p>
+                <p class="text-justify px-1 md:px-3 text-[17px] md:text-[22px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus optio nostrum, alias deserunt quidem quos exercitationem tempore molestias qui facere voluptate nam expedita asperiores mollitia accusamus quae veritatis nemo natus nobis! Incidunt nisi ut quisquam, labore temporibus, dicta a nobis ad consequuntur perspiciatis tenetur cum, quae excepturi expedita impedit? Esse laboriosam repellendus tempora blanditiis ducimus quaerat, vero, nesciunt et voluptas id autem, repudiandae excepturi consequatur quibusdam quia modi maiores placeat deserunt. Repellendus fuga quas ullam nam qui rem ratione voluptates officia. Consequuntur maxime autem ad atque, distinctio similique dolores recusandae esse quae laborum sunt expedita earum! Suscipit, adipisci assumenda. Numquam ut, explicabo alias porro commodi itaque odit rerum maiores at tempora adipisci vero esse culpa laboriosam quam nulla impedit similique corrupti ipsum libero quo exercitationem accusamus? Commodi cum beatae, repellat laudantium eos quasi corrupti ducimus qui ullam sint odit mollitia ex corporis? Laborum natus, obcaecati libero est odio quis tempore.</p>
               </div>
 
               <div class="">
 
                 <h2 class="md:text-[25px] text-[17px] text-purple-700 my-3 px-1 md:px-3"> Property Specifications</h2>
 
-                <div class="px-4 gap-5 flex">
+                <div class="md:px-4 px-2 gap-2 md:gap-5 flex flex-row flex-wrap">
 
-                    <i class=" fa fa-check-square-o flex gap-3 border p-2  items-center text-[20px]  my-2  " aria-hidden="true"><span class="text-purple-700">Borehole Water</span></i>
+                    <i class=" fa fa-check-square-o flex gap-1 md:gap-3 border p-2  items-center text-[14px] md:text-[20px]  my-2  " aria-hidden="true"><span class="text-purple-700">Borehole Water</span></i>
 
-                    <i class=" fa fa-check-square-o flex gap-3 border p-2  items-center text-[20px]  my-2  " aria-hidden="true"><span class="text-purple-700">Prepaid meter</span></i>
+                    <i class=" fa fa-check-square-o flex gap-1 md:gap-3 border p-2  items-center text-[14px] md:text-[20px]  my-2  " aria-hidden="true"><span class="text-purple-700">Prepaid meter</span></i>
 
-                    <i class=" fa fa-check-square-o flex gap-3 border p-2  items-center text-[20px]  my-2  " aria-hidden="true"><span class="text-purple-700">Tiles</span></i>
+                    <i class=" fa fa-check-square-o flex gap-1 md:gap-3 border p-2  items-center text-[14px] md:text-[20px]  my-2  " aria-hidden="true"><span class="text-purple-700">Tiles</span></i>
 
-                    <i class=" fa fa-check-square-o flex gap-3 border p-2  items-center text-[20px]  my-2  " aria-hidden="true"><span class="text-purple-700">POP</span></i>
+                    <i class=" fa fa-check-square-o flex gap-1 md:gap-3 border p-2  items-center text-[14px] md:text-[20px]  my-2  " aria-hidden="true"><span class="text-purple-700">POP</span></i>
 
-                    <i class=" fa fa-check-square-o flex gap-3 border p-2  items-center text-[20px]  my-2  " aria-hidden="true"><span class="text-purple-700">Spacious Compound</span></i>
+                    <i class=" fa fa-check-square-o flex gap-1 md:gap-3 border p-2  items-center text-[14px] md:text-[20px]  my-2  " aria-hidden="true"><span class="text-purple-700">Spacious Compound</span></i>
 
                 </div>
 
@@ -273,33 +281,33 @@
 
               </div>
 
-              <div class="px-4 flex gap-3 justify-between items-center">
+              <div class="md:px-4 px-1 flex flex-col md:flex-row gap-3 justify-between items-center">
 
-                <div class=" my-3 flex gap-3 ">
+                <div class=" my-3 flex gap-1 md:gap-3 ">
                     
-                    <input type="checkbox" name="" class="text-[20px] " id="talk"> 
-                    <span class="text-purrple-700 text-[20px]">I would love to book an inspection session</span>
+                    <input type="checkbox" name="" class=" text-[15px] md:text-[20px] " id="talk"> 
+                    <span class="text-purrple-700  text-[13px] md:text-[20px]">I would love to book an inspection session</span>
 
                 </div>
 
-                <a href="#" id="pale" class="flex gap-3 border p-2  items-center text-[18px] hover:bg-purple-700 hover:text-white rounded-[12px] bg-[#f0f0f0] text-purple-700 my-2 cursor-pointer">Procced to payment</a>
+                <a href="#" id="pale" class="flex gap-3 border p-2  items-center text-[16px] md:text-[18px] hover:bg-purple-700 hover:text-white rounded-[12px] bg-[#f0f0f0] text-purple-700 my-2 cursor-pointer">Procced to payment</a>
 
               </div>
 
-              <div id="inspect" class="px-4 border hidden shadow-md py-2 my-3 text-center rounded-[12px]">
+              <div id="inspect" class="md:px-4 px-2 border hidden  shadow-md py-2 my-3 text-center rounded-[12px]">
 
-                <h2 class="text-[25px] text-center text-purple-700 ">Book an inspection session</h2>
+                <h2 class="md:text-[25px] text-[16px] text-center text-purple-700 ">Book an inspection session</h2>
 
-                <p class="text-[22px]">Proccedures</p>
+                <p class="md:text-[25px] text-[16px]">Proccedures</p>
 
-                <ol class="text-left w-[80%] mx-auto">
-                    <li class="text-[20px] py-1"> 1) Make a payment of 2,000 naira only Mestate. </li>
-                    <li class="text-[20px] py-1"> 2) After payment, a Mestate representative would reach out to you to schedule a convient time for the inspection.</li>
-                    <li class="text-[20px] py-1"> 3) Our representative would reach out via mail and phone calls/message.</li>
-                    <li class="text-[20px] py-1"> 4) Meet up with the representative and have your tour around the property, do well to ask enough question to your satisfaction.</li>
+                <ol class="text-left w-full md:w-[90%] lg:w-[80%] mx-auto">
+                    <li class="lg:text-[20px] md:text-[17px] text-[13px] py-1"> 1) Make a payment of &#8358;2,000 naira only Mestate. </li>
+                    <li class="lg:text-[20px] md:text-[17px] text-[13px] py-1"> 2) After payment, a Mestate representative would reach out to you to schedule a convient time for the inspection.</li>
+                    <li class="lg:text-[20px] md:text-[17px] text-[13px] py-1"> 3) Our representative would reach out via mail and phone calls/message.</li>
+                    <li class="lg:text-[20px] md:text-[17px] text-[13px] py-1"> 4) Meet up with the representative and have your tour around the property, do well to ask enough question to your satisfaction.</li>
                 </ol>
 
-                <button class="  border p-2  items-center text-[18px] hover:bg-purple-700 hover:text-white rounded-[12px] bg-[#f0f0f0] text-purple-700 my-2 cursor-pointer">Procced to pay 2,000</button>
+                <button class="  border p-2  items-center text-[14px] md:text-[18px] hover:bg-purple-700 hover:text-white rounded-[12px] bg-[#f0f0f0] text-purple-700 my-2 cursor-pointer">Procced to pay &#8358; 2,000</button>
 
               </div>
 
@@ -320,7 +328,7 @@
       
     </main>
 
-    <div class=" md:hidden absolute top-0   ">
+    <div class=" lg:hidden absolute top-0   ">
 
       <div id="mobile" loading="lazy" class=" bg-[#f0f0f0] top-0 enter h-[100vh] hidden  w-[60%] rounded-r-[25px]  p-2 shadow-lg">
 
