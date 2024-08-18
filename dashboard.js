@@ -1,10 +1,42 @@
 
 
+const inputfill = document.getElementById('day')
+
+inputfill.addEventListener("keypress", function(){
+
+    const charCode = event.charCode
+        if(charCode < 48 || charCode> 57 ){
+            event.preventDefault()
+        }
+
+})
+
 document.addEventListener("DOMContentLoaded", function(){
     setTimeout(function(){
         document.getElementById('preloader').style.display = 'none'},1500)
     
 })
+
+const bankdetails = () =>{
+
+    const lead = document.getElementById('bank') //popup
+    const mobile = document.getElementById('cancelbank')
+    const z= document.getElementById("body")
+    const x= document.getElementById("class")
+
+    if(lead.style.display == "block"){
+        lead.style.display = 'none'
+        z.style.filter = "blur(0px)";
+        x.style.overflow = "auto";
+        console.log('na me')
+    }else{
+        lead.style.display = 'block'
+        z.style.filter = "blur(2px)";
+        x.style.overflow = "hidden";
+        console.log('no be me')
+    }
+
+}
 
 
 
@@ -17,6 +49,7 @@ btns.forEach((btn) => {
 
     })
 })
+
 
 
 const dos = document.querySelectorAll('.dam')
@@ -53,16 +86,12 @@ const fist = () =>{
 
     if(mobile.style.display == "block"){
         mobile.style.display = 'none'
-        lead.style.display = 'block'
         z.style.filter = "blur(0px)";
         x.style.overflow = "auto";
-        console.log('na me')
     }else{
         mobile.style.display = "block"
-        lead.style.display = 'none'
         z.style.filter = "blur(2px)";
         x.style.overflow = "hidden";
-        console.log('no be me')
     }
 
 }
@@ -128,13 +157,7 @@ choice.addEventListener('change', function(){
 
 
 
-
-
-
-
-
-
-
+console.log("Developed by shadow-dev")
 
 
 
