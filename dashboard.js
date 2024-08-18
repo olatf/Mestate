@@ -1,21 +1,23 @@
 
 
-const inputfill = document.getElementById('day')
 
-inputfill.addEventListener("keypress", function(){
-
-    const charCode = event.charCode
-        if(charCode < 48 || charCode> 57 ){
-            event.preventDefault()
-        }
-
-})
 
 document.addEventListener("DOMContentLoaded", function(){
     setTimeout(function(){
         document.getElementById('preloader').style.display = 'none'},1500)
     
 })
+
+// const inputfill = document.getElementById('day')
+
+// inputfill.addEventListener("keypress", function(){
+
+//     const charCode = event.charCode
+//         if(charCode < 48 || charCode> 57 ){
+//             event.preventDefault()
+//         }
+
+// })
 
 const bankdetails = () =>{
 
