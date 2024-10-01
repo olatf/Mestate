@@ -42,15 +42,15 @@ const bankdetails = () =>{
 
 
 
-let btns = document.querySelectorAll('.form-links');
+// let btns = document.querySelectorAll('.form-links');
 
-btns.forEach((btn) => { 
-    btn.addEventListener('click', ()=>{
-        btns.forEach( (b) => b.classList.remove('active') )
-        btn.classList.add('active')
+// btns.forEach((btn) => { 
+//     btn.addEventListener('click', ()=>{
+//         btns.forEach( (b) => b.classList.remove('active') )
+//         btn.classList.add('active')
 
-    })
-})
+//     })
+// })
 
 
 

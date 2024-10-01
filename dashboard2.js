@@ -120,6 +120,8 @@ sdcard.addEventListener('change', function(){
         
         ode.style.color = 'red'
         this.value= ''
+    }else{
+        ode.style.color = 'green'
     }
 })
 
